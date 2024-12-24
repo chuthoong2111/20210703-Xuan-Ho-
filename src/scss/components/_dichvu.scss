@@ -1,0 +1,37 @@
+.bg-dichvu {
+  background: #f5f5f5;
+
+  padding: 1rem;
+  @include media-breakpoint-up(lg) {
+    padding: 2rem;
+  }
+}
+.dichvu {
+  .bg-primary {
+    padding: 1rem;
+    @include media-breakpoint-up(xl) {
+      padding: 2rem;
+    }
+    height: 100%;
+    h4 {
+      color: #fff;
+    }
+  }
+}
+a.underline {
+  text-decoration: underline;
+  color: #555;
+  &:hover {
+    color: $primary;
+  }
+}
+.btn-white {
+  background: #fff;
+  color: $primary;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  &:hover {
+    background: #222;
+    color: $primary;
+  }
+}

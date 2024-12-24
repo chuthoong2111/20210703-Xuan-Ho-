@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body class="decor">
+  {{>./components/sidebar}}
+
+  {{>./components/nav-decor}}
+  {{>./components/banner}}
+
+
+  <section class='my-5 khampha'>
+    <div class='container-fluid wrapper'>
+      <div class='tag-all d-flex w-100'>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Phòng ngủ
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Phòng họp
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Lớp học
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Khách sạn
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Ngoài trời
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Phòng ăn
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Không gian văn phòng
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Y tế
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Thư viện
+        </a>
+        <a href='#' class='rounded-pill fw-bold btn btn-tag'>
+          Cộng đồng
+        </a>
+      </div>
+      <div class='row g-2 g-md-3 g-xl-4 mt-0'>
+        <div class='col-lg-6'>
+          <div class='card rounded-0 border-0'>
+            <a class="overlink" href="#"></a>
+            <div class='ratio ratio-3x2'>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+            </div>
+            <div class='card-body px-0'>
+              <h6 class='card-title fw-bold text-uppercase'>Các công trình thiết kế</h6>
+
+              <p class='card-text'>Đi đến tham quan</p>
+              {{!-- <a class='h6 card-subtitle mt-2 btn btn-primary fw-bold px-4 rounded-pill'>Đi đến thăm quan</a> --}}
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-6'>
+          
+          <div class='card rounded-0 border-0'>
+            <a class="overlink" href="#"></a>
+            <div class='ratio ratio-3x2'>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+            </div>
+            <div class='card-body px-0'>
+              <h6 class='card-title fw-bold text-uppercase'>Trải nghiệm không gian thực tế ảo</h6>
+
+              <p class='card-text'>Trải nghiệm tại đây</p>
+              {{!-- <a class='h6 card-subtitle mt-2 btn btn-primary fw-bold px-4 rounded-pill'>Trải nghiệm tại đây</a> --}}
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-4'>
+
+          <div class='card rounded-0 border-0'>
+            <a href="#" class="overlink"></a>
+            <div class='ratio ratio-3x4'>
+              <a href="#" class="overlink"></a>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='card-body px-0'>
+              <h6 class='card-title fw-bold text-uppercase'>Nội thất Decor</h6>
+
+              <p class='card-text'>Tại sao lựa chọn nội thất Decor tại Xuân Hòa</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-4'>
+
+          <div class='card rounded-0 border-0'>
+            <a href="#" class="overlink"></a>
+            <div class='ratio ratio-3x4'>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+            </div>
+            <div class='card-body px-0'>
+              <h6 class='card-title fw-bold text-uppercase'>Quy trình triển khai dự án</h6>
+
+              <p class='card-text'>Thực hiện công việc của bạn theo từng bước</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-4'>
+          <div class='card rounded-0 border-0'>
+            <a href="#" class="overlink"></a>
+            <div class='ratio ratio-3x4'>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+            </div>
+            <div class='card-body px-0'>
+              <h6 class='card-title fw-bold text-uppercase'>Đăng ký nhận tư vấn</h6>
+
+              <p class='card-text'>Chúng tôi có thể giúp ích gì cho bạn ?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="has-padding bg-grey-light">
+    <div class="container-fluid wrapper">
+      <div class="row g-2 g-lg-4">
+        <div class="col-12">
+          <img data-src="./assets/images/line.svg" alt="" class="img-fluid lazyload d-block d-lg-none">
+          <h2 class='h2 fw-bold mb-3 mb-lg-4 text-center'>
+            CÂU CHUYỆN <span class="fw-normal">dành cho bạn</span>
+          </h2>
+        </div>
+        <div class='col-lg-3 col-6'>
+
+          <div class='card rounded-0 border-0 bg-transparent'>
+            <a href="#" class="overlink"></a>
+            <div class='ratio ratio-1x1 d-block d-lg-none'>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='ratio ratio-3x4 d-none d-lg-block'>
+              
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='card-body px-0 text-center '>
+              <h5 class='card-title fw-bold text-uppercase'>Chặng đường 40 năm</h5>
+
+              <p class='card-text'>Người bạn tri kỷ luôn đồng hành cùng bạn
+                trước những quyết định sáng suốt</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-6'>
+
+          <div class='card rounded-0 border-0 bg-transparent'>
+            <a href="#" class="overlink"></a>
+            <div class='ratio ratio-1x1 d-block d-lg-none'>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='ratio ratio-3x4 d-none d-lg-block'>
+              
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='card-body px-0  text-center'>
+              <h5 class='card-title fw-bold text-uppercase'>Những điều tuyệt vời</h5>
+
+              <p class='card-text'>Chạm - cảm - nghĩ
+                để giác quan và tâm hồn hòa hợp</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-6'>
+
+          <div class='card rounded-0 border-0 bg-transparent'>
+            <a href="#" class="overlink"></a>
+            <div class='ratio ratio-1x1 d-block d-lg-none'>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='ratio ratio-3x4 d-none d-lg-block'>
+              
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='card-body px-0  text-center'>
+              <h5 class='card-title fw-bold text-uppercase'>Tư vấn thiết kế</h5>
+
+              <p class='card-text'>Những điều cần thiết cho quyết định
+                về không gian ở của bạn</p>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-3 col-6'>
+
+          <div class='card rounded-0 border-0  bg-transparent'>
+            <a href="#" class="overlink"></a>
+            <div class='ratio ratio-1x1 d-block d-lg-none'>
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='ratio ratio-3x4 d-none d-lg-block'>
+              
+              <img
+                data-src='https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                class='card-img-top lazyload img-fluid rounded-0' alt='...' />
+
+            </div>
+            <div class='card-body px-0 text-center'>
+              <h5 class='card-title fw-bold text-uppercase'>Chuyến đi đến</h5>
+
+              <p class='card-text'>Thăm quan không gian mới
+                được thiết kế bởi Xuân Hòa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class='my-5 container-fluid wrapper'>
+    <div class='row'>
+      <div class='col-xxl-7 col-xl-7 mx-auto text-center'>
+        <h2 class='h1 text-primary fw-bold'>
+          Một không gian mở ra thế giới đầy cảm xúc
+        </h2>
+        <div class='text-center my-4'>
+          <svg width='118' height='118' viewBox='0 0 118 118' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M46.61 76.83L58.71 60.98L40.35 38.08H30.39L48.74 61.5L29.75 84.94H59.14L53.26 76.83H46.61Z'
+              fill='#CC1421'></path>
+            <path d='M58.69 38.08L64.57 46.19H71.14L59.11 60.82L77.47 84.94H87.39L69.09 60.36L88.14 38.08H58.69Z'
+              fill='#CC1421'></path>
+            <path
+              d='M59.3 104.11C33.44 104.11 13.93 84.71 13.93 59C13.93 33.31 33.44 13.94 59.3 13.94C85.17 13.94 104.67 33.31 104.67 59C104.68 84.71 85.17 104.11 59.3 104.11ZM59.3 6C29.91 6 6 29.77 6 59C6 88.22 29.91 112 59.3 112C88.69 112 112.6 88.23 112.6 59C112.61 29.77 88.7 6 59.3 6Z'
+              fill='#CC1421'></path>
+          </svg>
+          <h3 class='fw-normal my-4'>Mãi gắn bó, Mãi bền lâu</h3>
+          <div class='widget_text'>
+            <div class='textwidget'>
+              <ul class='list-unstyled d-flex col-lg-8 col-xxl-6 mx-auto justify-content-between'>
+                <li><a href='#'><strong>Sản phẩm</strong> chất lượng</a></li>
+                <li><a href='#'><strong>Sự tiện nghi</strong>
+                    và tiện dụng</a></li>
+                <li><a href='#'><strong>Môi trường</strong> chuyên nghiệp</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <svg focusable='false' viewBox='0 0 24 24' class='d-none' aria-hidden='true'>
+    <path id='tag' fill-rule='evenodd' clip-rule='evenodd'
+      d='M12.143 2.95l-7.94 1.253-1.253 7.94 10.387 10.386 9.192-9.192L12.143 2.95zm-2.114 7.08a1.5 1.5 0 10-2.121-2.122 1.5 1.5 0 002.121 2.121z'>
+    </path>
+  </svg>
+  <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='d-none'>
+    <path id='arrow'
+      d='M21.677 12.673C21.6856 12.6559 21.7027 12.6388 21.7112 12.6216C21.7198 12.6045 21.7284 12.5874 21.7455 12.5703C21.754 12.5532 21.7626 12.5446 21.7712 12.5275C21.7797 12.5104 21.7883 12.4932 21.7968 12.4761C21.8054 12.459 21.814 12.4419 21.8225 12.4248C21.8225 12.4162 21.8225 12.3991 21.8311 12.382C21.8396 12.3649 21.8396 12.3477 21.8482 12.3306C21.8568 12.3135 21.8568 12.2964 21.8653 12.2793C21.8739 12.2621 21.8739 12.245 21.8824 12.2279C21.8824 12.2108 21.891 12.1851 21.891 12.168C21.891 12.1509 21.8996 12.1337 21.8996 12.1252C21.9081 12.0481 21.9081 11.9797 21.8996 11.9026C21.8996 11.8855 21.891 11.8684 21.891 11.8598C21.891 11.8427 21.8824 11.817 21.8824 11.7999C21.8824 11.7828 21.8739 11.7657 21.8653 11.7486C21.8568 11.7143 21.8568 11.6972 21.8482 11.6801C21.8482 11.663 21.8396 11.6458 21.8311 11.6287C21.8225 11.6116 21.8225 11.5945 21.814 11.5774C21.8054 11.5603 21.7968 11.5431 21.7883 11.526C21.7797 11.5089 21.7712 11.4918 21.7626 11.4747C21.754 11.4575 21.7455 11.449 21.7369 11.4319C21.7284 11.4147 21.7198 11.3976 21.7027 11.3805C21.6941 11.3634 21.677 11.3463 21.6684 11.3291C21.6599 11.312 21.6513 11.3035 21.6428 11.2863C21.6171 11.2607 21.5914 11.2264 21.5657 11.2007L14.6924 4.3274C14.2559 3.89087 13.5454 3.89087 13.1089 4.3274C12.6723 4.76394 12.6723 5.47439 13.1089 5.91093L18.0734 10.8755H4.12131C3.49646 10.884 3 11.3805 3 12.0053C3 12.6216 3.49646 13.1267 4.12131 13.1267H18.082L13.1174 18.0912C12.6809 18.5278 12.6809 19.2382 13.1174 19.6747C13.34 19.8887 13.6224 20 13.9049 20C14.1874 20 14.4784 19.8887 14.6924 19.6747L21.5657 12.8014C21.5914 12.7757 21.6171 12.75 21.6428 12.7158C21.6599 12.6987 21.6684 12.6816 21.677 12.673Z'
+      fill='#CC2027'></path>
+  </svg>
+  {{>./layouts/footer}}
+
+</body>
+
+</html>

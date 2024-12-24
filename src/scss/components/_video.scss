@@ -1,0 +1,113 @@
+.video {
+  background: no-repeat;
+  background-size: cover;
+}
+
+.swiper-video {
+  .card {
+    position: relative;
+    border: 1px solid rgba($color: #000, $alpha: .8);
+    padding: 1rem;
+    overflow: hidden;
+    background: rgba($color: #000000, $alpha: .5);
+    border-radius: 0;
+
+    &:hover {
+      iframe {
+        opacity: 1;
+      }
+    }
+  }
+
+  .ratio {
+    background: #222;
+
+    iframe {
+      opacity: 0.6;
+      transition: all ease-in-out 0.3s;
+    }
+  }
+}
+
+.widget_text ul li,
+.widget_text ul li a {
+  color: #4f4f4f;
+  font-size: 15px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.widget_text ul li:hover a,
+.widget_text ul li:hover strong {
+  color: #f7941e;
+}
+
+.widget_text ul li:nth-child(n) a:before {
+  width: 120px;
+  height: 120px;
+
+  @include media-breakpoint-down(sm) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.widget_text ul li:nth-child(1) a:before {
+  content: '';
+  background: url('../images/box1.png') no-repeat center center;
+  border: 1px solid #dedede;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.widget_text ul li:nth-child(1):hover a:before {
+  background: url('../images/boxhv1.png') no-repeat center center;
+  border: 1px solid #f7941e;
+}
+
+.widget_text ul li:nth-child(2) a:before {
+  content: '';
+  background: url('../images/box2.png') no-repeat center center;
+
+  border: 1px solid #dedede;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.widget_text ul li:nth-child(2):hover a:before {
+  background: url('../images/boxhv2.png') no-repeat center center;
+  border: 1px solid #f7941e;
+}
+
+.widget_text ul li:nth-child(3) a:before {
+  content: '';
+  background: url('../images/box3.png') no-repeat center center;
+
+  border: 1px solid #dedede;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.widget_text ul li:nth-child(3):hover a:before {
+  background: url('../images/boxhv3.png') no-repeat center center;
+  border: 1px solid #f7941e;
+}
+
+.widget_text ul li strong {
+  display: block;
+  color: #4f4f4f;
+  font-size: 15px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}

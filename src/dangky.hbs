@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  {{>./components/sidebar}}
+
+  {{>./components/nav}}
+  {{!-- {{>./components/breadcrumb}} --}}
+  <hr class="p-0 m-0">
+  <section class="dangky wrapper fixheigtcontent">
+    <div class="row h-100 g-0 align-items-lg-stretch">
+
+      <div class="col-lg-6 h-100 ps-lg-2 ps-0 pe-lg-1 pe-0 order-lg-1 overflow-auto">
+        
+              
+              <div class="px-xxl-5 px-0">
+                <div class="d-flex mt-3 justify-content-between">
+                <a href="javascript:history.back()"><i class="fas fa-angle-left me-2"></i>Trở lại</a>
+                <div class="step">
+                  {{!-- <small class="text-grey-70">Bước 01/03</small> --}}
+                  <div class="fw-bold">Thông tin cá nhân</div>
+                </div>
+              </div>
+                <div class="col-12  mt-4">
+                  <div class="text-start mb-4">
+                    <h1 class="h2 fw-bold">Đăng ký tài khoản cá nhân</h1>
+                    <p class="text-grey-70">Cam kết thông tin của quý khách chỉ được Xuân Hòa sử dụng với mục đích lưu
+                      trữ thông tin bảo hành</p>
+
+                  </div>
+                </div>
+                <div class="col-lg-12">
+
+                  <hr>
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label"><span
+                        class="text-danger me-1">*</span>Khu vực ( Tỉnh/TP) : </label>
+                    <div class="col-sm-8">
+                      <select class="form-select rounded-0" id="inputTinhThanh">
+                        <option value="op1">Xin hãy lựa chọn</option>
+                        <option value="op2">Hanoi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label"><span
+                        class="text-danger me-1">*</span>Tài khoản : </label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="inputTinhThanh"
+                        placeholder="Số điện thoại hoặc email">
+                      <div class="small lh-sm mt-1  text-grey-70"><small>Số điện thoại hoặc Email sẽ sử dụng làm tên
+                          đăng nhập và không thể thay đổi về sau. Đề nghị quý khách hàng/ Đại lý cân nhắc kỹ trước khi
+                          điền thông tin</small></div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label"><span
+                        class="text-danger me-1">*</span>Email : </label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="inputTinhThanh" placeholder="Email">
+
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label"><span
+                        class="text-danger me-1">*</span>Nhập lại Email : </label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="inputTinhThanh" placeholder="Nhập lại email">
+
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label"><span
+                        class="text-danger me-1">*</span>Tạo mật khẩu : </label>
+                    <div class="col-sm-8">
+                      <div class="position-relative pass-form">
+                        <input type="password" class="form-control" id="inputTinhThanh" placeholder="Tạo mật khẩu">
+                        <i class="far fa-eye position-absolute"></i>
+                        <i class="far fa-eye-slash d-none position-absolute"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label"><span
+                        class="text-danger me-1">*</span>Nhập lại mật khẩu : </label>
+                    <div class="col-sm-8">
+                      <div class="position-relative pass-form">
+                        <input type="password" class="form-control" id="inputTinhThanh" placeholder="Nhập lại mật khẩu">
+                        <i class="far fa-eye position-absolute"></i>
+                        <i class="far fa-eye-slash d-none position-absolute"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label"><span
+                        class="text-danger me-1">*</span>Tên đầy đủ : </label>
+                    <div class="col-sm-8">
+                      <input type="name" class="form-control" id="inputTinhThanh" placeholder="Tên đầy đủ">
+
+                    </div>
+                  </div>
+                  
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label">Ngày tháng năm sinh</label>
+                    <div class="col-sm-8">
+                      <div class="position-relative pass-form">
+                        <input type="password" class="form-control" id="inputTinhThanh" placeholder="dd/mm/yyyy">
+                        <i class="far fa-calendar-alt position-absolute"></i>
+
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label">Giới tính</label>
+                    <div class="col-sm-8">
+                      <select class="form-select rounded-0" id="inputTinhThanh">
+                        <option value="op1">Nam</option>
+                        <option value="op2">Nữ</option>
+                      </select>
+
+                    </div>
+                  </div>
+                  {{!-- <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label">Số điện thoại</label>
+                    <div class="col-sm-8">
+                      <input type="tell" class="form-control" id="tel">
+
+                    </div>
+                  </div> --}}
+                  <div class="row mb-3">
+                    <label for="inputTinhThanh" class="col-sm-4 col-form-label"><span
+                        class="text-danger me-1">*</span>Địa chỉ : </label>
+                    <div class="col-sm-8">
+                      <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="2"></textarea>
+
+                    </div>
+                  </div>
+                  <div class="col-12  mt-3 mt-lg-0 mb-2">
+                    <div class="form-check">
+                      <input class="form-check-input ms-0 me-2" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Tôi đồng ý với các điều khoản & điều kiện
+                      </label>
+                    </div>
+                    <div class="col-12 my-4">
+                      <a href="#" class="btn btn-primary btn-large d-block fw-bold">Đăng ký</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+      </div>
+      <div class="col-lg-6  h-100 my-4 my-lg-0 d-flex order-lg-0 ">
+        <!-- Slider main container -->
+        <div class="swiper-container swiper-dangky position-relative">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                data-src="https://images.unsplash.com/photo-1610341857041-1fb85125de76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=675&q=80"
+                alt="" class="object-fit lazyload">
+              <a href="#" class="btn btn-primary btn-small">Tìm hiểu thêm</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-src="https://images.unsplash.com/photo-1604578762246-41134e37f9cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80"
+                alt="" class="object-fit lazyload">
+              <a href="#" class="btn btn-primary">Tìm hiểu thêm</a>
+            </div>
+            <div class="swiper-slide">
+              <img
+                data-src="https://images.unsplash.com/photo-1524061511843-fd43443e3cb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=675&q=80"
+                alt="" class="object-fit lazyload">
+              <a href="#" class="btn btn-primary btn-small">Tìm hiểu thêm</a>
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="control-dangky">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  {{>./layouts/footer2}}
+
+</body>
+
+</html>

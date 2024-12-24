@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body class="sanpham">
+  {{>./components/sidebar}}
+
+  {{>./components/nav}}
+  <div class="bg-breadcrumb">
+  <div class="wrapper container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb align-items-center">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="#">Sản phẩm</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Nội thất gia đình</li>
+        <li class="ms-lg-auto mt-3 mt-lg-0 d-flex  align-items-center">
+          <div class="counter me-3 text-nowrap">Các sản phẩm: <span class="text-primary">200</span></div>
+          <select class="form-select form-select-sm" aria-label="Default select example">
+  <option selected>Tìm kiếm mặc đinh</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+  <section class='my-4'>
+    <div class='container-fluid wrapper'>
+      <div class='row'>
+        <div class='col-12'>
+          <h1 class=" h2 col-12 fw-bold my-4">Nội thất gia đình</h1>
+          <!-- Slider main container -->
+          <div class='swiper-container swiper-hangmuc'>
+            <!-- Additional required wrapper -->
+            <div class='swiper-wrapper'>
+              <div class='swiper-slide'>
+
+                <div class='card item active'>
+                  <a href="/sanpham-detail.html"  class='overlay'></a>
+                  <div class='card-img ratio ratio-1x1'>
+                    <img
+                      data-src='https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGZ1cm5pdHVyZXN8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                      class='card-img-top lazyload img-fluid' alt='...' />
+                  </div>
+                  <div class='card-body'>
+                    <h5 class='card-title'>Card title</h5>
+                    <h6 class='card-subtitle my-2'>Card subtitle</h6>
+                    <span class='card-link' href='#'>
+                      <svg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                          d='M12.99 7.41161C13 7.40261 13.01 7.39361 13.01 7.38462C13.02 7.37562 13.02 7.36662 13.03 7.35763C13.04 7.34863 13.04 7.33963 13.05 7.33063C13.06 7.32164 13.06 7.31264 13.07 7.29465C13.08 7.28565 13.08 7.27665 13.09 7.26766C13.09 7.25866 13.1 7.24966 13.1 7.23167C13.1 7.22267 13.11 7.21368 13.11 7.19568C13.11 7.18668 13.12 7.17769 13.12 7.15969C13.12 7.1507 13.13 7.1417 13.13 7.12371C13.13 7.11471 13.13 7.09672 13.14 7.08772C13.14 7.07872 13.14 7.06973 13.14 7.06073C13.15 7.01574 13.15 6.97076 13.14 6.92578C13.14 6.91678 13.14 6.90778 13.14 6.89879C13.14 6.88979 13.14 6.87179 13.13 6.8628C13.13 6.8538 13.12 6.83581 13.12 6.82681C13.12 6.81781 13.11 6.80882 13.11 6.79082C13.11 6.78183 13.1 6.77283 13.1 6.75484C13.1 6.74584 13.09 6.73684 13.09 6.71885C13.09 6.70985 13.08 6.70085 13.07 6.69186C13.06 6.68286 13.06 6.67386 13.05 6.65587C13.04 6.64687 13.04 6.63788 13.03 6.62888C13.02 6.61988 13.02 6.61089 13.01 6.60189C13.01 6.59289 13 6.5839 12.99 6.5749C12.98 6.5659 12.98 6.55691 12.97 6.54791C12.95 6.52991 12.94 6.51192 12.92 6.49393L8.14 2.20243C7.84 1.93252 7.34 1.93252 7.04 2.20243C6.74 2.47233 6.74 2.92218 7.04 3.19208L10.49 6.296H0.78C0.35 6.296 0 6.61089 0 6.99775C0 7.38462 0.35 7.69951 0.78 7.69951H10.49L7.04 10.8034C6.74 11.0733 6.74 11.5232 7.04 11.7931C7.19 11.928 7.39 12 7.59 12C7.79 12 7.99 11.928 8.14 11.7931L12.92 7.49258C12.94 7.47458 12.96 7.45659 12.97 7.4386C12.98 7.4296 12.98 7.4206 12.99 7.41161Z'
+                          fill='white'></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+              <div class='swiper-slide'>
+
+                <div class='card item'>
+                  <a href="/sanpham-detail.html"  class='overlay'></a>
+                  <div class='card-img ratio ratio-1x1'>
+                    <img
+                      data-src='https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGZ1cm5pdHVyZXN8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                      class='card-img-top lazyload img-fluid' alt='...' />
+                  </div>
+                  <div class='card-body'>
+                    <h5 class='card-title'>Card title</h5>
+                    <h6 class='card-subtitle my-2'>Card subtitle</h6>
+                    <span class='card-link' href='#'>
+                      <svg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                          d='M12.99 7.41161C13 7.40261 13.01 7.39361 13.01 7.38462C13.02 7.37562 13.02 7.36662 13.03 7.35763C13.04 7.34863 13.04 7.33963 13.05 7.33063C13.06 7.32164 13.06 7.31264 13.07 7.29465C13.08 7.28565 13.08 7.27665 13.09 7.26766C13.09 7.25866 13.1 7.24966 13.1 7.23167C13.1 7.22267 13.11 7.21368 13.11 7.19568C13.11 7.18668 13.12 7.17769 13.12 7.15969C13.12 7.1507 13.13 7.1417 13.13 7.12371C13.13 7.11471 13.13 7.09672 13.14 7.08772C13.14 7.07872 13.14 7.06973 13.14 7.06073C13.15 7.01574 13.15 6.97076 13.14 6.92578C13.14 6.91678 13.14 6.90778 13.14 6.89879C13.14 6.88979 13.14 6.87179 13.13 6.8628C13.13 6.8538 13.12 6.83581 13.12 6.82681C13.12 6.81781 13.11 6.80882 13.11 6.79082C13.11 6.78183 13.1 6.77283 13.1 6.75484C13.1 6.74584 13.09 6.73684 13.09 6.71885C13.09 6.70985 13.08 6.70085 13.07 6.69186C13.06 6.68286 13.06 6.67386 13.05 6.65587C13.04 6.64687 13.04 6.63788 13.03 6.62888C13.02 6.61988 13.02 6.61089 13.01 6.60189C13.01 6.59289 13 6.5839 12.99 6.5749C12.98 6.5659 12.98 6.55691 12.97 6.54791C12.95 6.52991 12.94 6.51192 12.92 6.49393L8.14 2.20243C7.84 1.93252 7.34 1.93252 7.04 2.20243C6.74 2.47233 6.74 2.92218 7.04 3.19208L10.49 6.296H0.78C0.35 6.296 0 6.61089 0 6.99775C0 7.38462 0.35 7.69951 0.78 7.69951H10.49L7.04 10.8034C6.74 11.0733 6.74 11.5232 7.04 11.7931C7.19 11.928 7.39 12 7.59 12C7.79 12 7.99 11.928 8.14 11.7931L12.92 7.49258C12.94 7.47458 12.96 7.45659 12.97 7.4386C12.98 7.4296 12.98 7.4206 12.99 7.41161Z'
+                          fill='white'></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+              <div class='swiper-slide'>
+
+                <div class='card item'>
+                  <a href="/sanpham-detail.html"  class='overlay'></a>
+                  <div class='card-img ratio ratio-1x1'>
+                    <img
+                      data-src='https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGZ1cm5pdHVyZXN8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                      class='card-img-top lazyload img-fluid' alt='...' />
+                  </div>
+                  <div class='card-body'>
+                    <h5 class='card-title'>Card title</h5>
+                    <h6 class='card-subtitle my-2'>Card subtitle</h6>
+                    <span class='card-link' href='#'>
+                      <svg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                          d='M12.99 7.41161C13 7.40261 13.01 7.39361 13.01 7.38462C13.02 7.37562 13.02 7.36662 13.03 7.35763C13.04 7.34863 13.04 7.33963 13.05 7.33063C13.06 7.32164 13.06 7.31264 13.07 7.29465C13.08 7.28565 13.08 7.27665 13.09 7.26766C13.09 7.25866 13.1 7.24966 13.1 7.23167C13.1 7.22267 13.11 7.21368 13.11 7.19568C13.11 7.18668 13.12 7.17769 13.12 7.15969C13.12 7.1507 13.13 7.1417 13.13 7.12371C13.13 7.11471 13.13 7.09672 13.14 7.08772C13.14 7.07872 13.14 7.06973 13.14 7.06073C13.15 7.01574 13.15 6.97076 13.14 6.92578C13.14 6.91678 13.14 6.90778 13.14 6.89879C13.14 6.88979 13.14 6.87179 13.13 6.8628C13.13 6.8538 13.12 6.83581 13.12 6.82681C13.12 6.81781 13.11 6.80882 13.11 6.79082C13.11 6.78183 13.1 6.77283 13.1 6.75484C13.1 6.74584 13.09 6.73684 13.09 6.71885C13.09 6.70985 13.08 6.70085 13.07 6.69186C13.06 6.68286 13.06 6.67386 13.05 6.65587C13.04 6.64687 13.04 6.63788 13.03 6.62888C13.02 6.61988 13.02 6.61089 13.01 6.60189C13.01 6.59289 13 6.5839 12.99 6.5749C12.98 6.5659 12.98 6.55691 12.97 6.54791C12.95 6.52991 12.94 6.51192 12.92 6.49393L8.14 2.20243C7.84 1.93252 7.34 1.93252 7.04 2.20243C6.74 2.47233 6.74 2.92218 7.04 3.19208L10.49 6.296H0.78C0.35 6.296 0 6.61089 0 6.99775C0 7.38462 0.35 7.69951 0.78 7.69951H10.49L7.04 10.8034C6.74 11.0733 6.74 11.5232 7.04 11.7931C7.19 11.928 7.39 12 7.59 12C7.79 12 7.99 11.928 8.14 11.7931L12.92 7.49258C12.94 7.47458 12.96 7.45659 12.97 7.4386C12.98 7.4296 12.98 7.4206 12.99 7.41161Z'
+                          fill='white'></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+              <div class='swiper-slide'>
+
+                <div class='card item'>
+                  <a href="/sanpham-detail.html"  class='overlay'></a>
+                  <div class='card-img ratio ratio-1x1'>
+                    <img
+                      data-src='https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGZ1cm5pdHVyZXN8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                      class='card-img-top lazyload img-fluid' alt='...' />
+                  </div>
+                  <div class='card-body'>
+                    <h5 class='card-title'>Card title</h5>
+                    <h6 class='card-subtitle my-2'>Card subtitle</h6>
+                    <span class='card-link' href='#'>
+                      <svg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                          d='M12.99 7.41161C13 7.40261 13.01 7.39361 13.01 7.38462C13.02 7.37562 13.02 7.36662 13.03 7.35763C13.04 7.34863 13.04 7.33963 13.05 7.33063C13.06 7.32164 13.06 7.31264 13.07 7.29465C13.08 7.28565 13.08 7.27665 13.09 7.26766C13.09 7.25866 13.1 7.24966 13.1 7.23167C13.1 7.22267 13.11 7.21368 13.11 7.19568C13.11 7.18668 13.12 7.17769 13.12 7.15969C13.12 7.1507 13.13 7.1417 13.13 7.12371C13.13 7.11471 13.13 7.09672 13.14 7.08772C13.14 7.07872 13.14 7.06973 13.14 7.06073C13.15 7.01574 13.15 6.97076 13.14 6.92578C13.14 6.91678 13.14 6.90778 13.14 6.89879C13.14 6.88979 13.14 6.87179 13.13 6.8628C13.13 6.8538 13.12 6.83581 13.12 6.82681C13.12 6.81781 13.11 6.80882 13.11 6.79082C13.11 6.78183 13.1 6.77283 13.1 6.75484C13.1 6.74584 13.09 6.73684 13.09 6.71885C13.09 6.70985 13.08 6.70085 13.07 6.69186C13.06 6.68286 13.06 6.67386 13.05 6.65587C13.04 6.64687 13.04 6.63788 13.03 6.62888C13.02 6.61988 13.02 6.61089 13.01 6.60189C13.01 6.59289 13 6.5839 12.99 6.5749C12.98 6.5659 12.98 6.55691 12.97 6.54791C12.95 6.52991 12.94 6.51192 12.92 6.49393L8.14 2.20243C7.84 1.93252 7.34 1.93252 7.04 2.20243C6.74 2.47233 6.74 2.92218 7.04 3.19208L10.49 6.296H0.78C0.35 6.296 0 6.61089 0 6.99775C0 7.38462 0.35 7.69951 0.78 7.69951H10.49L7.04 10.8034C6.74 11.0733 6.74 11.5232 7.04 11.7931C7.19 11.928 7.39 12 7.59 12C7.79 12 7.99 11.928 8.14 11.7931L12.92 7.49258C12.94 7.47458 12.96 7.45659 12.97 7.4386C12.98 7.4296 12.98 7.4206 12.99 7.41161Z'
+                          fill='white'></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+              <div class='swiper-slide'>
+
+                <div class='card item'>
+                  <a href="/sanpham-detail.html"  class='overlay'></a>
+                  <div class='card-img ratio ratio-1x1'>
+                    <img
+                      data-src='https://images.unsplash.com/photo-1618220048045-10a6dbdf83e0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTR8fGZ1cm5pdHVyZXN8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                      class='card-img-top lazyload img-fluid' alt='...' />
+                  </div>
+                  <div class='card-body'>
+                    <h5 class='card-title'>Card title</h5>
+                    <h6 class='card-subtitle my-2'>Card subtitle</h6>
+                    <span class='card-link' href='#'>
+                      <svg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path
+                          d='M12.99 7.41161C13 7.40261 13.01 7.39361 13.01 7.38462C13.02 7.37562 13.02 7.36662 13.03 7.35763C13.04 7.34863 13.04 7.33963 13.05 7.33063C13.06 7.32164 13.06 7.31264 13.07 7.29465C13.08 7.28565 13.08 7.27665 13.09 7.26766C13.09 7.25866 13.1 7.24966 13.1 7.23167C13.1 7.22267 13.11 7.21368 13.11 7.19568C13.11 7.18668 13.12 7.17769 13.12 7.15969C13.12 7.1507 13.13 7.1417 13.13 7.12371C13.13 7.11471 13.13 7.09672 13.14 7.08772C13.14 7.07872 13.14 7.06973 13.14 7.06073C13.15 7.01574 13.15 6.97076 13.14 6.92578C13.14 6.91678 13.14 6.90778 13.14 6.89879C13.14 6.88979 13.14 6.87179 13.13 6.8628C13.13 6.8538 13.12 6.83581 13.12 6.82681C13.12 6.81781 13.11 6.80882 13.11 6.79082C13.11 6.78183 13.1 6.77283 13.1 6.75484C13.1 6.74584 13.09 6.73684 13.09 6.71885C13.09 6.70985 13.08 6.70085 13.07 6.69186C13.06 6.68286 13.06 6.67386 13.05 6.65587C13.04 6.64687 13.04 6.63788 13.03 6.62888C13.02 6.61988 13.02 6.61089 13.01 6.60189C13.01 6.59289 13 6.5839 12.99 6.5749C12.98 6.5659 12.98 6.55691 12.97 6.54791C12.95 6.52991 12.94 6.51192 12.92 6.49393L8.14 2.20243C7.84 1.93252 7.34 1.93252 7.04 2.20243C6.74 2.47233 6.74 2.92218 7.04 3.19208L10.49 6.296H0.78C0.35 6.296 0 6.61089 0 6.99775C0 7.38462 0.35 7.69951 0.78 7.69951H10.49L7.04 10.8034C6.74 11.0733 6.74 11.5232 7.04 11.7931C7.19 11.928 7.39 12 7.59 12C7.79 12 7.99 11.928 8.14 11.7931L12.92 7.49258C12.94 7.47458 12.96 7.45659 12.97 7.4386C12.98 7.4296 12.98 7.4206 12.99 7.41161Z'
+                          fill='white'></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            {{! <div class='swiper-pagination'></div> }}
+
+            <!-- If we need scrollbar -->
+            <div class='swiper-scrollbar'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class='container-fluid wrapper'>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-xl-5 list-cataloge g-3">
+        <div class="col">
+          <div class="card rounded-0 border-0">
+            <a href="/sanpham-detail.html"  class='overlay'></a>
+            <div class="ratio ratio-16x9">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 lazyload" alt="...">
+            </div>
+            <div class="card-body rounded-0 p-0 mt-2 mt-xl-3">
+              <h6 class="card-title fw-normal">Bàn văn phòng</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-0 border-0">
+            <a href="/sanpham-detail.html"  class='overlay'></a>
+            <div class="ratio ratio-16x9">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 lazyload" alt="...">
+            </div>
+            <div class="card-body rounded-0 p-0 mt-2 mt-xl-3">
+              <h6 class="card-title fw-normal">Bàn văn phòng</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-0 border-0">
+            <a href="/sanpham-detail.html"  class='overlay'></a>
+            <div class="ratio ratio-16x9">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 lazyload" alt="...">
+            </div>
+            <div class="card-body rounded-0 p-0 mt-2 mt-xl-3">
+              <h6 class="card-title fw-normal">Bàn văn phòng</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-0 border-0">
+            <a href="/sanpham-detail.html"  class='overlay'></a>
+            <div class="ratio ratio-16x9">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 lazyload" alt="...">
+            </div>
+            <div class="card-body rounded-0 p-0 mt-2 mt-xl-3">
+              <h6 class="card-title fw-normal">Bàn văn phòng</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card rounded-0 border-0">
+            <a href="/sanpham-detail.html"  class='overlay'></a>
+            <div class="ratio ratio-16x9">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 lazyload" alt="...">
+            </div>
+            <div class="card-body rounded-0 p-0 mt-2 mt-xl-3">
+              <h6 class="card-title fw-normal">Bàn văn phòng</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="summary lead col-xl-7 mt-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum, reiciendis fugit nam optio alias sequi
+          corrupti cupiditate quibusdam at distinctio nobis quam rerum dolores asperiores similique, tempore fugiat ex.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum, reiciendis fugit nam optio alias sequi
+          corrupti cupiditate quibusdam at distinctio nobis quam rerum dolores asperiores similique, tempore fugiat ex.
+
+        </p>
+
+      </div>
+      <div class="repeat-cataloge mt-5">
+        <div class='row'>
+          <div class="summary col-lg-6">
+            <h2 class="col-12 h4 fw-bold mt-4">
+              Nội thất linh hoạt để làm việc
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum, reiciendis fugit nam optio alias
+              sequi
+              corrupti cupiditate quibusdam at distinctio nobis quam rerum dolores asperiores similique, tempore fugiat
+              ex.
+
+            </p>
+
+          </div>
+          <div class="col-lg-6 d-flex justify-content-end">
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4 mt-auto mb-4 small fw-bold">Xem tất cả sản
+              phẩm</a>
+          </div>
+        </div>
+        <div class='row g-3 masonry-grid'>
+
+          <div class='portfolio-item col-xl-6 col-lg-6 col-12 item-home '>
+            <div class='card rounded-0 border-0'>
+              <div class="area-dot" style="top: 50%;
+    left: 50%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--right" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 80%;
+    left: 75%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--left" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 10%;
+    left: 15%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--bottom" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 30%;
+    left: 55%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--top" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class='ratio ratio-3x4'>
+                <img
+                  src='https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFyZHdvb2R8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='img-fluid object-fit' />
+              </div>
+              <a class='tag rounded-pill' role='button'>
+                <svg focusable='false' viewBox='0 0 24 24' class='icon-tag' aria-hidden='true'>
+                  <use xlink:href='#tag'></use>
+                </svg>
+                <span>Shop all</span>
+              </a>
+
+            </div>
+          </div>
+          <div class='portfolio-item col-xl-6 col-lg-6 col-12 item-home '>
+            <div class='card rounded-0 border-0'>
+              <div class="area-dot" style="top: 50%;
+    left: 50%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--right" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 80%;
+    left: 75%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--left" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 10%;
+    left: 15%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--bottom" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 30%;
+    left: 55%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--top" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class='ratio ratio-3x4'>
+                <img
+                  src='https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFyZHdvb2R8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='img-fluid object-fit' />
+              </div>
+              <a class='tag rounded-pill' role='button'>
+                <svg focusable='false' viewBox='0 0 24 24' class='icon-tag' aria-hidden='true'>
+                  <use xlink:href='#tag'></use>
+                </svg>
+                <span>Shop all</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="repeat-cataloge mt-5">
+        <div class='row'>
+          <div class="summary col-lg-6">
+            <h2 class="col-12 h4 fw-bold mt-4">
+              Nội thất linh hoạt để làm việc
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolorum, reiciendis fugit nam optio alias
+              sequi
+              corrupti cupiditate quibusdam at distinctio nobis quam rerum dolores asperiores similique, tempore fugiat
+              ex.
+
+            </p>
+
+          </div>
+          <div class="col-lg-6 d-flex justify-content-end">
+            <a href="#" class="btn btn-outline-secondary rounded-pill px-4 mt-auto mb-4 small fw-bold">Xem tất cả sản
+              phẩm</a>
+          </div>
+        </div>
+        <div class='row g-3 masonry-grid'>
+
+          <div class='portfolio-item col-xl-6 col-lg-6 col-12 item-home '>
+            <div class='card rounded-0 border-0'>
+              <div class="area-dot" style="top: 50%;
+    left: 50%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--right" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 80%;
+    left: 75%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--left" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 10%;
+    left: 15%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--bottom" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 30%;
+    left: 55%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--top" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class='ratio ratio-3x4'>
+                <img
+                  src='https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFyZHdvb2R8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='img-fluid object-fit' />
+              </div>
+              <a class='tag rounded-pill' role='button'>
+                <svg focusable='false' viewBox='0 0 24 24' class='icon-tag' aria-hidden='true'>
+                  <use xlink:href='#tag'></use>
+                </svg>
+                <span>Shop all</span>
+              </a>
+
+            </div>
+          </div>
+          <div class='portfolio-item col-xl-6 col-lg-6 col-12 item-home '>
+            <div class='card rounded-0 border-0'>
+              <div class="area-dot" style="top: 50%;
+    left: 50%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--right" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 80%;
+    left: 75%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--left" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 10%;
+    left: 15%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--bottom" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class="svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="area-dot" style="top: 30%;
+    left: 55%;">
+                <a role='button' href='#' class='dot'>
+
+                </a>
+                <a class="tooltip pos--top" role="button" href="#">
+                  <div class="inner">
+                    <div class="d-flex">
+
+                      <div class="info-product">
+                        <div class="tooltip-badge">
+                          News
+                        </div>
+                        <div class="name">
+                          Ghế Sopha nhập khẩu Nga
+                        </div>
+                        <div class="dec">
+                          Mầu sắc tuỳ chọn, handmake tại Slovakia
+                        </div>
+                      </div>
+                      <div class="icon-arow flex-grow-0">
+
+                        <svg focusable="false" viewBox="0 0 24 24" class=" svg-icon" aria-hidden="true">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.415 12.001l-8.001 8L7 18.588l6.587-6.586L7 5.414 8.415 4l8 8.001z" fill="#222">
+                          </path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="price mt-3 fw-bold">
+                      30.000.000 VND
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class='ratio ratio-3x4'>
+                <img
+                  src='https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFyZHdvb2R8ZW58MHwxfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='img-fluid object-fit' />
+              </div>
+              <a class='tag rounded-pill' role='button'>
+                <svg focusable='false' viewBox='0 0 24 24' class='icon-tag' aria-hidden='true'>
+                  <use xlink:href='#tag'></use>
+                </svg>
+                <span>Shop all</span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="#" class="h5 btn btn-outline-primary btn-lg rounded-pill px-4 fw-bold mx-auto">Hiển thị thêm</a>
+      </div>
+    </div>
+  </section>
+
+
+  <svg focusable='false' viewBox='0 0 24 24' class='d-none' aria-hidden='true'>
+    <path id='tag' fill-rule='evenodd' clip-rule='evenodd'
+      d='M12.143 2.95l-7.94 1.253-1.253 7.94 10.387 10.386 9.192-9.192L12.143 2.95zm-2.114 7.08a1.5 1.5 0 10-2.121-2.122 1.5 1.5 0 002.121 2.121z'>
+    </path>
+  </svg>
+  <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='d-none'>
+    <path id='arrow'
+      d='M21.677 12.673C21.6856 12.6559 21.7027 12.6388 21.7112 12.6216C21.7198 12.6045 21.7284 12.5874 21.7455 12.5703C21.754 12.5532 21.7626 12.5446 21.7712 12.5275C21.7797 12.5104 21.7883 12.4932 21.7968 12.4761C21.8054 12.459 21.814 12.4419 21.8225 12.4248C21.8225 12.4162 21.8225 12.3991 21.8311 12.382C21.8396 12.3649 21.8396 12.3477 21.8482 12.3306C21.8568 12.3135 21.8568 12.2964 21.8653 12.2793C21.8739 12.2621 21.8739 12.245 21.8824 12.2279C21.8824 12.2108 21.891 12.1851 21.891 12.168C21.891 12.1509 21.8996 12.1337 21.8996 12.1252C21.9081 12.0481 21.9081 11.9797 21.8996 11.9026C21.8996 11.8855 21.891 11.8684 21.891 11.8598C21.891 11.8427 21.8824 11.817 21.8824 11.7999C21.8824 11.7828 21.8739 11.7657 21.8653 11.7486C21.8568 11.7143 21.8568 11.6972 21.8482 11.6801C21.8482 11.663 21.8396 11.6458 21.8311 11.6287C21.8225 11.6116 21.8225 11.5945 21.814 11.5774C21.8054 11.5603 21.7968 11.5431 21.7883 11.526C21.7797 11.5089 21.7712 11.4918 21.7626 11.4747C21.754 11.4575 21.7455 11.449 21.7369 11.4319C21.7284 11.4147 21.7198 11.3976 21.7027 11.3805C21.6941 11.3634 21.677 11.3463 21.6684 11.3291C21.6599 11.312 21.6513 11.3035 21.6428 11.2863C21.6171 11.2607 21.5914 11.2264 21.5657 11.2007L14.6924 4.3274C14.2559 3.89087 13.5454 3.89087 13.1089 4.3274C12.6723 4.76394 12.6723 5.47439 13.1089 5.91093L18.0734 10.8755H4.12131C3.49646 10.884 3 11.3805 3 12.0053C3 12.6216 3.49646 13.1267 4.12131 13.1267H18.082L13.1174 18.0912C12.6809 18.5278 12.6809 19.2382 13.1174 19.6747C13.34 19.8887 13.6224 20 13.9049 20C14.1874 20 14.4784 19.8887 14.6924 19.6747L21.5657 12.8014C21.5914 12.7757 21.6171 12.75 21.6428 12.7158C21.6599 12.6987 21.6684 12.6816 21.677 12.673Z'
+      fill='#CC2027'></path>
+  </svg>
+  {{>./layouts/footer}}
+
+</body>
+
+</html>

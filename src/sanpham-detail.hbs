@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body class="sanpham">
+  {{>./components/sidebar}}
+
+  {{>./components/nav}}
+  <div class="bg-breadcrumb">
+  <div class="wrapper container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="#">Sản phẩm</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="#">Nội thất văn phòng</a></li>
+        <li class="breadcrumb-item" aria-current="page"><a href="#">Ghế xoay văn phòng</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Ghế xoay GARKA</li>
+      </ol>
+    </nav>
+  </div>
+  </div>
+  <section>
+    <div class='container-fluid wrapper my-4'>
+      <div class="row">
+        <div class="col-lg-7">
+          <div class='row g-2 g-md-3 g-xl-4 mt-0 masonry-grid d-none d-xl-block' id='gallery-product'>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. "
+                  data-fancybox="gallery" href="https://lipsum.app/id/1/800x450" class="ratio ratio-1x1">
+                  <img class="w-100" src="https://lipsum.app/id/1/200x150" />
+                </a>
+
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="Short caption" data-fancybox="gallery" href="https://lipsum.app/id/2/800x450" class="ratio ratio-1x1">
+                  <img class="w-100" src="https://lipsum.app/id/2/200x150" />
+                </a>
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/3/800x450" class="ratio ratio-1x1">
+                  <img class="w-100" src="https://lipsum.app/id/3/200x150" />
+                </a>
+              </div>
+            </div>
+
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/4/800x450" class="ratio ratio-1x1">
+                  <img class="w-100" src="https://lipsum.app/id/4/200x150" />
+                </a>
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/5/800x450" class="ratio ratio-1x1">
+                  <img class="w-100" src="https://lipsum.app/id/5/200x150" />
+                </a>
+
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/ /800x450" class="ratio ratio-1x1">
+                  <img class="w-100" src="https://lipsum.app/id/6/200x150" />
+                </a>
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/7/800x450" class="ratio ratio-1x1">
+                  <img class="w-100" src="https://lipsum.app/id/7/200x150" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-block d-xl-none">
+            <div class="swiper-container one-product">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add Arrows -->
+                  </div>
+            <div class="swiper-container mt-3 thumbs-for-one-product">
+               <!-- If we need scrollbar -->
+          <div class='swiper-scrollbar position-relative w-100'></div>
+                    <div class="swiper-wrapper mt-4">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+ <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                       <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+              
+          </div>
+           {{!-- under div --}}
+          <div class="lead mt-4">
+            Bạn ngồi thoải mái, bất kể chiều cao của bạn, vì ghế và chỗ để chân có thể
+            điều chỉnh được.
+          </div>
+        </div>
+        <div class="col-lg-5 pt-4">
+          <div class="px-xl-4 px-0">
+
+            <div class="tooltip-badge w-100 mb-2">
+              News
+            </div>
+            <div class="d-lg-flex d-block flex-lg-nowrap align-content-start">
+
+              <div class="info-product">
+
+                <h1 class="name h4 m-0">
+                  Ghế Sopha nhập khẩu Nga
+                </h1>
+                <div class="dec text-grey-70 mb-2">
+                  Mầu sắc tuỳ chọn, handmake tại Slovakia
+                </div>
+                <div class="fs-6 code text-grey">GX - 12345</div>
+                <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                </div>
+              </div>
+              <div class="price ms-xl-5 ms-0 mt-3 d-flex d-lg-block justify-content-between align-items-center mt-xl-0">
+                <p class="small mb-0 mb-xl-1 text-grey-70 ">Giá tham khảo</p>
+                <h2 class="h4 text-primary m-0 fw-bold">1.350.000<span class="donvi">đ</span></h2>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush my-4">
+              <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+                <div class="fw-bold me-3">Phân loại</div>
+                <div class="thongso  d-flex d-flex justify-content-xl-end justify-content-start flex-wrap">
+                  <a type="button" class="active btn  ms-2 rounded-0 p-2" href="#">01 tầng</a>
+                  <a type="button" class="btn  ms-2 rounded-0 p-2" href="#">02 tầng</a>
+                </div>
+              </li>
+              <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+                <div class="fw-bold me-3">Kích thước</div>
+                <div class="thongso  d-flex d-flex justify-content-xl-end justify-content-start flex-wrap">
+                  <a type="button" class="active btn  ms-2 rounded-0 p-2" href="#">D100 x R55 x C75cm</a>
+                  <a type="button" class="btn  ms-2 rounded-0 p-2" href="#">D120 x R55 x C75cm</a>
+                </div>
+              </li>
+              <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+                <div class="fw-bold me-3">Vật liệu</div>
+                <div class="thongso d-flex justify-content-xl-end justify-content-start flex-wrap">
+                  <a type="button" class="btn active  ms-2 rounded-0 p-2" href="#">Lưới vải</a>
+                  <a type="button" class="btn  ms-2 rounded-0 p-2" href="#">Bọc da</a>
+                </div>
+              </li>
+              <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+                <div class="fw-bold me-3">Loại hàng</div>
+                <div class="thongso  d-flex justify-content-end">
+                  <a type="button" class="btn active ms-2 rounded-0 p-2" href="#">Hàng có sẵn</a>
+                </div>
+              </li>
+              <li class="list-group-item align-items-center px-0 d-flex flex-wrap flex-lg-nowrap justify-content-between">
+                <div class="fw-bold me-3 text-nowrap">Mầu sắc</div>
+                <div class="thongso d-flex justify-content-xl-end justify-content-start mausac flex-wrap">
+                  <a type="button" class="btn p-1 rounded-0 active ms-2 mw-20" href="#">
+                    <img class="img-fluid lazyload"
+                      data-src="https://www.ikea.com/us/en/images/products/yttervag-four-poster-bed-frame-black-luroey__1014360_pe829628_s5.jpg?f=xu"
+                      alt="Four-poster bed frame, Queen, black"></a>
+                  <a type="button" class="btn p-1 rounded-0 ms-2 mw-20" href="#">
+                    <img class="img-fluid lazyload"
+                      data-src="https://www.ikea.com/us/en/images/products/yttervag-four-poster-bed-frame-black-luroey__1014360_pe829628_s5.jpg?f=xu"
+                      alt="Four-poster bed frame, Queen, black"></a>
+                  <a type="button" class="btn p-1 rounded-0 ms-2 mw-20" href="#">
+                    <img class="img-fluid lazyload"
+                      data-src="https://www.ikea.com/us/en/images/products/yttervag-four-poster-bed-frame-black-luroey__1014360_pe829628_s5.jpg?f=xu"
+                      alt="Four-poster bed frame, Queen, black"></a>
+                  <a type="button" class="btn p-1 rounded-0 ms-2 mw-20" href="#">
+                    <img class="img-fluid lazyload"
+                      data-src="https://www.ikea.com/us/en/images/products/yttervag-four-poster-bed-frame-black-luroey__1014360_pe829628_s5.jpg?f=xu"
+                      alt="Four-poster bed frame, Queen, black"></a>
+                </div>
+              </li>
+            </ul>
+           <a role="button" class="fs-5 w-100 d-flex align-items-center justify-content-center text-center btn-yeuthich rounded-pill py-3 fw-bold mx-auto">
+              <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.4967 2.8365L12.3806 3.72038L13.2645 2.8365C15.3798 0.721165 18.8095 0.721166 20.9248 2.83651C22.0447 3.95642 22.5812 5.12563 22.6661 6.37146C22.7528 7.64573 22.3759 9.14002 21.4059 10.8954C20.9692 11.6857 20.1738 12.6414 19.1533 13.665C18.1472 14.6742 16.9823 15.6905 15.8666 16.6027C14.753 17.5132 13.7015 18.3094 12.9279 18.8782C12.7325 19.0219 12.5552 19.1508 12.3993 19.2632C12.2625 19.1599 12.1089 19.0433 11.9409 18.9148C11.2145 18.3594 10.2215 17.5847 9.1541 16.7068C6.97949 14.9181 4.63115 12.8089 3.51179 11.266C1.38674 8.3368 1.70636 4.96655 3.8364 2.83651C5.95174 0.721166 9.38138 0.721165 11.4967 2.8365Z" stroke="white" stroke-width="2.5"></path>
+              </svg>
+              <span class="ms-2">Thêm vào yêu thích</span></a>
+            <div class="tag-products d-flex align-items-center flex-wrap  mt-3 mb-4">
+              <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="-0.0263985" y="0.281122" width="21.5926"
+                  height="23.202" fill="black">
+                  <rect fill="white" x="-0.0263985" y="0.281122" width="21.5926" height="23.202" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.7608 4.26528C10.4341 4.25439 10.1228 4.40379 9.92695 4.66539L2.5213 14.5568C2.23379 14.9408 2.25911 15.4737 2.59098 15.8201C3.30708 16.5675 4.57337 17.8391 5.61322 18.6176C6.65307 19.3962 8.2298 20.2531 9.14864 20.7298C9.57448 20.9506 10.0929 20.8249 10.3804 20.4409L17.786 10.5494C17.9819 10.2878 18.0376 9.94703 17.9352 9.6367L16.4412 5.11007C16.3098 4.71191 15.944 4.438 15.5249 4.42403L10.7608 4.26528ZM12.0419 9.60568C12.9118 10.257 14.1388 10.088 14.7825 9.22827C15.4261 8.36854 15.2427 7.14362 14.3728 6.49233C13.5029 5.84103 12.2759 6.01 11.6323 6.86973C10.9886 7.72946 11.172 8.95438 12.0419 9.60568Z" />
+                </mask>
+                <path
+                  d="M9.92695 4.66539L9.12645 4.06606L9.92695 4.66539ZM10.7608 4.26528L10.7941 3.26583L10.7941 3.26583L10.7608 4.26528ZM2.5213 14.5568L3.3218 15.1562L2.5213 14.5568ZM2.59098 15.8201L1.8689 16.5119L1.8689 16.5119L2.59098 15.8201ZM9.14864 20.7298L8.68817 21.6174L8.68817 21.6174L9.14864 20.7298ZM10.3804 20.4409L11.1809 21.0402L10.3804 20.4409ZM17.786 10.5494L16.9855 9.95011L17.786 10.5494ZM17.9352 9.6367L16.9855 9.95011L16.9855 9.95011L17.9352 9.6367ZM16.4412 5.11007L17.3908 4.79666L17.3908 4.79666L16.4412 5.11007ZM15.5249 4.42403L15.5582 3.42459L15.5582 3.42459L15.5249 4.42403ZM10.7275 5.26472L10.7275 5.26472L10.7941 3.26583C10.1408 3.24406 9.51817 3.54285 9.12645 4.06606L10.7275 5.26472ZM3.3218 15.1562L10.7275 5.26472L9.12645 4.06606L1.7208 13.9575L3.3218 15.1562ZM3.31306 15.1283C3.31487 15.1302 3.31766 15.134 3.31977 15.1389C3.3217 15.1434 3.32234 15.1472 3.32248 15.1497C3.32261 15.1522 3.32229 15.1541 3.3219 15.1553C3.32142 15.157 3.32095 15.1573 3.3218 15.1562L1.7208 13.9575C1.14832 14.7221 1.18917 15.8024 1.8689 16.5119L3.31306 15.1283ZM6.21255 17.8171C5.24567 17.0932 4.02981 15.8764 3.31306 15.1283L1.8689 16.5119C2.58436 17.2586 3.90108 18.585 5.01389 19.4181L6.21255 17.8171ZM9.60911 19.8421C8.68944 19.365 7.17943 18.541 6.21255 17.8171L5.01389 19.4181C6.1267 20.2513 7.77016 21.1412 8.68817 21.6174L9.60911 19.8421ZM9.57989 19.8415C9.57903 19.8427 9.57923 19.8421 9.58064 19.8412C9.58177 19.8405 9.58344 19.8397 9.58586 19.8391C9.58833 19.8385 9.59211 19.8381 9.59701 19.8386C9.60237 19.8393 9.60679 19.8409 9.60911 19.8421L8.68817 21.6174C9.56035 22.0699 10.6084 21.8049 11.1809 21.0402L9.57989 19.8415ZM16.9855 9.95011L9.57989 19.8415L11.1809 21.0402L18.5865 11.1488L16.9855 9.95011ZM16.9855 9.95011L16.9855 9.95011L18.5865 11.1488C18.9783 10.6256 19.0896 9.94396 18.8848 9.32329L16.9855 9.95011ZM15.4916 5.42348L16.9855 9.95011L18.8848 9.32329L17.3908 4.79666L15.4916 5.42348ZM15.4916 5.42348L15.4916 5.42348L17.3908 4.79666C17.128 4.00033 16.3963 3.45252 15.5582 3.42459L15.4916 5.42348ZM10.7275 5.26472L15.4916 5.42348L15.5582 3.42459L10.7941 3.26583L10.7275 5.26472ZM13.982 8.62894C13.6759 9.03771 13.0779 9.13214 12.6412 8.80518L11.4426 10.4062C12.7457 11.3818 14.6017 11.1383 15.583 9.8276L13.982 8.62894ZM13.7735 7.29283C14.2102 7.61979 14.288 8.22017 13.982 8.62894L15.583 9.8276C16.5643 8.51691 16.2753 6.66745 14.9722 5.69182L13.7735 7.29283ZM12.4328 7.46906C12.7388 7.06029 13.3368 6.96587 13.7735 7.29283L14.9722 5.69182C13.6691 4.7162 11.8131 4.95971 10.8317 6.2704L12.4328 7.46906ZM12.6412 8.80518C12.2045 8.47821 12.1267 7.87783 12.4328 7.46906L10.8317 6.2704C9.85045 7.58109 10.1394 9.43056 11.4426 10.4062L12.6412 8.80518Z"
+                  fill="#888888" mask="url(#path-1-outside-1)" />
+              </svg>
+              <a href="#" class="text-grey-70">
+                # Ghế xoay văn phòng
+              </a>
+              <a href="#" class="text-grey-70">
+                # Ghế Xuân Hòa
+              </a>
+            </div>
+            <div class="mota-sp">
+              <h3 class="h4 mt-4 mota-sp-title fw-bold">Mô Tả Sản Phẩm</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias corrupti neque maxime! Alias error
+                itaque illo molestiae, repudiandae quod soluta culpa voluptate assumenda, pariatur ad reiciendis dolores
+                rem tempora! Odio?</p>
+            </div>
+            <div class="price-agency">
+              <h3 class="h4 mota-sp-title fw-bold mt-4">Dành cho đại lý</h3>
+
+              <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item align-items-center py-3 px-0 d-flex flex-wrap justify-content-between">
+                  <div class="fw-bold me-3">Miền Bắc</div>
+                  <div class="thongso  d-flex justify-content-end">
+                    <h2 class="h5 text-primary m-0 fw-bold">1.150.000<span class="donvi">đ</span></h2>
+                  </div>
+                  <div class="w-100 mt-2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias corrupti neque maxime! Alias error itaque illo molestiae, repudiandae quod soluta culpa voluptate assumenda, pariatur ad reiciendis dolores rem tempora! Odio?</p>
+                  </div>
+                </li>
+                <li class="list-group-item align-items-center py-3 px-0 d-flex flex-wrap justify-content-between">
+                  <div class="fw-bold me-3">Miền Trung, Miền Nam</div>
+                  <div class="thongso  d-flex justify-content-end">
+                    <h2 class="h5 text-primary m-0 fw-bold">1.250.000<span class="donvi">đ</span></h2>
+                  </div>
+                  <div class="w-100 mt-2">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias corrupti neque maxime! Alias error itaque illo molestiae, repudiandae quod soluta culpa voluptate assumenda, pariatur ad reiciendis dolores rem tempora! Odio?</p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-7">
+         
+          {{!-- canvas 1 --}}
+          <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasRight1"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header bg-primary">
+              <h5 id="offcanvasRightLabel" class="fw-bold text-white">Thông tin chi tiết</h5>
+              <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-light p-4  h-100 overlay-auto">
+              Nội dung về sản phẩm
+            </div>
+          </div>
+          {{!-- canvas 2 --}}
+          <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasRight2"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header bg-primary">
+              <h5 id="offcanvasRightLabel" class="fw-bold text-white">Kích thước sản phẩm</h5>
+              <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-light p-4  h-100 overlay-auto">
+              Nội dung về kích thước
+            </div>
+          </div>
+          {{!-- canvas 3 --}}
+          <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasRight3"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header bg-primary">
+              <h5 id="offcanvasRightLabel" class="fw-bold text-white">Đánh giá sản phẩm</h5>
+              <button type="button" class="btn-close text-reset bg-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body bg-light p-4  h-100 overlay-auto">
+              <h2 class="fs-4 fw-bold"> GHẾ SOPHA NHẬP KHẨU NGA</h2>
+              <div class="d-flex align-items-center mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="stars d-flex">
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#one-star"></use>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#one-star"></use>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#one-star"></use>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#one-star"></use>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use xlink:href="#one-star"></use>
+                    </svg>
+
+                  </div>
+                  {{!-- <div class="ms-2 text-grey-70">5 sao</div> --}}
+                  <div class="ms-2 text-grey-70">(126)</div>
+                </div>
+                
+              </div>
+              <ul class="list-unstyled comments-form">
+                <li><input name="Email" type="text" placeholder="Ex: yourEmail@gmail.com" required="" value=""></li>
+                <li class="d-flex align-items-center ">
+                  <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">Hiển thị số sao đc chọn ví dụ: (5 sao)</div>
+                </li>
+                <li><textarea name="comment" placeholder="Comment" required="" rows="5"></textarea></li>
+                <li class="d-flex justify-content-end"><input type="submit" value="Đánh giá"></li>
+              </ul>
+              <div class="comments-list">
+                <div class="comment">
+                  <h4>ada says</h4>
+                  <p class="timestamp">07/21/21, 10:03 PM</p>
+                  <p>dsadasd</p>
+                </div>
+                <div class="comment">
+                  <h4>kodla.io says</h4>
+                  <p class="timestamp">07/21/21, 01:11 AM</p>
+                  <p>kodla.io</p>
+                </div>
+                <div class="comment">
+                  <h4>mehmet says</h4>
+                  <p class="timestamp">07/21/21, 01:10 AM</p>
+                  <p>hi</p>
+                </div>
+                <div class="comment">
+                  <h4>h says</h4>
+                  <p class="timestamp">07/20/21, 10:54 PM</p>
+                  <p>hh</p>
+                </div>
+                <div class="comment">
+                  <h4>felipe says</h4>
+                  <p class="timestamp">07/18/21, 07:59 PM</p>
+                  <p>amigão</p>
+                </div>
+                <div class="comment">
+                  <h4>a says</h4>
+                  <p class="timestamp">07/18/21, 07:58 PM</p>
+                  <p>aa</p>
+                </div>
+                <div class="comment">
+                  <h4>ffsdsd says</h4>
+                  <p class="timestamp">07/18/21, 09:02 PM</p>
+                  <p>fsgs</p>
+                </div>
+                <div class="comment">
+                  <h4>dfs says</h4>
+                  <p class="timestamp">07/18/21, 08:55 PM</p>
+                  <p>sdq</p>
+                </div>
+                <div class="comment">
+                  <h4>ali says</h4>
+                  <p class="timestamp">07/18/21, 06:02 PM</p>
+                  <p>dfgsdgs</p>
+                </div>
+                <div class="comment">
+                  <h4>gf says</h4>
+                  <p class="timestamp">07/18/21, 03:01 PM</p>
+                  <p>fggf</p>
+                </div>
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <ul class="list-group list-group-flush my-4 border-bottom-0">
+            <li class="list-group-item px-0 ">
+              <a role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1"
+                aria-controls="offcanvasRight"
+                class="d-flex flex-wrap align-items-center justify-content-between canvas-one">
+                <div class="fs-4 fw-bold me-3 my-2">Thông tin chi tiết sản phẩm</div>
+                <div class="thongso  d-flex justify-content-end">
+                  <svg focusable="false" viewBox="0 0 24 24" class="arrow-right" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20 12l-8-8-1.414 1.414L16.173 11H4v2h12.172l-5.587 5.587L12 20l8-8z"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item px-0">
+              <a role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2"
+                aria-controls="offcanvasRight"
+                class="d-flex flex-wrap align-items-center justify-content-between canvas-one">
+                <div class="fs-4 fw-bold me-3 my-2">Kích thước sản phẩm</div>
+                <div class="thongso  d-flex justify-content-end">
+                  <svg focusable="false" viewBox="0 0 24 24" class="arrow-right" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20 12l-8-8-1.414 1.414L16.173 11H4v2h12.172l-5.587 5.587L12 20l8-8z"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="list-group-item px-0">
+              <a role="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3"
+                aria-controls="offcanvasRight"
+                class="d-flex flex-wrap align-items-center justify-content-between canvas-one">
+                <div class="me-3 my-2">
+                  <div class="fs-4 fw-bold ">Đánh giá sản phẩm</div>
+                  <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                  </div>
+
+                </div>
+                <div class="thongso  d-flex justify-content-end">
+                  <svg focusable="false" viewBox="0 0 24 24" class="arrow-right" aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20 12l-8-8-1.414 1.414L16.173 11H4v2h12.172l-5.587 5.587L12 20l8-8z"></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+   {{!--  Sản phẩm liên quan --}}
+    <div class="row">
+      <div class="col-12">
+        <hr class="mb-5">
+      </div>
+      <h2 class="col-12 h4 fw-bold mb-3">
+        Sản phẩm liên quan
+      </h2>
+      <div class='col-12 position-relative'>
+        <!-- Slider main container -->
+        <div class='swiper-container one-sanpham swiper-sanpham-lienquan'>
+          <!-- Additional required wrapper -->
+          <div class='swiper-wrapper'>
+            <div class='swiper-slide'>
+
+              <div class='card'>
+                <a href='#' class='overlink'></a>
+                <div class='card-img'>
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.4967 2.8365L12.3806 3.72038L13.2645 2.8365C15.3798 0.721165 18.8095 0.721166 20.9248 2.83651C22.0447 3.95642 22.5812 5.12563 22.6661 6.37146C22.7528 7.64573 22.3759 9.14002 21.4059 10.8954C20.9692 11.6857 20.1738 12.6414 19.1533 13.665C18.1472 14.6742 16.9823 15.6905 15.8666 16.6027C14.753 17.5132 13.7015 18.3094 12.9279 18.8782C12.7325 19.0219 12.5552 19.1508 12.3993 19.2632C12.2625 19.1599 12.1089 19.0433 11.9409 18.9148C11.2145 18.3594 10.2215 17.5847 9.1541 16.7068C6.97949 14.9181 4.63115 12.8089 3.51179 11.266C1.38674 8.3368 1.70636 4.96655 3.8364 2.83651C5.95174 0.721166 9.38138 0.721165 11.4967 2.8365Z"
+                      stroke="#222222" stroke-width="2.5" />
+                  </svg>
+
+                  <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Add Arrows -->
+                  </div>
+
+                </div>
+                <div class='card-body px-0'>
+                  <div class="icon-promotion">
+                    <img data-src="./assets/images/icon-promotion.png" alt="" class="img-fluid lazyload">
+                  </div>
+
+                  <div class="small text-grey-70 my-2">Buy 01 Get 01</div>
+                  <h5 class='card-title'><a href="#">Tên sản phẩm</a></h5>
+                  <div class="dec text-grey-70  mb-1">
+                    Mầu sắc tuỳ chọn, handmake tại Slovakia
+                  </div>
+                  <h2 class="h5 text-primary m-0 fw-bold mb-3">1.150.000<span class="donvi">đ</span></h2>
+                  <div class="position-relative">
+                    <a href="#" role="button" class="btn btn-cart  p-1 rounded-circle">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="icon-cart">
+                        <path
+                          d="M3.5 6.125C3.26794 6.125 3.04538 6.21719 2.88128 6.38128C2.71719 6.54537 2.625 6.76793 2.625 7C2.625 7.23206 2.71719 7.45462 2.88128 7.61872C3.04538 7.78281 3.26794 7.875 3.5 7.875H5.4425L7.7385 17.0625C7.93362 17.8412 8.631 18.375 9.43338 18.375H20.3446C21.1347 18.375 21.8059 17.85 22.0133 17.0887L24.2812 8.75H22.449L20.3438 16.625H9.4325L7.13737 7.4375C7.04257 7.06057 6.82402 6.72637 6.51672 6.4884C6.20942 6.25043 5.83116 6.12247 5.4425 6.125H3.5ZM19.25 18.375C17.8106 18.375 16.625 19.5606 16.625 21C16.625 22.4394 17.8106 23.625 19.25 23.625C20.6894 23.625 21.875 22.4394 21.875 21C21.875 19.5606 20.6894 18.375 19.25 18.375ZM11.375 18.375C9.93563 18.375 8.75 19.5606 8.75 21C8.75 22.4394 9.93563 23.625 11.375 23.625C12.8144 23.625 14 22.4394 14 21C14 19.5606 12.8144 18.375 11.375 18.375ZM14 6.125V8.75H11.375V10.5H14V13.125H15.75V10.5H18.375V8.75H15.75V6.125H14ZM11.375 20.125C11.8685 20.125 12.25 20.5065 12.25 21C12.25 21.4935 11.8685 21.875 11.375 21.875C10.8815 21.875 10.5 21.4935 10.5 21C10.5 20.5065 10.8815 20.125 11.375 20.125ZM19.25 20.125C19.7435 20.125 20.125 20.5065 20.125 21C20.125 21.4935 19.7435 21.875 19.25 21.875C18.7565 21.875 18.375 21.4935 18.375 21C18.375 20.5065 18.7565 20.125 19.25 20.125Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    <div class="fs-6 code text-grey">GX - 12345</div>
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                    </div>
+                  </div>
+                  <div class="small text-grey-70 mt-2 mb-1">Lựa chọn mầu sắc</div>
+                  <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='swiper-slide'>
+
+              <div class='card'>
+                <a href='#' class='overlink'></a>
+                <img
+                  data-src='https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='card-img-top lazyload img-fluid' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>Card title</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class='swiper-slide'>
+
+              <div class='card'>
+                <a href='#' class='overlink '></a>
+                <img
+                  data-src='https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='card-img-top lazyload img-fluid' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>Card title</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class='swiper-slide'>
+
+              <div class='card'>
+                <a href='#' class='overlink'></a>
+                <img
+                  data-src='https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='card-img-top lazyload img-fluid' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>Card title</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class='swiper-slide'>
+
+              <div class='card'>
+
+                <img
+                  data-src='https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='card-img-top lazyload img-fluid' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>Card title</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class='swiper-slide'>
+
+              <div class='card'>
+                <a href='#' class='overlink'></a>
+                <img
+                  data-src='https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='card-img-top lazyload img-fluid' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>Card title</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class='swiper-slide'>
+
+              <div class='card'>
+                <a href='#' class='overlink'></a>
+                <img
+                  data-src='https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='card-img-top lazyload img-fluid' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>Card title</h5>
+
+                </div>
+              </div>
+            </div>
+            <div class='swiper-slide'>
+
+              <div class='card'>
+                <a href='#' class='overlink'></a>
+                <img
+                  data-src='https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDF8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+                  class='card-img-top lazyload img-fluid' alt='...' />
+                <div class='card-body'>
+                  <h5 class='card-title'>Card title</h5>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          {{! <div class='swiper-pagination'></div> }}
+
+          <!-- If we need scrollbar -->
+          {{!-- <div class='swiper-scrollbar'></div> --}}
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="control-sanpham">
+          <div class='swiper-button-prev'></div>
+          <div class='swiper-button-next'></div>
+        </div>
+      </div>
+    </div>
+    {{!-- Sản phẩm đi kèm phù hợp --}}
+    <div class="row">
+      <div class="col-12">
+        <hr class="mb-5">
+      </div>
+      <h2 class="col-12 h4 fw-bold mb-3">
+        Sản phẩm đi kèm phù hợp
+      </h2>
+      <div class='col-12 position-relative'>
+         <div class='swiper-container one-sanpham swiper-phuhop'>
+          <!-- Additional required wrapper -->
+          <div class='swiper-wrapper'>
+             <div class='swiper-slide'>
+
+               <div class='card'>
+                <a href='#' class='overlink'></a>
+                <div class='card-img'>
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.4967 2.8365L12.3806 3.72038L13.2645 2.8365C15.3798 0.721165 18.8095 0.721166 20.9248 2.83651C22.0447 3.95642 22.5812 5.12563 22.6661 6.37146C22.7528 7.64573 22.3759 9.14002 21.4059 10.8954C20.9692 11.6857 20.1738 12.6414 19.1533 13.665C18.1472 14.6742 16.9823 15.6905 15.8666 16.6027C14.753 17.5132 13.7015 18.3094 12.9279 18.8782C12.7325 19.0219 12.5552 19.1508 12.3993 19.2632C12.2625 19.1599 12.1089 19.0433 11.9409 18.9148C11.2145 18.3594 10.2215 17.5847 9.1541 16.7068C6.97949 14.9181 4.63115 12.8089 3.51179 11.266C1.38674 8.3368 1.70636 4.96655 3.8364 2.83651C5.95174 0.721166 9.38138 0.721165 11.4967 2.8365Z"
+                      stroke="#222222" stroke-width="2.5" />
+                  </svg>
+ <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+
+                </div>
+                <div class='card-body px-0'>
+                  <div class="icon-promotion">
+                    <img data-src="./assets/images/icon-promotion.png" alt="" class="img-fluid lazyload">
+                  </div>
+
+                  <div class="small text-grey-70 my-2">Buy 01 Get 01</div>
+                  <h5 class='card-title mb-0'><a href="#">Tên sản phẩm</a></h5>
+                  {{!-- <div class="dec text-grey-70  mb-1">
+                    Mầu sắc tuỳ chọn, handmake tại Slovakia
+                  </div> --}}
+                  {{!-- <h2 class="h5 text-primary m-0 fw-bold mb-3">1.150.000<span class="donvi">đ</span></h2> --}}
+                  <div class="position-relative">
+                    <a href="#" role="button" class="btn btn-cart  p-1 rounded-circle">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="icon-cart">
+                        <path
+                          d="M3.5 6.125C3.26794 6.125 3.04538 6.21719 2.88128 6.38128C2.71719 6.54537 2.625 6.76793 2.625 7C2.625 7.23206 2.71719 7.45462 2.88128 7.61872C3.04538 7.78281 3.26794 7.875 3.5 7.875H5.4425L7.7385 17.0625C7.93362 17.8412 8.631 18.375 9.43338 18.375H20.3446C21.1347 18.375 21.8059 17.85 22.0133 17.0887L24.2812 8.75H22.449L20.3438 16.625H9.4325L7.13737 7.4375C7.04257 7.06057 6.82402 6.72637 6.51672 6.4884C6.20942 6.25043 5.83116 6.12247 5.4425 6.125H3.5ZM19.25 18.375C17.8106 18.375 16.625 19.5606 16.625 21C16.625 22.4394 17.8106 23.625 19.25 23.625C20.6894 23.625 21.875 22.4394 21.875 21C21.875 19.5606 20.6894 18.375 19.25 18.375ZM11.375 18.375C9.93563 18.375 8.75 19.5606 8.75 21C8.75 22.4394 9.93563 23.625 11.375 23.625C12.8144 23.625 14 22.4394 14 21C14 19.5606 12.8144 18.375 11.375 18.375ZM14 6.125V8.75H11.375V10.5H14V13.125H15.75V10.5H18.375V8.75H15.75V6.125H14ZM11.375 20.125C11.8685 20.125 12.25 20.5065 12.25 21C12.25 21.4935 11.8685 21.875 11.375 21.875C10.8815 21.875 10.5 21.4935 10.5 21C10.5 20.5065 10.8815 20.125 11.375 20.125ZM19.25 20.125C19.7435 20.125 20.125 20.5065 20.125 21C20.125 21.4935 19.7435 21.875 19.25 21.875C18.7565 21.875 18.375 21.4935 18.375 21C18.375 20.5065 18.7565 20.125 19.25 20.125Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    {{!-- <div class="fs-6 code text-grey">GX - 12345</div> --}}
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+               <div class='swiper-slide'>
+
+               <div class='card'>
+                <a href='#' class='overlink'></a>
+                <div class='card-img'>
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.4967 2.8365L12.3806 3.72038L13.2645 2.8365C15.3798 0.721165 18.8095 0.721166 20.9248 2.83651C22.0447 3.95642 22.5812 5.12563 22.6661 6.37146C22.7528 7.64573 22.3759 9.14002 21.4059 10.8954C20.9692 11.6857 20.1738 12.6414 19.1533 13.665C18.1472 14.6742 16.9823 15.6905 15.8666 16.6027C14.753 17.5132 13.7015 18.3094 12.9279 18.8782C12.7325 19.0219 12.5552 19.1508 12.3993 19.2632C12.2625 19.1599 12.1089 19.0433 11.9409 18.9148C11.2145 18.3594 10.2215 17.5847 9.1541 16.7068C6.97949 14.9181 4.63115 12.8089 3.51179 11.266C1.38674 8.3368 1.70636 4.96655 3.8364 2.83651C5.95174 0.721166 9.38138 0.721165 11.4967 2.8365Z"
+                      stroke="#222222" stroke-width="2.5" />
+                  </svg>
+ <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+
+                </div>
+                <div class='card-body px-0'>
+                  <div class="icon-promotion">
+                    <img data-src="./assets/images/icon-promotion.png" alt="" class="img-fluid lazyload">
+                  </div>
+
+                  <div class="small text-grey-70 my-2">Buy 01 Get 01</div>
+                  <h5 class='card-title mb-0'><a href="#">Tên sản phẩm</a></h5>
+                  {{!-- <div class="dec text-grey-70  mb-1">
+                    Mầu sắc tuỳ chọn, handmake tại Slovakia
+                  </div> --}}
+                  {{!-- <h2 class="h5 text-primary m-0 fw-bold mb-3">1.150.000<span class="donvi">đ</span></h2> --}}
+                  <div class="position-relative">
+                    <a href="#" role="button" class="btn btn-cart  p-1 rounded-circle">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="icon-cart">
+                        <path
+                          d="M3.5 6.125C3.26794 6.125 3.04538 6.21719 2.88128 6.38128C2.71719 6.54537 2.625 6.76793 2.625 7C2.625 7.23206 2.71719 7.45462 2.88128 7.61872C3.04538 7.78281 3.26794 7.875 3.5 7.875H5.4425L7.7385 17.0625C7.93362 17.8412 8.631 18.375 9.43338 18.375H20.3446C21.1347 18.375 21.8059 17.85 22.0133 17.0887L24.2812 8.75H22.449L20.3438 16.625H9.4325L7.13737 7.4375C7.04257 7.06057 6.82402 6.72637 6.51672 6.4884C6.20942 6.25043 5.83116 6.12247 5.4425 6.125H3.5ZM19.25 18.375C17.8106 18.375 16.625 19.5606 16.625 21C16.625 22.4394 17.8106 23.625 19.25 23.625C20.6894 23.625 21.875 22.4394 21.875 21C21.875 19.5606 20.6894 18.375 19.25 18.375ZM11.375 18.375C9.93563 18.375 8.75 19.5606 8.75 21C8.75 22.4394 9.93563 23.625 11.375 23.625C12.8144 23.625 14 22.4394 14 21C14 19.5606 12.8144 18.375 11.375 18.375ZM14 6.125V8.75H11.375V10.5H14V13.125H15.75V10.5H18.375V8.75H15.75V6.125H14ZM11.375 20.125C11.8685 20.125 12.25 20.5065 12.25 21C12.25 21.4935 11.8685 21.875 11.375 21.875C10.8815 21.875 10.5 21.4935 10.5 21C10.5 20.5065 10.8815 20.125 11.375 20.125ZM19.25 20.125C19.7435 20.125 20.125 20.5065 20.125 21C20.125 21.4935 19.7435 21.875 19.25 21.875C18.7565 21.875 18.375 21.4935 18.375 21C18.375 20.5065 18.7565 20.125 19.25 20.125Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    {{!-- <div class="fs-6 code text-grey">GX - 12345</div> --}}
+                    <div class="d-flex align-items-center">
+                     <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+               <div class='swiper-slide'>
+
+               <div class='card'>
+                <a href='#' class='overlink'></a>
+                <div class='card-img'>
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.4967 2.8365L12.3806 3.72038L13.2645 2.8365C15.3798 0.721165 18.8095 0.721166 20.9248 2.83651C22.0447 3.95642 22.5812 5.12563 22.6661 6.37146C22.7528 7.64573 22.3759 9.14002 21.4059 10.8954C20.9692 11.6857 20.1738 12.6414 19.1533 13.665C18.1472 14.6742 16.9823 15.6905 15.8666 16.6027C14.753 17.5132 13.7015 18.3094 12.9279 18.8782C12.7325 19.0219 12.5552 19.1508 12.3993 19.2632C12.2625 19.1599 12.1089 19.0433 11.9409 18.9148C11.2145 18.3594 10.2215 17.5847 9.1541 16.7068C6.97949 14.9181 4.63115 12.8089 3.51179 11.266C1.38674 8.3368 1.70636 4.96655 3.8364 2.83651C5.95174 0.721166 9.38138 0.721165 11.4967 2.8365Z"
+                      stroke="#222222" stroke-width="2.5" />
+                  </svg>
+ <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+
+                </div>
+                <div class='card-body px-0'>
+                  <div class="icon-promotion">
+                    <img data-src="./assets/images/icon-promotion.png" alt="" class="img-fluid lazyload">
+                  </div>
+
+                  <div class="small text-grey-70 my-2">Buy 01 Get 01</div>
+                  <h5 class='card-title mb-0'><a href="#">Tên sản phẩm</a></h5>
+                  {{!-- <div class="dec text-grey-70  mb-1">
+                    Mầu sắc tuỳ chọn, handmake tại Slovakia
+                  </div> --}}
+                  {{!-- <h2 class="h5 text-primary m-0 fw-bold mb-3">1.150.000<span class="donvi">đ</span></h2> --}}
+                  <div class="position-relative">
+                    <a href="#" role="button" class="btn btn-cart  p-1 rounded-circle">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="icon-cart">
+                        <path
+                          d="M3.5 6.125C3.26794 6.125 3.04538 6.21719 2.88128 6.38128C2.71719 6.54537 2.625 6.76793 2.625 7C2.625 7.23206 2.71719 7.45462 2.88128 7.61872C3.04538 7.78281 3.26794 7.875 3.5 7.875H5.4425L7.7385 17.0625C7.93362 17.8412 8.631 18.375 9.43338 18.375H20.3446C21.1347 18.375 21.8059 17.85 22.0133 17.0887L24.2812 8.75H22.449L20.3438 16.625H9.4325L7.13737 7.4375C7.04257 7.06057 6.82402 6.72637 6.51672 6.4884C6.20942 6.25043 5.83116 6.12247 5.4425 6.125H3.5ZM19.25 18.375C17.8106 18.375 16.625 19.5606 16.625 21C16.625 22.4394 17.8106 23.625 19.25 23.625C20.6894 23.625 21.875 22.4394 21.875 21C21.875 19.5606 20.6894 18.375 19.25 18.375ZM11.375 18.375C9.93563 18.375 8.75 19.5606 8.75 21C8.75 22.4394 9.93563 23.625 11.375 23.625C12.8144 23.625 14 22.4394 14 21C14 19.5606 12.8144 18.375 11.375 18.375ZM14 6.125V8.75H11.375V10.5H14V13.125H15.75V10.5H18.375V8.75H15.75V6.125H14ZM11.375 20.125C11.8685 20.125 12.25 20.5065 12.25 21C12.25 21.4935 11.8685 21.875 11.375 21.875C10.8815 21.875 10.5 21.4935 10.5 21C10.5 20.5065 10.8815 20.125 11.375 20.125ZM19.25 20.125C19.7435 20.125 20.125 20.5065 20.125 21C20.125 21.4935 19.7435 21.875 19.25 21.875C18.7565 21.875 18.375 21.4935 18.375 21C18.375 20.5065 18.7565 20.125 19.25 20.125Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    {{!-- <div class="fs-6 code text-grey">GX - 12345</div> --}}
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+               <div class='swiper-slide'>
+
+               <div class='card'>
+                <a href='#' class='overlink'></a>
+                <div class='card-img'>
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.4967 2.8365L12.3806 3.72038L13.2645 2.8365C15.3798 0.721165 18.8095 0.721166 20.9248 2.83651C22.0447 3.95642 22.5812 5.12563 22.6661 6.37146C22.7528 7.64573 22.3759 9.14002 21.4059 10.8954C20.9692 11.6857 20.1738 12.6414 19.1533 13.665C18.1472 14.6742 16.9823 15.6905 15.8666 16.6027C14.753 17.5132 13.7015 18.3094 12.9279 18.8782C12.7325 19.0219 12.5552 19.1508 12.3993 19.2632C12.2625 19.1599 12.1089 19.0433 11.9409 18.9148C11.2145 18.3594 10.2215 17.5847 9.1541 16.7068C6.97949 14.9181 4.63115 12.8089 3.51179 11.266C1.38674 8.3368 1.70636 4.96655 3.8364 2.83651C5.95174 0.721166 9.38138 0.721165 11.4967 2.8365Z"
+                      stroke="#222222" stroke-width="2.5" />
+                  </svg>
+ <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+
+                </div>
+                <div class='card-body px-0'>
+                  <div class="icon-promotion">
+                    <img data-src="./assets/images/icon-promotion.png" alt="" class="img-fluid lazyload">
+                  </div>
+
+                  <div class="small text-grey-70 my-2">Buy 01 Get 01</div>
+                  <h5 class='card-title mb-0'><a href="#">Tên sản phẩm</a></h5>
+                  {{!-- <div class="dec text-grey-70  mb-1">
+                    Mầu sắc tuỳ chọn, handmake tại Slovakia
+                  </div> --}}
+                  {{!-- <h2 class="h5 text-primary m-0 fw-bold mb-3">1.150.000<span class="donvi">đ</span></h2> --}}
+                  <div class="position-relative">
+                    <a href="#" role="button" class="btn btn-cart  p-1 rounded-circle">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="icon-cart">
+                        <path
+                          d="M3.5 6.125C3.26794 6.125 3.04538 6.21719 2.88128 6.38128C2.71719 6.54537 2.625 6.76793 2.625 7C2.625 7.23206 2.71719 7.45462 2.88128 7.61872C3.04538 7.78281 3.26794 7.875 3.5 7.875H5.4425L7.7385 17.0625C7.93362 17.8412 8.631 18.375 9.43338 18.375H20.3446C21.1347 18.375 21.8059 17.85 22.0133 17.0887L24.2812 8.75H22.449L20.3438 16.625H9.4325L7.13737 7.4375C7.04257 7.06057 6.82402 6.72637 6.51672 6.4884C6.20942 6.25043 5.83116 6.12247 5.4425 6.125H3.5ZM19.25 18.375C17.8106 18.375 16.625 19.5606 16.625 21C16.625 22.4394 17.8106 23.625 19.25 23.625C20.6894 23.625 21.875 22.4394 21.875 21C21.875 19.5606 20.6894 18.375 19.25 18.375ZM11.375 18.375C9.93563 18.375 8.75 19.5606 8.75 21C8.75 22.4394 9.93563 23.625 11.375 23.625C12.8144 23.625 14 22.4394 14 21C14 19.5606 12.8144 18.375 11.375 18.375ZM14 6.125V8.75H11.375V10.5H14V13.125H15.75V10.5H18.375V8.75H15.75V6.125H14ZM11.375 20.125C11.8685 20.125 12.25 20.5065 12.25 21C12.25 21.4935 11.8685 21.875 11.375 21.875C10.8815 21.875 10.5 21.4935 10.5 21C10.5 20.5065 10.8815 20.125 11.375 20.125ZM19.25 20.125C19.7435 20.125 20.125 20.5065 20.125 21C20.125 21.4935 19.7435 21.875 19.25 21.875C18.7565 21.875 18.375 21.4935 18.375 21C18.375 20.5065 18.7565 20.125 19.25 20.125Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    {{!-- <div class="fs-6 code text-grey">GX - 12345</div> --}}
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+              <div class='swiper-slide'>
+
+               <div class='card'>
+                <a href='#' class='overlink'></a>
+                <div class='card-img'>
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.4967 2.8365L12.3806 3.72038L13.2645 2.8365C15.3798 0.721165 18.8095 0.721166 20.9248 2.83651C22.0447 3.95642 22.5812 5.12563 22.6661 6.37146C22.7528 7.64573 22.3759 9.14002 21.4059 10.8954C20.9692 11.6857 20.1738 12.6414 19.1533 13.665C18.1472 14.6742 16.9823 15.6905 15.8666 16.6027C14.753 17.5132 13.7015 18.3094 12.9279 18.8782C12.7325 19.0219 12.5552 19.1508 12.3993 19.2632C12.2625 19.1599 12.1089 19.0433 11.9409 18.9148C11.2145 18.3594 10.2215 17.5847 9.1541 16.7068C6.97949 14.9181 4.63115 12.8089 3.51179 11.266C1.38674 8.3368 1.70636 4.96655 3.8364 2.83651C5.95174 0.721166 9.38138 0.721165 11.4967 2.8365Z"
+                      stroke="#222222" stroke-width="2.5" />
+                  </svg>
+ <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+
+                </div>
+                <div class='card-body px-0'>
+                  <div class="icon-promotion">
+                    <img data-src="./assets/images/icon-promotion.png" alt="" class="img-fluid lazyload">
+                  </div>
+
+                  <div class="small text-grey-70 my-2">Buy 01 Get 01</div>
+                  <h5 class='card-title mb-0'><a href="#">Tên sản phẩm</a></h5>
+                  {{!-- <div class="dec text-grey-70  mb-1">
+                    Mầu sắc tuỳ chọn, handmake tại Slovakia
+                  </div> --}}
+                  {{!-- <h2 class="h5 text-primary m-0 fw-bold mb-3">1.150.000<span class="donvi">đ</span></h2> --}}
+                  <div class="position-relative">
+                    <a href="#" role="button" class="btn btn-cart  p-1 rounded-circle">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="icon-cart">
+                        <path
+                          d="M3.5 6.125C3.26794 6.125 3.04538 6.21719 2.88128 6.38128C2.71719 6.54537 2.625 6.76793 2.625 7C2.625 7.23206 2.71719 7.45462 2.88128 7.61872C3.04538 7.78281 3.26794 7.875 3.5 7.875H5.4425L7.7385 17.0625C7.93362 17.8412 8.631 18.375 9.43338 18.375H20.3446C21.1347 18.375 21.8059 17.85 22.0133 17.0887L24.2812 8.75H22.449L20.3438 16.625H9.4325L7.13737 7.4375C7.04257 7.06057 6.82402 6.72637 6.51672 6.4884C6.20942 6.25043 5.83116 6.12247 5.4425 6.125H3.5ZM19.25 18.375C17.8106 18.375 16.625 19.5606 16.625 21C16.625 22.4394 17.8106 23.625 19.25 23.625C20.6894 23.625 21.875 22.4394 21.875 21C21.875 19.5606 20.6894 18.375 19.25 18.375ZM11.375 18.375C9.93563 18.375 8.75 19.5606 8.75 21C8.75 22.4394 9.93563 23.625 11.375 23.625C12.8144 23.625 14 22.4394 14 21C14 19.5606 12.8144 18.375 11.375 18.375ZM14 6.125V8.75H11.375V10.5H14V13.125H15.75V10.5H18.375V8.75H15.75V6.125H14ZM11.375 20.125C11.8685 20.125 12.25 20.5065 12.25 21C12.25 21.4935 11.8685 21.875 11.375 21.875C10.8815 21.875 10.5 21.4935 10.5 21C10.5 20.5065 10.8815 20.125 11.375 20.125ZM19.25 20.125C19.7435 20.125 20.125 20.5065 20.125 21C20.125 21.4935 19.7435 21.875 19.25 21.875C18.7565 21.875 18.375 21.4935 18.375 21C18.375 20.5065 18.7565 20.125 19.25 20.125Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    {{!-- <div class="fs-6 code text-grey">GX - 12345</div> --}}
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+              <div class='swiper-slide'>
+
+               <div class='card'>
+                <a href='#' class='overlink'></a>
+                <div class='card-img'>
+                  <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.4967 2.8365L12.3806 3.72038L13.2645 2.8365C15.3798 0.721165 18.8095 0.721166 20.9248 2.83651C22.0447 3.95642 22.5812 5.12563 22.6661 6.37146C22.7528 7.64573 22.3759 9.14002 21.4059 10.8954C20.9692 11.6857 20.1738 12.6414 19.1533 13.665C18.1472 14.6742 16.9823 15.6905 15.8666 16.6027C14.753 17.5132 13.7015 18.3094 12.9279 18.8782C12.7325 19.0219 12.5552 19.1508 12.3993 19.2632C12.2625 19.1599 12.1089 19.0433 11.9409 18.9148C11.2145 18.3594 10.2215 17.5847 9.1541 16.7068C6.97949 14.9181 4.63115 12.8089 3.51179 11.266C1.38674 8.3368 1.70636 4.96655 3.8364 2.83651C5.95174 0.721166 9.38138 0.721165 11.4967 2.8365Z"
+                      stroke="#222222" stroke-width="2.5" />
+                  </svg>
+ <div class="ratio ratio-1x1 overflow-hidden">
+                          <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                        </div>
+
+                </div>
+                <div class='card-body px-0'>
+                  <div class="icon-promotion">
+                    <img data-src="./assets/images/icon-promotion.png" alt="" class="img-fluid lazyload">
+                  </div>
+
+                  <div class="small text-grey-70 my-2">Buy 01 Get 01</div>
+                  <h5 class='card-title mb-0'><a href="#">Tên sản phẩm</a></h5>
+                  {{!-- <div class="dec text-grey-70  mb-1">
+                    Mầu sắc tuỳ chọn, handmake tại Slovakia
+                  </div> --}}
+                  {{!-- <h2 class="h5 text-primary m-0 fw-bold mb-3">1.150.000<span class="donvi">đ</span></h2> --}}
+                  <div class="position-relative">
+                    <a href="#" role="button" class="btn btn-cart  p-1 rounded-circle">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="icon-cart">
+                        <path
+                          d="M3.5 6.125C3.26794 6.125 3.04538 6.21719 2.88128 6.38128C2.71719 6.54537 2.625 6.76793 2.625 7C2.625 7.23206 2.71719 7.45462 2.88128 7.61872C3.04538 7.78281 3.26794 7.875 3.5 7.875H5.4425L7.7385 17.0625C7.93362 17.8412 8.631 18.375 9.43338 18.375H20.3446C21.1347 18.375 21.8059 17.85 22.0133 17.0887L24.2812 8.75H22.449L20.3438 16.625H9.4325L7.13737 7.4375C7.04257 7.06057 6.82402 6.72637 6.51672 6.4884C6.20942 6.25043 5.83116 6.12247 5.4425 6.125H3.5ZM19.25 18.375C17.8106 18.375 16.625 19.5606 16.625 21C16.625 22.4394 17.8106 23.625 19.25 23.625C20.6894 23.625 21.875 22.4394 21.875 21C21.875 19.5606 20.6894 18.375 19.25 18.375ZM11.375 18.375C9.93563 18.375 8.75 19.5606 8.75 21C8.75 22.4394 9.93563 23.625 11.375 23.625C12.8144 23.625 14 22.4394 14 21C14 19.5606 12.8144 18.375 11.375 18.375ZM14 6.125V8.75H11.375V10.5H14V13.125H15.75V10.5H18.375V8.75H15.75V6.125H14ZM11.375 20.125C11.8685 20.125 12.25 20.5065 12.25 21C12.25 21.4935 11.8685 21.875 11.375 21.875C10.8815 21.875 10.5 21.4935 10.5 21C10.5 20.5065 10.8815 20.125 11.375 20.125ZM19.25 20.125C19.7435 20.125 20.125 20.5065 20.125 21C20.125 21.4935 19.7435 21.875 19.25 21.875C18.7565 21.875 18.375 21.4935 18.375 21C18.375 20.5065 18.7565 20.125 19.25 20.125Z"
+                          fill="white" />
+                      </svg>
+                    </a>
+                    {{!-- <div class="fs-6 code text-grey">GX - 12345</div> --}}
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center">
+    <div class="stars d-flex">
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+      <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="#one-star"></use>
+      </svg>
+
+    </div>
+    <div class="ms-2 text-grey-70">(126)</div>
+  </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+          </div>
+          <!-- If we need pagination -->
+          {{! <div class='swiper-pagination'></div> }}
+
+          <!-- If we need scrollbar -->
+          {{!-- <div class='swiper-scrollbar'></div> --}}
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="phuhop-control">
+          <div class='swiper-button-prev'></div>
+          <div class='swiper-button-next'></div>
+        </div>
+      </div>
+    </div>
+    {{!-- Sản phẩm đã xem --}}
+    <div class="history-product">
+      <hr class="mb-5">
+      <h2 class="col-12 h4 fw-bold  mb-3">
+        Sản phẩm đã xem
+      </h2>
+      <div class='swiper-container swiper-history'>
+        <div class='swiper-wrapper mb-4'>
+            <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+             <div class='swiper-slide'>
+              <a class="overlay" href="#">
+            <div class="ratio ratio-1x1">
+              <img
+                data-src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+                class="card-img-top img-fluid rounded-0 ls-is-cached lazyloaded" alt="..."
+                src="https://images.unsplash.com/photo-1616464916356-3a777b2b60b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlc3xlbnwwfDB8MHx8&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60">
+            </div>
+          </a>
+            </div>
+         </div>
+         <!-- If we need scrollbar -->
+          <div class='swiper-scrollbar'></div>
+      </div>
+    
+    </div>
+    </div>
+   
+     </div>
+  </section>
+
+
+  <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg" class='d-none'
+    aria-hidden='true'>
+    <path id="one-star"
+      d="M7 0L9.05725 4.16844L13.6574 4.83688L10.3287 8.08156L11.1145 12.6631L7 10.5L2.8855 12.6631L3.6713 8.08156L0.342604 4.83688L4.94275 4.16844L7 0Z"
+      fill="#C62127"></path>
+  </svg>
+
+  <svg focusable='false' viewBox='0 0 24 24' class='d-none' aria-hidden='true'>
+    <path id='tag' fill-rule='evenodd' clip-rule='evenodd'
+      d='M12.143 2.95l-7.94 1.253-1.253 7.94 10.387 10.386 9.192-9.192L12.143 2.95zm-2.114 7.08a1.5 1.5 0 10-2.121-2.122 1.5 1.5 0 002.121 2.121z'>
+    </path>
+  </svg>
+  <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='d-none'>
+    <path id='arrow'
+      d='M21.677 12.673C21.6856 12.6559 21.7027 12.6388 21.7112 12.6216C21.7198 12.6045 21.7284 12.5874 21.7455 12.5703C21.754 12.5532 21.7626 12.5446 21.7712 12.5275C21.7797 12.5104 21.7883 12.4932 21.7968 12.4761C21.8054 12.459 21.814 12.4419 21.8225 12.4248C21.8225 12.4162 21.8225 12.3991 21.8311 12.382C21.8396 12.3649 21.8396 12.3477 21.8482 12.3306C21.8568 12.3135 21.8568 12.2964 21.8653 12.2793C21.8739 12.2621 21.8739 12.245 21.8824 12.2279C21.8824 12.2108 21.891 12.1851 21.891 12.168C21.891 12.1509 21.8996 12.1337 21.8996 12.1252C21.9081 12.0481 21.9081 11.9797 21.8996 11.9026C21.8996 11.8855 21.891 11.8684 21.891 11.8598C21.891 11.8427 21.8824 11.817 21.8824 11.7999C21.8824 11.7828 21.8739 11.7657 21.8653 11.7486C21.8568 11.7143 21.8568 11.6972 21.8482 11.6801C21.8482 11.663 21.8396 11.6458 21.8311 11.6287C21.8225 11.6116 21.8225 11.5945 21.814 11.5774C21.8054 11.5603 21.7968 11.5431 21.7883 11.526C21.7797 11.5089 21.7712 11.4918 21.7626 11.4747C21.754 11.4575 21.7455 11.449 21.7369 11.4319C21.7284 11.4147 21.7198 11.3976 21.7027 11.3805C21.6941 11.3634 21.677 11.3463 21.6684 11.3291C21.6599 11.312 21.6513 11.3035 21.6428 11.2863C21.6171 11.2607 21.5914 11.2264 21.5657 11.2007L14.6924 4.3274C14.2559 3.89087 13.5454 3.89087 13.1089 4.3274C12.6723 4.76394 12.6723 5.47439 13.1089 5.91093L18.0734 10.8755H4.12131C3.49646 10.884 3 11.3805 3 12.0053C3 12.6216 3.49646 13.1267 4.12131 13.1267H18.082L13.1174 18.0912C12.6809 18.5278 12.6809 19.2382 13.1174 19.6747C13.34 19.8887 13.6224 20 13.9049 20C14.1874 20 14.4784 19.8887 14.6924 19.6747L21.5657 12.8014C21.5914 12.7757 21.6171 12.75 21.6428 12.7158C21.6599 12.6987 21.6684 12.6816 21.677 12.673Z'
+      fill='#CC2027'></path>
+  </svg>
+  {{>./layouts/footer}}
+
+</body>
+
+</html>

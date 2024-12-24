@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  {{>./components/sidebar}}
+
+  {{>./components/nav}}
+  <div class="wrapper container-fluid bg-breadcrumb">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Cổ đông</a></li>
+        {{!-- <li class="breadcrumb-item active" aria-current="page">Data</li> --}}
+      </ol>
+    </nav>
+  </div>
+
+
+
+  <section class="tintuc khampha wrapper">
+    <div class="row">
+      <h1 class=" h2col-12 fw-bold my-4">Quan Hệ Cổ Đông</h1>
+      <div class="col-12 mb-5">
+        <div class="banner  ratio ratio-21x9">
+          <img
+            data-src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1993&q=80"
+            class="d-block img-fluid object-fit lazyload" alt="...">
+        </div>
+        <div class="overflow-hidden">
+          <div class="list-per row">
+            <a href="#" class="col text-center list-per-item"></a>
+            <a href="#" class="col text-center list-per-item">8</a>
+            <a href="#" class="col text-center list-per-item">6</a>
+            <a href="#" class="col text-center list-per-item">4</a>
+            <a href="#" class="col text-center list-per-item">2</a>
+            <a href="#" class="col active text-center list-per-item">1</a>
+            <a href="#" class="col text-center list-per-item">3</a>
+            <a href="#" class="col text-center list-per-item">5</a>
+            <a href="#" class="col text-center list-per-item">7</a>
+            <a href="#" class="col text-center list-per-item">9</a>
+            <a href="#" class="col text-center list-per-item"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8  col-xxl-9 mb-4">
+        <div class="box-blog dangkyemail d-block d-lg-none">
+          <div class="d-flex tracuu position-relative">
+            <img data-src="./assets/images/icon-search.svg" alt="#" class="icon-search position-absolute lazyloaded"
+              height="16" src="./assets/images/icon-search.svg">
+            <input class="form-control me-2" type="search" placeholder="Tra cứu dữ liệu" aria-label="Search">
+            <a role="button" class="btn rounded-0 btn-primary text-nowrap" type="submit">Tìm kiếm</a>
+          </div>
+          <div class="d-flex flex-wrap pt-3">
+            <div class="form-check form-check-inline w-50 mx-0 mt-1  fw-bold">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Tất cả</label>
+            </div>
+            <div class="form-check form-check-inline w-50 mx-0 mt-1  fw-bold">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Thông báo</label>
+            </div>
+            <div class="form-check form-check-inline  w-50 mx-0 mt-1  fw-bold">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">Lãnh đạo</label>
+            </div>
+            <div class="form-check form-check-inline  w-50 mx-0 mt-1 fw-bold">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+              <label class="form-check-label" for="inlineRadio4">Báo cáo tài chính</label>
+            </div>
+          </div>
+        </div>
+        <div class="overflow-hidden list-thongbao">
+           <div class="row p-3 align-items-center">
+            <div class="col-lg-2 col-3"><a role="button" class="btn btn-white btn-sm w-100" type="submit">TB</a></div>
+            <div class="col-lg-8 col-9">
+              <a href="#" class="title d-block fw-bold">THÔNG BÁO NGÀY ĐĂNG KÝ CUỐI CÙNG THỰC HIỆN QUYỀN</a>
+              <span class="date small">02/07/2021</span>
+            </div>
+            <div class="col-lg-2 mt-2 d-none d-lg-block col-12 text-lg-end text-center"><a href="/codong-detail.html" role="button"
+                class="mx-auto btn btn-primary btn-sm text-center" type="submit">Xem thêm</a></div>
+          </div>
+           <div class="row p-3 align-items-center">
+            <div class="col-lg-2 col-3"><a role="button" class="btn btn-white btn-sm w-100" type="submit">TB</a></div>
+            <div class="col-lg-8 col-9">
+              <a href="#" class="title d-block fw-bold">THÔNG BÁO NGÀY ĐĂNG KÝ CUỐI CÙNG THỰC HIỆN QUYỀN</a>
+              <span class="date small">02/07/2021</span>
+            </div>
+            <div class="col-lg-2 mt-2 d-none d-lg-block col-12 text-lg-end text-center"><a href="/codong-detail.html" role="button"
+                class="mx-auto btn btn-primary btn-sm text-center" type="submit">Xem thêm</a></div>
+          </div>
+           <div class="row p-3 align-items-center">
+            <div class="col-lg-2 col-3"><a role="button" class="btn btn-white btn-sm w-100" type="submit">TB</a></div>
+            <div class="col-lg-8 col-9">
+              <a href="#" class="title d-block fw-bold">THÔNG BÁO NGÀY ĐĂNG KÝ CUỐI CÙNG THỰC HIỆN QUYỀN</a>
+              <span class="date small">02/07/2021</span>
+            </div>
+            <div class="col-lg-2 mt-2 d-none d-lg-block col-12 text-lg-end text-center"><a href="/codong-detail.html" role="button"
+                class="mx-auto btn btn-primary btn-sm text-center" type="submit">Xem thêm</a></div>
+          </div>
+           <div class="row p-3 align-items-center">
+            <div class="col-lg-2 col-3"><a role="button" class="btn btn-white btn-sm w-100" type="submit">TB</a></div>
+            <div class="col-lg-8 col-9">
+              <a href="#" class="title d-block fw-bold">THÔNG BÁO NGÀY ĐĂNG KÝ CUỐI CÙNG THỰC HIỆN QUYỀN</a>
+              <span class="date small">02/07/2021</span>
+            </div>
+            <div class="col-lg-2 mt-2 d-none d-lg-block col-12 text-lg-end text-center"><a href="/codong-detail.html" role="button"
+                class="mx-auto btn btn-primary btn-sm text-center" type="submit">Xem thêm</a></div>
+          </div>
+           <div class="row p-3 align-items-center">
+            <div class="col-lg-2 col-3"><a role="button" class="btn btn-white btn-sm w-100" type="submit">TB</a></div>
+            <div class="col-lg-8 col-9">
+              <a href="#" class="title d-block fw-bold">THÔNG BÁO NGÀY ĐĂNG KÝ CUỐI CÙNG THỰC HIỆN QUYỀN</a>
+              <span class="date small">02/07/2021</span>
+            </div>
+            <div class="col-lg-2 mt-2 d-none d-lg-block col-12 text-lg-end text-center"><a href="/codong-detail.html" role="button"
+                class="mx-auto btn btn-primary btn-sm text-center" type="submit">Xem thêm</a></div>
+          </div>
+        </div>
+        <div class="text-center">
+         <a href="#" class="h5 btn btn-outline-primary btn-lg rounded-pill px-4 mt-5 mx-auto">Hiển thị thêm</a>
+        </div>
+
+      </div>
+      <div class="col-lg-4 col-xxl-3">
+        <div class="box-blog d-none d-lg-block dangkyemail ">
+          <div class="d-flex tracuu position-relative">
+            <img data-src="./assets/images/icon-search.svg" alt="#" class="icon-search position-absolute lazyloaded"
+              height="16" src="./assets/images/icon-search.svg">
+            <input class="form-control me-2" type="search" placeholder="Tra cứu dữ liệu" aria-label="Search">
+            <a role="button" class="btn rounded-0 btn-primary text-nowrap" type="submit">Tìm kiếm</a>
+          </div>
+          <div class="d-flex flex-wrap pt-3">
+            <div class="form-check form-check-inline w-50 mx-0 mt-1  fw-bold">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Tất cả</label>
+            </div>
+            <div class="form-check form-check-inline w-50 mx-0 mt-1  fw-bold">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Thông báo</label>
+            </div>
+            <div class="form-check form-check-inline  w-50 mx-0 mt-1  fw-bold">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+              <label class="form-check-label" for="inlineRadio3">Lãnh đạo</label>
+            </div>
+            <div class="form-check form-check-inline  w-50 mx-0 mt-1 fw-bold">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+              <label class="form-check-label" for="inlineRadio4">Báo cáo tài chính</label>
+            </div>
+          </div>
+        </div>
+        <div class="box-blog p-0 d-none d-lg-block ">
+          <h4 class="title p-3 m-0">
+            Hội đồng quản trị
+          </h4>
+          <ul class="list-group list-group-flush user-hdqt">
+
+            <li class="list-group-item border-0">
+              <a href="#">
+                <span class="name">1. Đào Đức Chinh</span>
+                <span>Chủ Tịch HĐQT, Tổng Giám Đốc</span>
+              </a>
+
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#">
+                <span class="name">1. Đào Đức Chinh</span>
+                <span>Chủ Tịch HĐQT, Tổng Giám Đốc</span>
+              </a>
+
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#">
+                <span class="name">1. Đào Đức Chinh</span>
+                <span>Chủ Tịch HĐQT, Tổng Giám Đốc</span>
+              </a>
+
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#">
+                <span class="name">1. Đào Đức Chinh</span>
+                <span>Chủ Tịch HĐQT, Tổng Giám Đốc</span>
+              </a>
+
+            </li>
+            <li class="list-group-item border-0">
+              <a href="#">
+                <span class="name">1. Đào Đức Chinh</span>
+                <span>Chủ Tịch HĐQT, Tổng Giám Đốc</span>
+              </a>
+
+            </li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  {{>./layouts/footer}}
+  <svg focusable='false' viewBox='0 0 24 24' class='d-none' aria-hidden='true'>
+    <path id='tag' fill-rule='evenodd' clip-rule='evenodd'
+      d='M12.143 2.95l-7.94 1.253-1.253 7.94 10.387 10.386 9.192-9.192L12.143 2.95zm-2.114 7.08a1.5 1.5 0 10-2.121-2.122 1.5 1.5 0 002.121 2.121z'>
+    </path>
+  </svg>
+  <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='d-none'>
+    <path id='arrow'
+      d='M21.677 12.673C21.6856 12.6559 21.7027 12.6388 21.7112 12.6216C21.7198 12.6045 21.7284 12.5874 21.7455 12.5703C21.754 12.5532 21.7626 12.5446 21.7712 12.5275C21.7797 12.5104 21.7883 12.4932 21.7968 12.4761C21.8054 12.459 21.814 12.4419 21.8225 12.4248C21.8225 12.4162 21.8225 12.3991 21.8311 12.382C21.8396 12.3649 21.8396 12.3477 21.8482 12.3306C21.8568 12.3135 21.8568 12.2964 21.8653 12.2793C21.8739 12.2621 21.8739 12.245 21.8824 12.2279C21.8824 12.2108 21.891 12.1851 21.891 12.168C21.891 12.1509 21.8996 12.1337 21.8996 12.1252C21.9081 12.0481 21.9081 11.9797 21.8996 11.9026C21.8996 11.8855 21.891 11.8684 21.891 11.8598C21.891 11.8427 21.8824 11.817 21.8824 11.7999C21.8824 11.7828 21.8739 11.7657 21.8653 11.7486C21.8568 11.7143 21.8568 11.6972 21.8482 11.6801C21.8482 11.663 21.8396 11.6458 21.8311 11.6287C21.8225 11.6116 21.8225 11.5945 21.814 11.5774C21.8054 11.5603 21.7968 11.5431 21.7883 11.526C21.7797 11.5089 21.7712 11.4918 21.7626 11.4747C21.754 11.4575 21.7455 11.449 21.7369 11.4319C21.7284 11.4147 21.7198 11.3976 21.7027 11.3805C21.6941 11.3634 21.677 11.3463 21.6684 11.3291C21.6599 11.312 21.6513 11.3035 21.6428 11.2863C21.6171 11.2607 21.5914 11.2264 21.5657 11.2007L14.6924 4.3274C14.2559 3.89087 13.5454 3.89087 13.1089 4.3274C12.6723 4.76394 12.6723 5.47439 13.1089 5.91093L18.0734 10.8755H4.12131C3.49646 10.884 3 11.3805 3 12.0053C3 12.6216 3.49646 13.1267 4.12131 13.1267H18.082L13.1174 18.0912C12.6809 18.5278 12.6809 19.2382 13.1174 19.6747C13.34 19.8887 13.6224 20 13.9049 20C14.1874 20 14.4784 19.8887 14.6924 19.6747L21.5657 12.8014C21.5914 12.7757 21.6171 12.75 21.6428 12.7158C21.6599 12.6987 21.6684 12.6816 21.677 12.673Z'
+      fill='#CC2027'></path>
+  </svg>
+
+
+
+</body>
+
+</html>

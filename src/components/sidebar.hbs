@@ -1,0 +1,328 @@
+<div
+    class='offcanvas offcanvas-start w-sidebar'
+    tabindex='-1'
+    id='offcanvas'
+    data-bs-keyboard='false'
+    data-bs-backdrop='true'
+    data-bs-scroll='true'
+>
+    <div class='offcanvas-header'>
+        <h6 class='offcanvas-title d-block' id='offcanvas'>
+            <a class='navbar-brand' href='/'>
+                <img
+                    data-src='./assets/images/logo.svg'
+                    alt='#'
+                    class='lazyload img-fluid'
+                    width='150'
+                />
+            </a></h6>
+        <button
+            type='button'
+            class='btn-close text-reset'
+            data-bs-dismiss='offcanvas'
+            aria-label='Close'
+        ></button>
+    </div>
+    <div class='offcanvas-body px-0'>
+
+        <ul
+            class='nav nav-pills flex-column mb-sm-auto mb-0 align-items-start p-3'
+            id='menu'
+        >
+            <li class='nav-item'>
+                <a href='/' class='nav-link text-truncate'>
+                    Trang chủ
+
+                </a>
+            </li>
+
+            <li class='nav-item'>
+                <a href='/codong-list.html' class='nav-link text-truncate'>
+                    Cổ Đông
+                </a>
+            </li>
+            <li class='nav-item'>
+                <a href='/lichsu.html' class='nav-link text-truncate'>
+                    Về XUÂN HÒA
+                </a>
+            </li>
+            <li class='nav-item d-block w-100'>
+                <div class='d-flex align-items-center justify-content-between'>
+                    <a href='/sanpham.html' class='nav-link text-truncate'>
+                        Sản phẩm
+                    </a>
+                    <button
+                        class='nav-link btn-arrow text-white'
+                        data-bs-toggle='collapse'
+                        href='#subproduct'
+                        role='button'
+                        aria-expanded='false'
+                        aria-controls='subproduct'
+                    ><i class='small fas fa-chevron-down'></i></button>
+                </div>
+                <div class='collapse' id='subproduct'>
+
+                    <ul
+                        class='d-flex flex-column pb-3 list-unstyled'
+                        id='subproduct1'
+                    >
+
+                        <li>
+
+                            <div
+                                class='d-flex align-items-center justify-content-between'
+                            >
+                                <a href='#'>Test</a>
+                                <a
+                                    class='nav-link collapsed'
+                                    data-bs-toggle='collapse'
+                                    href='#subAB22'
+                                    aria-expanded='false'
+                                >+ NỘI THẤT VĂN PHÒNG</a>
+                            </div>
+                            <div
+                                class='collapse'
+                                id='subAB22'
+                                data-bs-parent='#subproduct1'
+                                style=''
+                            >
+                                <ul
+                                    class='d-flex flex-column pb-3 list-unstyled'
+                                >
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/ban-van-phong'
+                                            class='dropdown-item'
+                                        >- Bàn văn phòng </a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/ghe-xoay-van-phong'
+                                            class='dropdown-item'
+                                        >- Ghế xoay văn phòng</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/tu-tai-lieu'
+                                            class='dropdown-item'
+                                        >- Tủ tài liệu</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/future-office'
+                                            class='dropdown-item'
+                                        >- Future Office</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/san-pham-pu'
+                                            class='dropdown-item'
+                                        >- Sản phẩm PU</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/ban-hop'
+                                            class='dropdown-item'
+                                        >- Bàn họp, hội trường</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/ghe-phong-hop'
+                                            class='dropdown-item'
+                                        >- Ghế phòng họp</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+
+                            <div
+                                class='d-flex align-items-center justify-content-between'
+                            >
+                                <a href='#'>Test 2</a>
+                                <a
+                                    class='nav-link collapsed'
+                                    data-bs-toggle='collapse'
+                                    href='#subAB38'
+                                    aria-expanded='false'
+                                >+ NỘI THẤT VĂN PHÒNG</a>
+                            </div>
+                            <div
+                                class='collapse'
+                                id='subAB38'
+                                data-bs-parent='#subproduct1'
+                                style=''
+                            >
+                                <ul
+                                    class='d-flex flex-column pb-3 list-unstyled'
+                                >
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/tu-quan-ao-gia-dinh'
+                                            class='dropdown-item'
+                                        >- Tủ quần áo gia đình</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/tu-giay-gia-dinh'
+                                            class='dropdown-item'
+                                        >- Tủ giày gia đình</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/ban-ghe-phong-an'
+                                            class='dropdown-item'
+                                        >- Bàn ghế phòng ăn</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/cau-la-gia-ao-thang-gap'
+                                            class='dropdown-item'
+                                        >- Cầu là - Giá áo - Thang gấp</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/giuong-ghe-nan-vong'
+                                            class='dropdown-item'
+                                        >- Giường gấp - Ghế thư giãn - Võng</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/gia-ke'
+                                            class='dropdown-item'
+                                        >- Giá - Kệ
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li>
+
+                            <div
+                                class='d-flex align-items-center justify-content-between'
+                            >
+                                <a
+                                    class='nav-link collapsed'
+                                    data-bs-toggle='collapse'
+                                    href='#subAB64'
+                                    aria-expanded='false'
+                                >+ NỘI THẤT TRƯỜNG HỌC</a>
+                            </div>
+                            <div
+                                class='collapse'
+                                id='subAB64'
+                                data-bs-parent='#subproduct1'
+                            >
+                                <ul
+                                    class='d-flex flex-column pb-3 list-unstyled'
+                                >
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/ban-hoc-sinh-gia-dinh'
+                                            class='dropdown-item'
+                                        >- Bàn học sinh gia đình</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/ban-ghe-truong-hoc'
+                                            class='dropdown-item'
+                                        >- Bàn ghế trường học </a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/ban-ghe-truong-hoc-alpha'
+                                            class='dropdown-item'
+                                        >- Bàn ghế trường học Alpha</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/gia-thu-vien'
+                                            class='dropdown-item'
+                                        >- Giá Thư Viện</a>
+                                    </li>
+
+                                    <li>
+                                        <a
+                                            href='/cmsp/giuong-tang'
+                                            class='dropdown-item'
+                                        >- Giường Tầng</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class='nav-item'>
+                <a href='/decor.html' class='nav-link text-truncate'>
+                    Nội thất Decor
+                </a>
+            </li>
+            <li class='nav-item'>
+                <a href='/tuvanthietke.html' class='nav-link text-truncate'>
+                    Tư vấn thiết kế
+                </a>
+            </li>
+            <li class='nav-item'>
+                <a href='/congtrinh.html' class='nav-link text-truncate'>
+                    Công trình tiêu biểu
+                </a>
+            </li>
+            <li class='nav-item'>
+                <a href='/catalogue.html' class='nav-link text-truncate'>
+                    Catalogue
+                </a>
+            </li>
+            <li class='nav-item'>
+                <a href='/baogia.html' class='nav-link text-truncate'>
+                    Báo giá
+                </a>
+            </li>
+
+            <li class='nav-item'>
+                <a href='/baohanh.html' class='nav-link text-truncate'>
+                    Bảo hành
+                </a>
+            </li>
+            <li class='nav-item'>
+                <a href='/tintuc.html' class='nav-link text-truncate'>
+                    Tin tức
+                </a>
+            </li>
+            <li class='nav-item'>
+                <a href='/tuyendung.html' class='nav-link text-truncate'>
+                    Tuyển dụng
+                </a>
+            </li>
+            <li class='nav-item'>
+                <a href='/lienhe.html' class='nav-link text-truncate'>
+                    Liên hệ
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>

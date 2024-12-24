@@ -1,0 +1,50 @@
+.offcanvas {
+    transition: all ease-in-out 0.3s;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    font-size: 24px;
+    margin-left: 50px;
+    color: #222;
+}
+.offcanvas-body {
+    background: $primary;
+    a {
+        color: #fff;
+        &:hover {
+            color: #ccc;
+        }
+    }
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+.w-sidebar {
+    width: 250px;
+    .dropdown-item:hover {
+        background: #99191e;
+    }
+    .btn-arrow {
+        .fas {
+            transition: all ease-in-out 0.3s;
+        }
+    }
+    .btn-arrow.change-arrow {
+        color: #fff;
+        .fas {
+            transform: rotate(180deg);
+        }
+    }
+}
+@media screen and (max-height: 960px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

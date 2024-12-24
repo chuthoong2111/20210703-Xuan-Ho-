@@ -1,0 +1,134 @@
+$trans: 0.3s all ease-in-out;
+$font-title: 'Amaranth', sans-serif;
+$font-primary: 'Roboto', sans-serif;
+// Theme
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1170px,
+//   xxl: 1440px,
+// );
+$enable-negative-margins: true;
+$aspect-ratios: (
+    '1x1': 100%,
+    '4x3': calc(3 / 4 * 100%),
+    '3x4': calc(4 / 3 * 100%),
+    '16x9': calc(9 / 16 * 100%),
+    '9x16': calc(16 / 9 * 100%),
+    '21x9': calc(9 / 21 * 100%),
+    '3x2': calc(2 / 3 * 100%),
+    '2x3': calc(3 / 2 * 100%),
+);
+$embed-responsive-aspect-ratios: (
+    (21 9),
+    (21 7),
+    (16 9),
+    (9 16),
+    (4 3),
+    (2 1),
+    (1 2),
+    (3 2),
+    (3 4),
+    (2 3),
+    (1 1)
+) !default;
+
+$theme-colors: (
+    primary: #cc2027,
+    secondary: #606060,
+    danger: #e65050,
+    dark: #231f20,
+    light: #f3f3f3,
+    color-brand3: #d91e32,
+    color-brand2: #29aae1,
+    blue: #5b86eb,
+    grey: #606060,
+    green: #58a755,
+    grey-70: #888,
+    grey-30: #ccc,
+    grey-20: #ececec,
+    warning: #f1d21c,
+);
+$trans: all 0.3s ease-in-out;
+$primary: map-get(
+    $map: $theme-colors,
+    $key: 'primary',
+);
+$color-brand2: map-get(
+    $map: $theme-colors,
+    $key: 'color-brand2',
+);
+$color-brand3: map-get(
+    $map: $theme-colors,
+    $key: 'color-brand3',
+);
+$secondary: map-get(
+    $map: $theme-colors,
+    $key: 'secondary',
+);
+$danger: map-get(
+    $map: $theme-colors,
+    $key: 'danger',
+);
+$warning: map-get(
+    $map: $theme-colors,
+    $key: 'warning',
+);
+$dark: map-get(
+    $map: $theme-colors,
+    $key: 'dark',
+);
+$light: map-get(
+    $map: $theme-colors,
+    $key: 'light',
+);
+// Colors
+$text-color: #555;
+
+// shadow
+$shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+$shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+// Required
+@import '~bootstrap/scss/bootstrap';
+// @import "@fancyapps/ui/dist/fancybox.css";
+// Base all css
+@import './base/base';
+// font
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+// component
+@import './components/nav';
+@import './components/banner';
+@import './components/search';
+@import './components/dichvu';
+// @import './components/list-tour';
+@import './components/testimonial';
+@import './components/step';
+@import './components/footer';
+@import './components/breadcrumb';
+@import './components/blog';
+@import './components/swiper';
+@import './components/camnang';
+@import './components/video';
+@import './components/menuoverlay';
+// page
+@import './page/decor';
+@import './page/sanpham';
+@import './page/baohanh';
+@import './page/tuyendung';
+@import './page/lichsu';
+@import './page/dangky';
+@import './page/_tintuc-thucteao';

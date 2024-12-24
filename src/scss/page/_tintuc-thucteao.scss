@@ -1,0 +1,46 @@
+.border-khung {
+    width: 16px;
+    border: 1px solid $primary;
+    border-right: 1px solid transparent;
+    margin: 10px 1rem 10px 0;
+}
+.dangkytuvan {
+    position: relative;
+    border: 1px solid $primary;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    margin-top: 3rem;
+    .form-tuvan {
+        margin-top: -2.2rem;
+        position: relative;
+        input {
+            border-color: $primary;
+            margin-bottom: 1rem;
+        }
+        .col-lg-4:last-child {
+            input {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.border-color-f5f5f5 {
+    border-color: #f5f5f5 !important;
+}
+.overlink {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.area-dangkytuvan,
+.area-taisao,
+.area-quytrinhthietke {
+    position: relative;
+    padding: 40px 0;
+    @include media-breakpoint-up(lg) {
+        padding: 120px 0;
+    }
+    z-index: 2;
+}

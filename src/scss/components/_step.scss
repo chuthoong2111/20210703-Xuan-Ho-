@@ -1,0 +1,63 @@
+@mixin centerer($horizontal: true,
+    $vertical: true) {
+    position: absolute;
+
+    @if ($horizontal and $vertical) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @else if ($horizontal) {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    @else if ($vertical) {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+.whyus__name {
+    font-weight: bold;
+    color: $primary;
+}
+
+.whyus__caption {
+    font-size: 100%;
+}
+
+.steps-item {
+    border-top: 1px solid #ddd;
+    padding: 3rem 1.5rem;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    position: relative;
+
+    &::before {
+        content: "";
+        @include centerer(true, false);
+        height: 11px;
+        width: 11px;
+        background: #ddd;
+        top: -5px;
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: "";
+        @include centerer(true, false);
+        height: 2.5rem;
+        width: 1px;
+        background: #ddd;
+        top: -1px;
+    }
+}

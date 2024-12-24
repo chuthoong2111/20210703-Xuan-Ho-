@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body class="decor">
+  {{>./components/sidebar}}
+  {{>./components/nav}}
+  <div class="wrapper container-fluid bg-breadcrumb">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Bảo hành</a></li>
+        <li class="ms-auto"><a role="button" data-bs-toggle="modal" data-bs-target="#huongdan"
+            class="link-right"><strong>Hướng dẫn</strong><i class="ms-1 far fa-question-circle"></i></a></li>
+      </ol>
+    </nav>
+  </div>
+  <div class="modal fade" id="huongdan" tabindex="-1" aria-labelledby="huongdanLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-primary text-uppercase fw-bold" id="huongdanLabel">Hướng dẫn tra cứu - kích hoạt
+            bảo hành</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- step1 --}}
+  <section class='my-5 baohanh'>
+    <div class='container-fluid wrapper my-4'>
+      <div class="row  justify-content-center">
+        <div class="col-lg-8 col-12 mx-auto">
+          <div class="row px-lg-5 px-0">
+            <div class="col-lg-6">
+              <a role="button" href="/dangky.html" class="button-dangky d-flex align-items-center">
+                <div class="dangky-left">
+                  <img data-src="./assets/images/user-s.svg" class="img-fluid lazyload svg-l-1">
+                  <img data-src="./assets/images/user-f.svg" class="img-fluid lazyload svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-4">
+                  <span class="fw-bold text-uppercase">Đăng ký</span>
+                  <small class="text-grey-70">Tài khoản bảo hành</small>
+                </div>
+                <div class="dangky-right">
+                  <img data-src="./assets/images/arrow-right.svg" class="lazyload">
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <a role="button" href="/dangky.html" class="button-dangky d-flex align-items-center">
+                <div class="dangky-left">
+                  <img data-src="./assets/images/search-s.svg" class="img-fluid lazyload svg-l-1">
+                  <img data-src="./assets/images/search-f.svg" class="img-fluid lazyload svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-4">
+                  <span class="fw-bold text-uppercase">Tra cứu</span>
+                  <small class="text-grey-70">Thông tin bảo hành</small>
+                </div>
+                <div class="dangky-right">
+                  <img data-src="./assets/images/arrow-right.svg" class="lazyload">
+                </div>
+              </a>
+            </div>
+          </div>
+          <h1 class="text-primary fw-bold text-center">BẢO HÀNH</h1>
+          <p class="text-grey-70 text-center">TẤT CẢ SẢN PHẨM XUÂN HÒA ĐƯỢC KÍCH HOẠT BẢO HÀNH ĐIỆN TỬ NGAY SAU KHI MUA. <br>
+            Quý khách vui lòng yêu cầu nơi bán (đại lý, cửa hàng) kích hoạt bảo hành điện tử và có thể kiểm tra
+            thời gian bảo hành thông qua số Seri / Mã tem của sản phẩm</p>
+          <p class="text-center fw-bold fs-5 mb-1">Bạn đã có tài khoản? <a href="/dangnhap.html">Đăng nhập</a></p>
+          <p class="text-center text-grey-70">Qúy khách hàng có thể kích hoạt nhiều sản phẩm cùng lúc.
+            ( Sau khi Đăng Nhập )
+          </p>
+          <div class="col-lg-9 mx-auto">
+            <div class="text-center justify-content-center">
+              <p class="fs-3 m-0 fw-bold text-primary">Kích Hoạt Nhanh</p>
+              <p class="m-0"> Không yêu cầu đăng nhập</p>
+            </div>
+            <div class="form-tracuu d-flex align-items-center rounded-3 mt-3 p-1 px-2">
+              <a href="#" class="me-0 me-lg-3 btn btn-outline-grey-30 p-1 lh-1">
+                <img data-src="./assets/images/qr-code.svg" class="img-fluid lazyload">
+              </a>
+              <input class="form-control form-control-lg input-baohanh" type="text"
+                placeholder="Nhập / Quét mã bảo hành trên Tem">
+              <!-- Button trigger modal -->
+              <a role="button"
+                class="btn px-4 btn-xacnhan fs-5 fw-bold text-uppercase ms-0 ms-lg-3 text-nowrap d-none d-xl-flex"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Xác nhận
+              </a>
+              <a role="button" class="d-block d-xl-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fas fa-2x fa-search text-primary"></i>
+              </a>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="md-thongbao">
+                      <button type="button" class="btn-close btn-close-tracuu" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                      <div class="modal-body text-center">
+                        <h2 class="display-2 text-primary"> <i class="fas fa-exclamation-triangle"></i></h2>
+                        <h3 class="text-grey-70 fw-bold">THÔNG BÁO</h3>
+                        <h5 class="text-primary">Mã bảo hành đã được kích hoạt</h5>
+                        <p>Vui lòng vào mục tra cứu thông tin bảo hành để xem thông tin!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="md-thongbao position-relative mt-5">
+          <button type="button" class="btn-close btn-close-tracuu" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body text-center">
+            <h2 class="display-2 text-primary"> <i class="fas fa-exclamation-triangle"></i></h2>
+            <h3 class="text-grey-70 fw-bold">THÔNG BÁO LỖI</h3>
+            <h5 class="text-primary">Số serial không có trong hệ thống</h5>
+            <p>Vui lòng kiểm tra lại</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{!-- step2 --}}
+  <div class="container col-lg-10 col-xxl-8 p-lg-5 p-3 shadow position-relative rounded-3">
+    <div class="row ">
+      <div class="col-lg-6">
+        <div class="p-3 btn-xacnhan fs-4 fw-bold text-center rounded-3 d-block mb-3">
+          Thông tin bảo hành
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Tên sản
+            phẩm: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="Ghế xoay văn phòng 360 độ - Xuân Hòa">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Mã sản
+            phẩm: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="GX - 123456">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Mã bảo
+            hành: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="XH 000028">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Thời gian
+            bảo hành: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="365 ngày">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label">Số hoá đơn:</label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="HD 01">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label">Mô tả sản phẩm:</label>
+          <div class="col-sm-12">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3">Ghế văn phòng 360 độ, mang đến sự thoải mái.
+           </textarea>
+          </div>
+        </div>
+        <div class="row flex-column mt-4 d-lg-flex d-none">
+          <div class="col-sm-12 text-center text-danger text-decoration-underline fw-bolder">
+            Cam kết thông tin của quý khách chỉ được Xuân Hòa sử dụng với mục đích lưu trữ thông tin bảo hành
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="p-3 btn-xacnhan fs-4 fw-bold text-center rounded-3 d-block mb-3">
+          Thông Tin Khách hàng
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Tên khách
+            hàng: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" placeholder="Vui lòng nhập họ tên">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label">Ngày tháng năm sinh:</label>
+          <div class="col-sm-12">
+            <div class="position-relative pass-form">
+              <input type="password" class="form-control" id="inputTinhThanh" placeholder="dd/mm/yyyy">
+              <i class="far fa-calendar-alt position-absolute"></i>
+
+            </div>
+          </div>
+        </div>
+        <div class="row  d-flex flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label">Giới tính: </label>
+          <div class="col-sm-12">
+            <select class="form-select rounded-0" id="inputTinhThanh">
+              <option value="op1">Nam</option>
+              <option value="op2">Nữ</option>
+            </select>
+
+          </div>
+        </div>
+        <div class="row  d-flex flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Số điện
+            thoại : </label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="" placeholder="">
+          </div>
+        </div>
+        <div class="row  d-flex flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Email :
+          </label>
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="inputTinhThanh" placeholder="Email">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Khu vực (
+            Tỉnh/TP) : </label>
+          <div class="col-sm-12">
+            <select class="form-select rounded-0" id="inputTinhThanh">
+              <option value="op1">Xin hãy lựa chọn</option>
+              <option value="op2">Hanoi</option>
+            </select>
+          </div>
+        </div>
+        <div class="row  d-flex flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Địa chỉ
+          </label>
+          <div class="col-sm-12">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 text-center">
+        <a href="#" class="btn btn-lg btn-primary py-3 px-5 fw-bold mt-4 text-center rounded-pill">Kích hoạt bảo
+          hành</a>
+      </div>
+      <div class="row flex-column mt-4 d-lg-none d-flex">
+        <div class="col-sm-12 text-center text-danger text-decoration-underline fw-bolder">
+          Cam kết thông tin của quý khách chỉ được Xuân Hòa sử dụng với mục đích lưu trữ thông tin bảo hành
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- step2a --}}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center p-lg-5">
+        <h2 class="display-2 text-green">
+          <i class="fas fa-check-circle"></i>
+        </h2>
+
+        <h2 class="text-green fw-bold">KÍCH HOẠT BẢO HÀNH THÀNH CÔNG</h2>
+        <p>
+          Cảm ơn quý khách
+          đã sử dụng sản phẩm của chúng tôi !
+        </p>
+      </div>
+    </div>
+  </div>
+  {{!-- step2b --}}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center p-lg-5">
+        <h2 class="display-2 text-green">
+          <i class="fas fa-check-circle"></i>
+        </h2>
+
+        <h2 class="text-green fw-bold">KÍCH HOẠT BẢO HÀNH THÀNH CÔNG</h2>
+        <p>
+          Đây là sản phẩm có 02 Tem Bảo Hành
+          Đề nghị quý khách <a class="text-primary text-decoration-underline fw-bold">quét tiếp mã bảo hành</a> để kích
+          hoạt
+
+        </p>
+        <div class="col-lg-5 mx-auto mt-4">
+          <a href="#" class="p-3 btn-xacnhan fs-4 text-center rounded-3 d-block mb-2">
+            Tôi không tìm thấy tem còn lại
+          </a>
+          <a class="text-center justify-content-center py-3 btn btn-large btn-tracuu fs-4">Quét Tem còn lại</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  {{!-- Thất bại kích hoạt --}}
+  <div class="container col-lg-10 col-xxl-8 p-lg-5 p-3 shadow rounded-3 position-relative">
+    <div class="center-x d-lg-block d-none">
+      <div class="btn  rounded-pill border-2 btn-outline-danger position-relative">
+        <i class="fas fa-5x fa-times-circle position-absolute"></i>
+        <div class="inner text-center  d-flex flex-column justify-content-center">
+          <p class="fw-bold h5 text-nowrap m-0">GỬI PHẢN HỒI KHÔNG THÀNH CÔNG</p>
+          <p class="fst-italic text-danger m-0">Vui lòng kiểm tra thông tin</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3 d-block d-lg-none">
+        <div
+          class="btn btn-alert flex-wrap my-4 d-flex rounded-pill border-2 btn-outline-danger position-relative p-1 justify-content-center">
+          <i class="fas fa-3x fa-times-circle"></i>
+          <div class="inner text-center w-100">
+            <p class="fw-bold small m-0">KÍCH HOẠT KHÔNG THÀNH CÔNG</p>
+            <small class="fst-italic text-dark">Vui lòng kiểm tra thông tin khách hàng</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-3 btn-xacnhan fs-4 fw-bold text-center rounded-3 d-block mb-3">
+          Thông tin bảo hành
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Tên sản
+            phẩm: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0 border-danger" value="Ghế xoay văn phòng 360 độ - Xuân Hòa">
+            <div class="invalid-feedback d-block">Sai tên sản phẩm </div>
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Mã sản
+            phẩm: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="GX - 123456">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Mã bảo
+            hành: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="XH 000028">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Thời gian
+            bảo hành: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="365 ngày">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label">Số hoá đơn:</label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" value="HD 01">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label">Mô tả sản phẩm:</label>
+          <div class="col-sm-12">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3">Ghế văn phòng 360 độ, mang đến sự thoải mái.
+           </textarea>
+          </div>
+        </div>
+        <div class="row flex-column mt-4 d-lg-flex d-none">
+          <div class="col-sm-12  text-center text-danger text-decoration-underline fw-bolder">
+            Cam kết thông tin của quý khách chỉ được Xuân Hòa sử dụng với mục đích lưu trữ thông tin bảo hành
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="p-3 btn-xacnhan fs-4 fw-bold text-center rounded-3 d-block mb-3">
+          Thông Tin Khách hàng
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Tên khách
+            hàng: </label>
+          <div class="col-sm-12">
+            <input class="form-control rounded-0" placeholder="Vui lòng nhập họ tên">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label">Ngày tháng năm sinh:</label>
+          <div class="col-sm-12">
+            <div class="position-relative pass-form">
+              <input type="password" class="form-control" id="inputTinhThanh" placeholder="dd/mm/yyyy">
+              <i class="far fa-calendar-alt position-absolute"></i>
+
+            </div>
+          </div>
+        </div>
+        <div class="row  d-flex flex-column  mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label">Giới tính: </label>
+          <div class="col-sm-12">
+            <select class="form-select rounded-0" id="inputTinhThanh">
+              <option value="op1">Nam</option>
+              <option value="op2">Nữ</option>
+            </select>
+
+          </div>
+        </div>
+        <div class="row  d-flex flex-column  mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Số điện
+            thoại : </label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="" placeholder="">
+          </div>
+        </div>
+        <div class="row  d-flex flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Email :
+          </label>
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="inputTinhThanh" placeholder="Email">
+          </div>
+        </div>
+        <div class="row flex-column mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Khu vực (
+            Tỉnh/TP) : </label>
+          <div class="col-sm-12">
+            <select class="form-select rounded-0" id="inputTinhThanh">
+              <option value="op1">Xin hãy lựa chọn</option>
+              <option value="op2">Hanoi</option>
+            </select>
+          </div>
+        </div>
+        <div class="row  d-flex flex-column  mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-form-label"><span class="text-danger me-1">*</span>Địa chỉ
+          </label>
+          <div class="col-sm-12">
+            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 text-center">
+        <a href="#" class="btn btn-lg btn-primary py-3 px-5 fw-bold mt-4 text-center rounded-pill">Kích hoạt bảo
+          hành</a>
+      </div>
+      <div class="row flex-column mt-4 d-lg-none d-flex">
+        <div class="col-sm-12 text-center text-danger text-decoration-underline fw-bolder">
+          Cam kết thông tin của quý khách chỉ được Xuân Hòa sử dụng với mục đích lưu trữ thông tin bảo hành
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="chinhsachModal" tabindex="-1" aria-labelledby="chinhsachLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold text-primary text-uppercase fs-4" id="chinhsachLabel">Chính sách bảo hành</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>./layouts/footer}}
+
+</body>
+
+</html>

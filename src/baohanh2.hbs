@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  {{>./components/sidebar}}
+  {{>./components/nav-active}}
+  <div class="wrapper container-fluid bg-breadcrumb">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Bảo hành</a></li>
+        <li class="ms-auto"><a role="button" data-bs-toggle="modal" data-bs-target="#huongdan"
+            class="link-right"><strong>Hướng dẫn</strong><i class="ms-1 far fa-question-circle"></i></a></li>
+      </ol>
+    </nav>
+  </div>
+  <div class="modal fade" id="huongdan" tabindex="-1" aria-labelledby="huongdanLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-primary text-uppercase fw-bold" id="huongdanLabel">Hướng dẫn tra cứu - kích hoạt
+            bảo hành</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- step1 --}}
+  <section class='my-5 baohanh'>
+    <div class='container-fluid wrapper my-4'>
+      <div class="row  justify-content-center">
+        
+        <div class="col-lg-10 col-xxl-9 col-12 mx-auto">
+          
+          <h1 class="text-primary fw-bold text-center">KÍCH HOẠT / TRA CỨU BẢO HÀNH</h1>
+          <p class="text-grey-70 text-center">Xem hướng dẫn <a role="button" data-bs-toggle="modal" data-bs-target="#huongdan"
+            class="link-right text-primary">TẠI ĐÂY</a></p>
+          <div class="row">
+            {{!-- btn 1 --}}
+            <div class="col-lg-4">
+              <a role="button" href="#" class="button-dangky d-flex align-items-center active">
+                <div class="dangky-left">
+                  <img data-src="./assets/images/one-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/one-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">KÍCH HOẠT LẺ</span>
+                  <small class="text-grey-70">Đơn lẻ một sản phẩm</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">                  
+                      <img data-src="./assets/images/arrow-right.svg" class="lazyload">                  
+                </div>
+              </a>
+            </div>
+            {{!-- btn-2 --}}
+            <div class="col-lg-4">
+              <a role="button" href="/dangky.html" class="button-dangky d-flex align-items-center">
+                <div class="dangky-left">
+                  <img data-src="./assets/images/bh-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/bh-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">KÍCH HOẠT NHIỀU</span>
+                  <small class="text-grey-70">Đồng loạt nhiều sản phẩm</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">
+                  <img data-src="./assets/images/arrow-right.svg" class="lazyload">    
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a role="button" href="/dangky.html" class="button-dangky d-flex align-items-center">
+                <div class="dangky-left">
+                   <img data-src="./assets/images/search-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/search-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">Tra cứu</span>
+                  <small class="text-grey-70">Thông tin bảo hành</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">
+                  <img data-src="./assets/images/arrow-right.svg" class="lazyload">  
+                </div>
+              </a>
+            </div>
+            {{!-- Form search --}}
+            <div class="col-lg-8">
+                         
+            <div class="form-tracuu d-flex align-items-center rounded-3 p-1 px-2">
+              <a href="#" class="me-0 me-lg-3 btn btn-outline-grey-30 p-1 lh-1">
+                <img data-src="./assets/images/qr-code.svg" class="lazyload">  
+              </a>
+              <input class="form-control input-baohanh" type="text"
+                placeholder="Nhập / Quét mã bảo hành trên Tem">
+              <a role="button" class="d-block d-xl-none m-0 h-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fas fa-2x fa-search text-primary"></i>
+</a>
+              
+            </div>          
+            </div>
+            <div class="col-lg-4">
+              <!-- Button trigger modal -->
+              <a role="button"
+                class="btn btn-primary px-4 fs-5 fw-bold text-uppercase m-0 h-100 align-items-center justify-content-center text-nowrap d-none d-xl-flex"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Xác nhận
+              </a>
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="md-thongbao">
+                      <button type="button" class="btn-close btn-close-tracuu" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                      <div class="modal-body text-center">
+                        <h2 class="display-2 text-primary"> <i class="fas fa-exclamation-triangle"></i></h2>
+                        <h3 class="text-grey-70 fw-bold">THÔNG BÁO</h3>
+                        <h5 class="text-primary">Mã bảo hành đã được kích hoạt</h5>
+                        <p>Vui lòng vào mục <a href="/tracuu.html" class="text-uppercase">tra cứu</a> thông tin bảo hành để xem thông tin!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 text-grey-70 fst-italic text-center mt-2">
+              <span class="text-danger">***</span> Lưu ý: Cào lớp nhũ để quét hoặc nhập dãy số serial trên Tem.
+            </div>
+          </div>         
+
+        </div>
+       <div class="col-lg-10 col-xxl-9 col-12 mt-5 mx-auto">
+         <div class="p-2 btn-xacnhan fs-5 text-center rounded-3 d-block mb-3">
+          Thông Tin Khách hàng
+        </div>
+          <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Tên khách hàng : </label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="name" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Đỗ Ngọc Long">        
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Ngày tháng năm sinh : </label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="21/11/1983">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Giới tính:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Nam">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Số điện thoại:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="0982 222 229">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Email:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="longdodesign@gmail.com">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Khu vực:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Hà Nội">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+        
+        
+       </div>
+      
+      </div>
+    </div>
+  </section>
+    <hr class="my-5">
+  {{!-- step2 --}}
+  <div class="container col-lg-6 col-xxl-6 p-3 p-xl-4 shadow position-relative rounded-3 mx-auto">
+    <div class="row ">
+      <div class="col-lg-12">
+        <div class="p-3 btn-xacnhan fs-4 fw-bold text-center rounded-2 d-block mb-3">
+          Thông tin bảo hành
+        </div>
+        <div class="row flex-column flex-lg-row mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-lg-5 col-form-label"><span class="text-danger me-1">*</span>Tên sản phẩm: </label>
+          <div class="col-sm-12 col-lg-7">
+            <input class="form-control rounded-0" value="Ghế xoay văn phòng 360 độ - Xuân Hòa">             
+          </div>
+        </div>
+       <div class="row flex-column flex-lg-row mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-lg-5 col-form-label"><span class="text-danger me-1">*</span>Mã sản phẩm: </label>
+          <div class="col-sm-12 col-lg-7">
+            <input class="form-control rounded-0" value="GX - 123456">             
+          </div>
+        </div>
+       <div class="row flex-column flex-lg-row mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-lg-5 col-form-label"><span class="text-danger me-1">*</span>Mã bảo hành: </label>
+          <div class="col-sm-12 col-lg-7">
+            <input class="form-control rounded-0"  value="XH 000028">             
+          </div>
+        </div>
+       <div class="row flex-column flex-lg-row mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-lg-5 col-form-label"><span class="text-danger me-1">*</span>Thời gian bảo hành: </label>
+          <div class="col-sm-12 col-lg-7">
+            <input class="form-control rounded-0"  value="365 ngày">             
+          </div>
+        </div>
+       <div class="row flex-column flex-lg-row mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-lg-5 col-form-label">Số hoá đơn:</label>
+          <div class="col-sm-12 col-lg-7">
+            <input class="form-control rounded-0"  value="HD 01">             
+          </div>
+        </div>
+       <div class="row flex-column flex-lg-row mb-2">
+          <label for="inputTinhThanh" class="col-sm-12 col-lg-5 col-form-label">Mô tả sản phẩm:</label>
+          <div class="col-sm-12 col-lg-7">
+           <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="3">Ghế văn phòng 360 độ, mang đến sự thoải mái.
+           </textarea>           
+          </div>
+        </div>
+       <div class="row flex-column flex-lg-row mb-2 mt-3">
+          <label for="inputTinhThanh" class="col-sm-12 col-lg-5 col-form-label fw-bold">Sản phẩm ghép cùng</label>
+          <div class="col-sm-12 col-lg-7">
+          <a role="button" class="text-decoration-underline" data-bs-toggle="modal" data-bs-target="#sanphamdikemModal"> Xem chi tiết</a>    
+          </div>
+        </div>
+         <!-- Modal san pham di kem -->
+              <div class="modal fade" id="sanphamdikemModal" tabindex="-1" aria-labelledby="sanphamdikemModal"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  
+                  <div class="modal-content p-4">
+                    <div class="md-thongbao">
+                      <button type="button" class="btn-close btn-close-tracuu" data-bs-dismiss="modal"></button>
+                  <div class="row g-3">
+                        <div class="col-6">
+                          <div class="ratio ratio-1x1">
+                            <img data-src="https://www.xuanhoa.vn/wp-content/uploads/2020/02/fo1-bnv-00-555x555.jpg" class="lazyload">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="ratio ratio-1x1">
+                            <img data-src="https://www.xuanhoa.vn/wp-content/uploads/2020/02/fo1-bnv-00-555x555.jpg" class="lazyload">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="ratio ratio-1x1">
+                            <img data-src="https://www.xuanhoa.vn/wp-content/uploads/2020/02/fo1-bnv-00-555x555.jpg" class="lazyload">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="ratio ratio-1x1">
+                            <img data-src="https://www.xuanhoa.vn/wp-content/uploads/2020/02/fo1-bnv-00-555x555.jpg" class="lazyload">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>      
+      <div class="col-12 text-center">
+        <a href="#" class="btn btn-lg btn-primary py-3 px-5 fw-bold mt-2 text-center rounded-pill">Kích hoạt bảo hành</a>
+      </div>
+      
+    </div>
+  </div>
+  {{!-- kich hoạt nhieu san pham --}}
+  <hr class="my-5">
+  <section class='my-5 baohanh'>
+    <div class='container-fluid wrapper my-4'>
+      <div class="row  justify-content-center">
+        
+        <div class="col-lg-10 col-xxl-9 col-12 mx-auto">
+          
+          <h1 class="text-primary fw-bold text-center">KÍCH HOẠT / TRA CỨU BẢO HÀNH</h1>
+          <p class="text-grey-70 text-center">Xem hướng dẫn <a role="button" data-bs-toggle="modal" data-bs-target="#huongdan"
+            class="link-right text-primary">TẠI ĐÂY</a></p>
+          <div class="row">
+            {{!-- btn 1 --}}
+            <div class="col-lg-4">
+              <a role="button" href="#" class="button-dangky d-flex align-items-center ">
+                <div class="dangky-left">
+                  <img data-src="./assets/images/one-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/one-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">KÍCH HOẠT LẺ</span>
+                  <small class="text-grey-70">Đơn lẻ một sản phẩm</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">                  
+                      <img data-src="./assets/images/arrow-right.svg" class="lazyload">                  
+                </div>
+              </a>
+            </div>
+            {{!-- btn-2 --}}
+            <div class="col-lg-4">
+              <a role="button" href="/dangky.html" class="button-dangky d-flex align-items-center active">
+                <div class="dangky-left">
+                  <img data-src="./assets/images/bh-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/bh-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">KÍCH HOẠT NHIỀU</span>
+                  <small class="text-grey-70">Đồng loạt nhiều sản phẩm</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">
+                  <img data-src="./assets/images/arrow-right.svg" class="lazyload">    
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a role="button" href="/dangky.html" class="button-dangky d-flex align-items-center">
+                <div class="dangky-left">
+                   <img data-src="./assets/images/search-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/search-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">Tra cứu</span>
+                  <small class="text-grey-70">Thông tin bảo hành</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">
+                  <img data-src="./assets/images/arrow-right.svg" class="lazyload">  
+                </div>
+              </a>
+            </div>
+            {{!-- Form search --}}
+            <div class="col-lg-6">
+                         
+            <div class="form-tracuu d-flex align-items-center rounded-3 p-1 px-2">
+              <a href="#" class="me-0 me-lg-3 btn btn-outline-grey-30 p-1 lh-1">
+                <img data-src="./assets/images/qr-code.svg" class="lazyload">  
+              </a>
+              <textarea rows="3" class="form-control input-baohanh" type="text" placeholder="Nhập / Quét mã bảo hành trên Tem&#10;Vui lòng nhập mỗi dòng 1 mã bảo hành.&#10;-------------"></textarea>
+              <a role="button" class="d-block d-xl-none m-0 h-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fas fa-2x fa-search text-primary"></i>
+</a>
+              
+            </div>          
+            </div>
+            <div class="col-lg-2 mt-2 mt-lg-0">
+              <div class="d-flex h-100 border border-secondary rounded-3 flex-column align-items-center justify-content-center">
+                <small class="text-grey-70">Tổng số mã</small>
+                <h3 class=" h1 lh-1 m-0 p-1 p-lg-0 text-primary fw-bold">00</h3>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <!-- Button trigger modal -->
+              <a role="button"
+                class="btn btn-primary px-4 fs-5 fw-bold text-uppercase m-0 h-100 align-items-center justify-content-center text-nowrap d-none d-xl-flex"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Xác nhận
+              </a>
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="md-thongbao">
+                      <button type="button" class="btn-close btn-close-tracuu" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                      <div class="modal-body text-center">
+                        <h2 class="display-2 text-primary"> <i class="fas fa-exclamation-triangle"></i></h2>
+                        <h3 class="text-grey-70 fw-bold">THÔNG BÁO</h3>
+                        <h5 class="text-primary">Mã bảo hành đã được kích hoạt</h5>
+                        <p>Vui lòng vào mục <a href="/tracuu.html" class="text-uppercase">tra cứu</a> thông tin bảo hành để xem thông tin!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 text-grey-70 fst-italic text-center mt-2">
+              <span class="text-danger">***</span> Lưu ý: Cào lớp nhũ để quét hoặc nhập dãy số serial trên Tem.
+            </div>
+          </div>         
+
+        </div>
+       <div class="col-lg-10 col-xxl-9 col-12 mt-5 mx-auto">
+         <div class="p-2 btn-xacnhan fs-5 text-center rounded-3 d-block mb-3">
+          Thông Tin Khách hàng
+        </div>
+          <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Tên khách hàng : </label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="name" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Đỗ Ngọc Long">        
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Ngày tháng năm sinh : </label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="21/11/1983">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Giới tính:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Nam">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Số điện thoại:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="0982 222 229">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Email:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="longdodesign@gmail.com">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Khu vực:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Hà Nội">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+        
+        
+       </div>
+      </div>
+    </div>
+  </section>
+    <hr class="my-5">
+   {{!-- step2 --}}
+   <div class="container-fluid wrapper my-4">
+     <div class="row">
+       <div class="col-lg-9 mx-auto">
+         <div class="shadow position-relative rounded-3 p-3 p-xl-4">
+  <div class="row ">
+      <div class="col-lg-12">
+        <div class="p-3 btn-xacnhan fs-4 fw-bold text-center rounded-2 d-block mb-3">
+          Thông tin bảo hành
+        </div>
+        <div class="table-responsive">
+        <table class="table  table-borderless align-middle">
+        <thead>
+          <tr class="align-middle">
+            <th scope="col"  class="text-nowrap"></th>
+            <th scope="col"  class="text-nowrap">Tên sản phẩm</th>
+            <th scope="col"  class="text-nowrap">Mã bảo hành</th>
+            <th scope="col"  class="text-nowrap">Thời hạn bảo hành</th>
+            <th scope="col"  class="text-nowrap">Sản phẩm theo bộ <br> <small>( 02 Tem bảo hành )</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <a href="#" class="text-grey-30"><i class="far fa-trash-alt"></i></a>
+            </th>
+            <td><div class="border p-1 rounded-1 text-nowrap">Bàn học sinh tiểu học BHS-19-05CS</div></td>
+            <td><div class="border p-1 rounded-1 text-nowrap">XH 00001</div></td>
+            <td><div class="border p-1 rounded-1 text-nowrap">365 ngày</div></td>
+            <td>             
+                <a class="d-flex justify-content-center align-items-center text-nowrap" href="#"><span class="check-icon me-2 p-1 active"><i class="fas fa-check"></i></span>
+               <span  class="text-nowrap">Xem chi tiết</span></a>
+            </td>
+          </tr>
+           <tr>
+            <th scope="row">
+              <a href="#" class="text-grey-30"><i class="far fa-trash-alt"></i></a>
+            </th>
+            <td><div class="border p-1 rounded-1 text-nowrap">Bàn học sinh tiểu học BHS-19-05CS</div></td>
+            <td><div class="border p-1 rounded-1 text-nowrap">XH 00001</div></td>
+            <td><div class="border p-1 rounded-1 text-nowrap">365 ngày</div></td>
+            <td>             
+                <a class="d-flex justify-content-center align-items-center text-nowrap" href="#"><span class="check-icon me-2 p-1 "><i class="fas fa-check"></i></span>
+               <span class="text-nowrap">Xem chi tiết</span></a>
+            </td>
+          </tr>
+           <tr>
+            <th scope="row">
+              <a href="#" class="text-grey-30"><i class="far fa-trash-alt"></i></a>
+            </th>
+            <td><div class="border p-1 rounded-1 text-nowrap">Bàn học sinh tiểu học BHS-19-05CS</div></td>
+            <td><div class="border p-1 rounded-1 text-nowrap">XH 00001</div></td>
+            <td><div class="border p-1 rounded-1 text-nowrap">365 ngày</div></td>
+            <td>             
+                <a class="d-flex justify-content-center align-items-center text-nowrap" href="#"><span class="check-icon me-2 p-1 active"><i class="fas fa-check"></i></span>
+               <span  class="text-nowrap">Xem chi tiết</span></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+         <!-- Modal san pham di kem -->
+              <div class="modal fade" id="sanphamdikemModal" tabindex="-1" aria-labelledby="sanphamdikemModal"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  
+                  <div class="modal-content p-4">
+                    <div class="md-thongbao">
+                      <button type="button" class="btn-close btn-close-tracuu" data-bs-dismiss="modal"></button>
+                  <div class="row g-3">
+                        <div class="col-6">
+                          <div class="ratio ratio-1x1">
+                            <img data-src="https://www.xuanhoa.vn/wp-content/uploads/2020/02/fo1-bnv-00-555x555.jpg" class="lazyload">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="ratio ratio-1x1">
+                            <img data-src="https://www.xuanhoa.vn/wp-content/uploads/2020/02/fo1-bnv-00-555x555.jpg" class="lazyload">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="ratio ratio-1x1">
+                            <img data-src="https://www.xuanhoa.vn/wp-content/uploads/2020/02/fo1-bnv-00-555x555.jpg" class="lazyload">
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="ratio ratio-1x1">
+                            <img data-src="https://www.xuanhoa.vn/wp-content/uploads/2020/02/fo1-bnv-00-555x555.jpg" class="lazyload">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>      
+      <div class="col-12 text-center">
+        <a href="#" class="btn btn-lg btn-primary py-3 px-5 fw-bold mt-2 text-center rounded-pill">Kích hoạt bảo hành</a>
+      </div>
+      
+    </div>
+         </div>
+       </div>
+     </div>
+   </div>  
+ <hr class="my-5">
+ {{!-- đăng nhập đại lý --}}
+ <section class='my-5 baohanh'>
+    <div class='container-fluid wrapper my-4'>
+      <div class="row  justify-content-center">
+        
+        <div class="col-lg-10 col-xxl-9 col-12 mx-auto">
+          
+          <h1 class="text-primary fw-bold text-center">KÍCH HOẠT / TRA CỨU BẢO HÀNH</h1>
+          <p class="text-grey-70 text-center">Xem hướng dẫn <a role="button" data-bs-toggle="modal" data-bs-target="#huongdan"
+            class="link-right text-primary">TẠI ĐÂY</a></p>
+          <div class="row">
+            {{!-- btn 1 --}}
+            <div class="col-lg-4">
+              <a role="button" href="#" class="button-dangky d-flex align-items-center ">
+                <div class="dangky-left">
+                  <img data-src="./assets/images/one-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/one-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">KÍCH HOẠT LẺ</span>
+                  <small class="text-grey-70">Đơn lẻ một sản phẩm</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">                  
+                      <img data-src="./assets/images/arrow-right.svg" class="lazyload">                  
+                </div>
+              </a>
+            </div>
+            {{!-- btn-2 --}}
+            <div class="col-lg-4">
+              <a role="button" href="/dangky.html" class="button-dangky d-flex align-items-center active">
+                <div class="dangky-left">
+                  <img data-src="./assets/images/bh-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/bh-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">KÍCH HOẠT NHIỀU</span>
+                  <small class="text-grey-70">Đồng loạt nhiều sản phẩm</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">
+                  <img data-src="./assets/images/arrow-right.svg" class="lazyload">    
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4">
+              <a role="button" href="/dangky.html" class="button-dangky d-flex align-items-center">
+                <div class="dangky-left">
+                   <img data-src="./assets/images/search-s.svg" class="lazyload img-fluid svg-l-1">
+                    <img data-src="./assets/images/search-f.svg" class="lazyload img-fluid svg-l-2">
+                </div>
+                <div class="content d-flex flex-column mx-2">
+                  <span class="fw-bold text-uppercase">Tra cứu</span>
+                  <small class="text-grey-70">Thông tin bảo hành</small>
+                </div>
+                <div class="dangky-right fa-rotate-90">
+                  <img data-src="./assets/images/arrow-right.svg" class="lazyload">  
+                </div>
+              </a>
+            </div>
+            {{!-- Form search --}}
+            <div class="col-lg-6">
+                         
+            <div class="form-tracuu d-flex align-items-center rounded-3 p-1 px-2">
+              <a href="#" class="me-0 me-lg-3 btn btn-outline-grey-30 p-1 lh-1">
+                <img data-src="./assets/images/qr-code.svg" class="lazyload">  
+              </a>
+              <textarea rows="3" class="form-control input-baohanh" type="text" placeholder="Nhập / Quét mã bảo hành trên Tem&#10;Vui lòng nhập mỗi dòng 1 mã bảo hành.&#10;-------------"></textarea>
+              <a role="button" class="d-block d-xl-none m-0 h-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fas fa-2x fa-search text-primary"></i>
+</a>
+              
+            </div>          
+            </div>
+            <div class="col-lg-2 mt-2 mt-lg-0">
+              <div class="d-flex h-100 border border-secondary rounded-3 flex-column align-items-center justify-content-center">
+                <small class="text-grey-70">Tổng số mã</small>
+                <h3 class=" h1 lh-1 m-0 p-1 p-lg-0 text-primary fw-bold">00</h3>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <!-- Button trigger modal -->
+              <a role="button"
+                class="btn btn-primary px-4 fs-5 fw-bold text-uppercase m-0 h-100 align-items-center justify-content-center text-nowrap d-none d-xl-flex"
+                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Xác nhận
+              </a>
+
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="md-thongbao">
+                      <button type="button" class="btn-close btn-close-tracuu" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                      <div class="modal-body text-center">
+                        <h2 class="display-2 text-primary"> <i class="fas fa-exclamation-triangle"></i></h2>
+                        <h3 class="text-grey-70 fw-bold">THÔNG BÁO</h3>
+                        <h5 class="text-primary">Mã bảo hành đã được kích hoạt</h5>
+                        <p>Vui lòng vào mục <a href="/tracuu.html" class="text-uppercase">tra cứu</a> thông tin bảo hành để xem thông tin!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 text-grey-70 fst-italic text-center mt-2">
+              <span class="text-danger">***</span> Lưu ý: Cào lớp nhũ để quét hoặc nhập dãy số serial trên Tem.
+            </div>
+          </div>         
+
+        </div>
+       <div class="col-lg-10 col-xxl-9 col-12 mt-5 mx-auto">
+        <div class="p-3 shadow-sm bg-grey-bh">
+        <div class="row">
+        <div class="col-lg-6">
+           <div class="p-2 btn-xacnhan fs-5 text-center rounded-3 d-block mb-3">
+          Thông Tin đại lý
+        </div>
+           <div class="row mb-1 flex-column flex-lg-row">
+            
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Tên khách hàng : </label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="name" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Đỗ Ngọc Long">        
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Ngày tháng năm sinh : </label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="21/11/1983">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Tài khoản:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Đỗ Tuấn Nam">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Mã đại lý:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="01">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Cấp đại lý:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="cấp 2">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Số điện thoại:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="0982 222 229">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Email:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly  type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="longdodesign@gmail.com">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Khu vực:</label>
+      <div class="col-12 col-lg-7">
+        <input readonly type="text" class="form-control-plaintext fw-bold" id="inputTinhThanh" value="Hà Nội">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+        <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Địa chỉ:</label>
+      <div class="col-12 col-lg-7">
+         <textarea readonly type="text" class="form-control-plaintext fw-bold " id="inputTinhThanh">Số 5 195 Đội Cấn Ba Đình Hà Nội
+        </textarea>
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+        
+        </div>
+          <div class="col-lg-6">
+           <div class="p-2 btn-xacnhan fs-5 text-center rounded-3 d-block mb-3">
+          Thông Tin Khách hàng
+        </div>
+           <div class="row mb-1 flex-column flex-lg-row">
+            
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small"><span class="text-danger me-1">*</span>Tên khách hàng : </label>
+      <div class="col-12 col-lg-7">
+        <input  type="name" class="form-control" id="inputTinhThanh" placeholder="Vui lòng nhập Họ và tên">        
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+        <div class="row mb-1 flex-column flex-lg-row">
+            
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small"><span class="text-danger me-1">*</span>Mã khách hàng : </label>
+      <div class="col-12 col-lg-7">
+        <input  type="name" class="form-control" id="inputTinhThanh" placeholder="Vui lòng nhập mã khách hàng">        
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Ngày tháng năm sinh : </label>
+      <div class="col-12 col-lg-7">
+        <div class="position-relative pass-form">
+          <input type="password" class="form-control" id="inputTinhThanh" placeholder="dd/mm/yyyy">
+          <i class="far fa-calendar-alt position-absolute"></i>          
+        </div>
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small">Giới tính:</label>
+      <div class="col-12 col-lg-7">
+        <select  type="text" class="form-select rounded-0">
+          <option value="Nam">Nam</option>
+          <option value="Nữ">Nữ</option>
+          </select>
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small"><span class="text-danger me-1">*</span>Số điện thoại:</label>
+      <div class="col-12 col-lg-7">
+        <input type="text" class="form-control" id="inputTinhThanh" placeholder="Vui lòng nhập số điện thoại">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small"><span class="text-danger me-1">*</span>Email:</label>
+      <div class="col-12 col-lg-7">
+        <input  type="text" class="form-control" id="inputTinhThanh" placeholder="Vui lòng nhập email">
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+         <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small"><span class="text-danger me-1">*</span>Khu vực:</label>
+      <div class="col-12 col-lg-7">
+        <select class="form-select rounded-0">
+          <option>Chọn Tỉnh / Thành phố</option>
+        </select>
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+        <div class="row mb-1 flex-column flex-lg-row">
+      <label for="inputTinhThanh" class="col-12 col-lg-5 col-form-label small"><span class="text-danger me-1">*</span>Địa chỉ:</label>
+      <div class="col-12 col-lg-7">
+        <textarea type="text" class="form-control" id="inputTinhThanh" placeholder="Vui lòng nhập đẩy đủ phường, xã, thị trấn"></textarea>
+      </div>
+      <div class="col-12"><hr class="mt-1 mb-0 p-0 hr-grey"></div>
+        </div>
+        </div>
+        <div class="col-12 my-3 text-center fw-bold text-primary text-decoration-underline">
+          Cam kết thông tin của quý khách chỉ được Xuân Hòa
+sử dụng với mục đích lưu trữ thông tin bảo hành
+
+        </div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </section>
+    <hr class="my-5">
+   {{!-- step2a --}}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center p-lg-5">
+        <h2 class="display-2 text-green">
+          <i class="fas fa-check-circle"></i>
+        </h2>
+        
+        <h2 class="text-green fw-bold">KÍCH HOẠT BẢO HÀNH THÀNH CÔNG</h2>
+       <p>
+          Cảm ơn quý khách
+  đã sử dụng sản phẩm của chúng tôi !
+       </p>
+      </div>
+    </div>
+  </div>
+  <hr class="my-5">
+   {{!-- step2b --}}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center p-lg-5">
+        <h2 class="display-2 text-green">
+          <i class="fas fa-check-circle"></i>
+        </h2>
+        
+        <h2 class="text-green fw-bold">KÍCH HOẠT BẢO HÀNH THÀNH CÔNG</h2>
+       <p>
+          Đây là sản phẩm có 02 Tem Bảo Hành <br>
+          <span class="text-danger">Thời gian bảo hành được tính theo TEM đầu tiên được kích hoạt</span><br>
+Đề nghị quý khách quét tiếp mã bảo hành
+
+       </p>
+       <div class="col-lg-5 mx-auto mt-4">
+       <a href="#" class="p-3 btn-xacnhan fs-4 text-center rounded-3 d-block mb-2">
+          Tôi không tìm thấy tem còn lại
+        </a>
+       <a class="text-center justify-content-center py-3 btn btn-large btn-tracuu fs-4">Quét Tem còn lại</a>
+       </div>
+      </div>
+    </div>
+  </div>
+  <hr class="my-5">
+   {{!-- step2b --}}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center p-lg-5">
+        <h2 class="display-2 text-green">
+          <i class="fas fa-check-circle"></i>
+        </h2>
+        
+        <h2 class="text-green fw-bold">KÍCH HOẠT BẢO HÀNH THÀNH CÔNG</h2>
+       <p>
+          Trong danh sách vừa kích hoạt có những sản phẩm được dán 02 tem bảo hành <br>
+          <span class="text-danger">Thời gian bảo hành được tính theo TEM đầu tiên được kích hoạt</span><br>
+Đề nghị quý khách quét tiếp mã bảo hành
+
+       </p>
+       <div class="col-lg-5 mx-auto mt-4">
+       <a href="#" class="p-3 btn-xacnhan fs-4 text-center rounded-3 d-block mb-2">
+          Tôi không tìm thấy tem còn lại
+        </a>
+       <a class="text-center justify-content-center py-3 btn btn-large btn-tracuu fs-4">Quét Tem còn lại</a>
+       </div>
+      </div>
+    </div>
+  </div>
+<hr class="my-5">
+ {{!-- Thất bại kích hoạt --}}
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="chinhsachModal" tabindex="-1" aria-labelledby="chinhsachLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold text-primary text-uppercase fs-4" id="chinhsachLabel">Chính sách bảo hành</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>./layouts/footer}}
+
+</body>
+
+</html>

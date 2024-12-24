@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body class="decor">
+  {{>./components/sidebar}}
+  {{>./components/nav}}
+  <div class="wrapper container-fluid bg-breadcrumb">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="#">Bảo hành</a></li>
+        <li class="ms-auto"><a role="button" data-bs-toggle="modal" data-bs-target="#huongdan"
+            class="link-right"><strong>Hướng dẫn</strong><i class="ms-1 far fa-question-circle"></i></a></li>
+      </ol>
+    </nav>
+  </div>
+  <div class="modal fade" id="huongdan" tabindex="-1" aria-labelledby="huongdanLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="huongdanLabel">Hướng dẫn tra cứu - kích hoạt bảo hành</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{!-- step 1 --}}
+
+  <section class='my-5 baohanh'>
+    <div class='container-fluid wrapper my-4'>
+      <div class="bgr-baohanh bg-primary p-4 p-lg-5">
+        <div class="px-0 px-lg-5">
+
+          <h1 class="text-white fw-bold text-center">TRA CỨU THÔNG TIN BẢO HÀNH</h1>
+          <div class="fs-5 d-none d-xl-block text-white my-4">Tất cả sản phẩm Xuân Hòa được kích hoạt bảo hành điện tử ngay sau khi mua.
+            Quý khách vui lòng yêu cầu nơi bán
+            (đại lý, cửa hàng) kích hoạt bảo hành điện tử và có thể kiểm tra thời gian bảo hành thông qua số Seri / Mã
+            tem của sản phẩm.</div>
+       <div class="row align-items-center">
+  <div class="col-lg-4">
+    <div class="form-check fs-5 fw-bold text-white my-2">
+  <input class="form-check-input" checked="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Kích hoạt bảo hành điện tử
+  </label>
+</div>
+<div class="form-check fs-5 fw-bold text-white my-2">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+  <label class="form-check-label" for="flexRadioDefault2">
+    Tra cứu thông tin bảo hành
+  </label>
+</div>
+  </div>
+  <div class="col-lg-8">
+    <div class="form-tracuu d-flex align-items-center">
+      <a href="#" class="me-0 me-lg-3">
+       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.481919 18.6845C6.36718 18.6699 12.2524 18.6699 18.1231 18.6845C18.5466 18.6845 18.678 18.5969 18.678 18.144C18.6634 15.2077 18.6634 12.2713 18.6634 9.34956C18.6634 6.39861 18.6634 3.44765 18.678 0.496696C18.6926 0.146087 18.6342 0 18.2253 0C13.669 0.0146087 9.11266 0 4.55633 0.0146087C2.07371 0.0292174 0.0146036 2.11826 0 4.60174C0 9.14504 0.0146036 13.6737 0 18.217C0 18.5969 0.102225 18.6845 0.481919 18.6845ZM3.50487 4.85009C3.50487 3.95896 3.95758 3.5207 4.863 3.5207C8.13421 3.5207 11.42 3.5353 14.6912 3.50609C15.1293 3.50609 15.1878 3.66678 15.1878 4.032C15.1732 5.81426 15.1732 7.59652 15.1732 9.37878C15.1732 11.1464 15.1586 12.9141 15.1732 14.6817C15.1732 15.0323 15.1147 15.193 14.7058 15.193C11.1426 15.1784 7.56467 15.1784 4.00139 15.193C3.59249 15.193 3.49026 15.0908 3.49026 14.6817C3.51947 11.3948 3.50487 8.12243 3.50487 4.85009Z" fill="#8D8D8D"></path>
+<path d="M23.8915 18.6991C26.8122 18.6845 29.7184 18.6845 32.6391 18.6845C35.6036 18.6845 38.5828 18.6845 41.5473 18.6991C41.9124 18.6991 42 18.5969 42 18.2463C41.9854 13.7176 42 9.17426 41.9854 4.64556C41.9708 2.08904 39.8971 0.0438261 37.3561 0.0292174C32.8289 0 28.3164 0.0146087 23.7893 0C23.4096 0 23.3074 0.0876522 23.3074 0.482087C23.322 6.36939 23.322 12.2567 23.3074 18.1294C23.3074 18.6115 23.468 18.6991 23.8915 18.6991ZM27.265 3.49148C30.58 3.50609 33.895 3.50609 37.21 3.50609C38.0132 3.50609 38.4805 3.95896 38.4805 4.74783C38.4951 8.07861 38.4805 11.4094 38.4951 14.7402C38.4951 15.0762 38.4075 15.1784 38.0716 15.1784C34.4645 15.1638 30.8574 15.1638 27.2503 15.1784C26.8707 15.1784 26.7976 15.0323 26.8122 14.6963C26.8268 12.8995 26.8122 11.088 26.8122 9.29113C26.8122 7.52348 26.8268 5.75583 26.7976 3.98817C26.8122 3.65217 26.8561 3.49148 27.265 3.49148Z" fill="#8D8D8D"></path>
+<path d="M18.1377 23.3155C15.2024 23.3301 12.267 23.3301 9.34631 23.3301C6.39638 23.3301 3.44645 23.3301 0.496523 23.3155C0.102225 23.3155 0 23.4031 0 23.7976C0.0146036 28.3263 0 32.8696 0.0146036 37.3983C0.0292072 39.911 2.08832 41.9854 4.61474 41.9854C9.15647 42 13.6836 41.9854 18.2253 42C18.5758 42 18.6926 41.927 18.6926 41.5471C18.678 35.6452 18.678 29.7433 18.6926 23.8414C18.6926 23.4031 18.5466 23.3155 18.1377 23.3155ZM14.7058 38.5085C11.4054 38.4939 8.11961 38.5085 4.81919 38.4939C3.94298 38.4939 3.50487 38.0557 3.50487 37.1791C3.50487 33.8776 3.50487 30.5906 3.49026 27.2891C3.49026 26.8946 3.60709 26.807 3.98679 26.807C5.76843 26.8216 7.55007 26.8216 9.34631 26.8216C11.128 26.8216 12.9096 26.8362 14.7058 26.807C15.0855 26.807 15.2024 26.9092 15.2024 27.2891C15.1878 30.8536 15.1878 34.4327 15.2024 37.9972C15.1878 38.3771 15.1147 38.5085 14.7058 38.5085Z" fill="#8D8D8D"></path>
+<path d="M35.0049 26.3541C34.9757 25.5068 34.9757 24.6449 35.0049 23.783C35.0195 23.3885 34.9027 23.3009 34.523 23.3009C32.756 23.3155 30.9889 23.3155 29.2219 23.3155C27.4256 23.3155 25.6148 23.3155 23.8185 23.3155C23.5119 23.3155 23.3074 23.3155 23.322 23.7391C23.3366 25.8136 23.3366 27.888 23.322 29.9624C23.322 30.2546 23.4389 30.3277 23.7017 30.3277C24.6071 30.313 25.5272 30.313 26.4326 30.3277C26.7393 30.3277 26.8415 30.24 26.8269 29.9332C26.8123 29.1005 26.8561 28.2532 26.8123 27.4205C26.7831 26.9384 26.9437 26.807 27.4256 26.8216C29.7914 26.8508 32.1572 26.8216 34.523 26.8362C34.8881 26.8362 35.0195 26.7485 35.0049 26.3541Z" fill="#8D8D8D"></path>
+<path d="M41.9854 35.2216C42 34.9586 41.8102 35.0024 41.6495 35.0024C40.7003 35.0024 39.751 35.0024 38.8164 34.9878C38.5535 34.9878 38.4805 35.0755 38.4805 35.3238C38.4951 35.9228 38.4951 36.5217 38.4805 37.1207C38.4805 38.0556 38.057 38.4793 37.1078 38.4793C34.9903 38.4793 32.8873 38.4939 30.7698 38.4793C30.4339 38.4793 30.2879 38.5377 30.3025 38.9176C30.3317 39.8087 30.3317 40.6998 30.3025 41.591C30.3025 41.9123 30.4047 41.9854 30.7114 41.9854C31.8797 41.9708 33.048 41.9854 34.2017 41.9854C35.2385 41.9854 36.2754 41.9854 37.3122 41.9854C39.4736 41.9854 41.3574 40.5099 41.854 38.4209C42.1022 37.369 41.9416 36.288 41.9854 35.2216Z" fill="#8D8D8D"></path>
+<path d="M38.904 30.3277C39.7949 30.2984 40.6857 30.313 41.5765 30.3277C41.8686 30.3277 41.9854 30.2692 41.9854 29.9478C41.9708 27.8734 41.9708 25.799 41.9854 23.7245C41.9854 23.4177 41.8978 23.3155 41.5911 23.3301C40.7149 23.3447 39.8387 23.3593 38.9624 23.3301C38.5828 23.3155 38.4513 23.4177 38.4659 23.8122C38.4951 24.8202 38.4805 25.8136 38.4805 26.8216C38.4805 27.8588 38.4951 28.896 38.4659 29.9332C38.4659 30.2546 38.5682 30.3423 38.904 30.3277Z" fill="#8D8D8D"></path>
+<path d="M26.3595 34.9878C25.4687 35.017 24.5779 35.0024 23.6871 34.9878C23.4096 34.9878 23.3074 35.0463 23.3074 35.353C23.322 37.4421 23.322 39.5457 23.3074 41.6348C23.3074 41.927 23.4096 42 23.6871 42C24.5925 41.9854 25.5125 41.9854 26.4179 42C26.7246 42 26.8268 41.927 26.8122 41.6056C26.7976 40.5683 26.8122 39.5311 26.8122 38.4939C26.8122 37.4713 26.7976 36.4487 26.8268 35.4407C26.8414 35.0755 26.71 34.9878 26.3595 34.9878Z" fill="#8D8D8D"></path>
+<path d="M30.6822 35.0024C31.3394 34.9878 31.9965 35.0024 32.6537 35.0024C33.3109 35.0024 33.968 34.9878 34.6252 35.0024C34.8881 35.0024 35.0195 34.9732 35.0049 34.6518C34.9903 33.3224 34.9903 31.993 35.0049 30.6637C35.0049 30.3569 34.8881 30.2984 34.6252 30.313C33.3109 30.3277 32.0111 30.3277 30.6968 30.313C30.4048 30.313 30.3317 30.4153 30.3317 30.6929C30.3463 32.0077 30.3463 33.3078 30.3317 34.6226C30.3025 34.9148 30.3901 35.017 30.6822 35.0024Z" fill="#8D8D8D"></path>
+<path d="M6.99512 11.3363C6.99512 11.5701 7.03893 11.687 7.331 11.687C8.65993 11.6723 9.98886 11.6723 11.3178 11.687C11.6099 11.7016 11.6829 11.5847 11.6829 11.3071C11.6829 9.99234 11.6683 8.69217 11.6829 7.37739C11.6829 7.09982 11.6099 6.99756 11.3178 6.99756C10.6606 7.01217 10.0035 6.99756 9.3463 6.99756C8.68914 6.99756 8.03197 7.01217 7.37481 6.99756C7.06814 6.98295 6.99512 7.09982 6.99512 7.392C7.00972 8.70678 7.00972 10.0216 6.99512 11.3363Z" fill="#8D8D8D"></path>
+<path d="M30.317 11.3363C30.3024 11.5993 30.4047 11.687 30.6675 11.687C31.9964 11.6723 33.3254 11.6723 34.6543 11.687C34.961 11.687 35.0048 11.5555 35.0048 11.2925C34.9902 10.6351 35.0048 9.97774 35.0048 9.32035C35.0048 8.66296 35.0048 8.00556 35.0048 7.34817C35.0048 7.11443 34.9902 6.98296 34.6981 6.98296C33.3546 6.99756 32.0111 6.99756 30.6529 6.98296C30.3754 6.98296 30.317 7.08522 30.317 7.33356C30.317 8.67756 30.317 10.007 30.317 11.3363Z" fill="#8D8D8D"></path>
+<path d="M11.2886 30.313C9.97426 30.3277 8.67453 30.3277 7.36021 30.313C7.06814 30.313 6.99512 30.4153 6.99512 30.6929C7.00972 32.0077 7.00972 33.3078 6.99512 34.6226C6.99512 34.8856 7.03893 35.0024 7.3456 35.0024C8.67453 34.9878 10.0035 34.9878 11.3324 35.0024C11.6537 35.0024 11.6829 34.871 11.6829 34.608C11.6683 33.9506 11.6829 33.2932 11.6829 32.6358C11.6829 31.993 11.6683 31.3649 11.6829 30.7221C11.6975 30.4445 11.6245 30.313 11.2886 30.313Z" fill="#8D8D8D"></path>
+</svg>
+
+
+      </a>
+      <input class="form-control form-control-lg input-baohanh" type="text" placeholder="Quét mã QR hoặc nhập dãy số bảo hành điện tử trên tem">
+      <a class="btn px-4 btn-tracuu fs-5 fw-bold text-uppercase ms-0 ms-lg-3 text-nowrap d-none d-xl-flex" href="#">        
+      
+          <span class="me-2"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M31.065 28.935L25.965 23.85C27.6105 21.7537 28.5033 19.165 28.5 16.5C28.5 14.1266 27.7962 11.8065 26.4776 9.83316C25.1591 7.85977 23.2849 6.3217 21.0922 5.41345C18.8995 4.50519 16.4867 4.26755 14.1589 4.73058C11.8312 5.1936 9.69295 6.33649 8.01472 8.01472C6.33649 9.69295 5.1936 11.8311 4.73058 14.1589C4.26756 16.4867 4.5052 18.8995 5.41345 21.0922C6.3217 23.2849 7.85977 25.1591 9.83316 26.4776C11.8066 27.7962 14.1266 28.5 16.5 28.5C19.165 28.5033 21.7537 27.6105 23.85 25.965L28.935 31.065C29.0745 31.2056 29.2404 31.3172 29.4231 31.3933C29.6059 31.4695 29.802 31.5087 30 31.5087C30.198 31.5087 30.3941 31.4695 30.5769 31.3933C30.7597 31.3172 30.9256 31.2056 31.065 31.065C31.2056 30.9255 31.3172 30.7596 31.3933 30.5769C31.4695 30.3941 31.5087 30.198 31.5087 30C31.5087 29.802 31.4695 29.6059 31.3933 29.4231C31.3172 29.2403 31.2056 29.0744 31.065 28.935V28.935ZM7.50001 16.5C7.50001 14.72 8.02785 12.9799 9.01678 11.4999C10.0057 10.0198 11.4113 8.86627 13.0559 8.18508C14.7004 7.50389 16.51 7.32566 18.2558 7.67293C20.0016 8.0202 21.6053 8.87737 22.864 10.136C24.1226 11.3947 24.9798 12.9984 25.3271 14.7442C25.6743 16.49 25.4961 18.2996 24.8149 19.9441C24.1337 21.5887 22.9802 22.9943 21.5001 23.9832C20.0201 24.9722 18.28 25.5 16.5 25.5C14.1131 25.5 11.8239 24.5518 10.136 22.864C8.44822 21.1761 7.50001 18.8869 7.50001 16.5Z" fill="white"></path>
+  </svg>
+  
+  
+  </span>Tra cứu
+      
+      
+       </a>
+        <a class="d-block d-xl-none" href="#"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.75 8.75H3.5V7H8.75V8.75ZM22.75 17.5C19.8555 17.5 17.5 19.8555 17.5 22.75C17.5 25.6445 19.8555 28 22.75 28C25.6445 28 28 25.6445 28 22.75C28 19.8555 25.6445 17.5 22.75 17.5ZM42 10.5V36.75H0V10.5H10.3775C11.5482 10.5 12.6402 9.9155 13.2895 8.94075L15.75 5.25H29.75L32.2105 8.94075C32.8598 9.9155 33.9517 10.5 35.1225 10.5H42ZM8.75 17.5C8.75 16.534 7.96775 15.75 7 15.75C6.03225 15.75 5.25 16.534 5.25 17.5C5.25 18.466 6.03225 19.25 7 19.25C7.96775 19.25 8.75 18.466 8.75 17.5ZM31.5 22.75C31.5 17.9183 27.5817 14 22.75 14C17.9183 14 14 17.9183 14 22.75C14 27.5817 17.9183 31.5 22.75 31.5C27.5817 31.5 31.5 27.5817 31.5 22.75Z" fill="#CC2027"></path>
+</svg>
+</a>
+    </div>
+  </div>
+    
+</div>
+ <div class="fs-5 d-block d-xl-none text-white my-4">Tất cả sản phẩm Xuân Hòa được kích hoạt bảo hành điện tử ngay sau khi mua.
+            Quý khách vui lòng yêu cầu nơi bán
+            (đại lý, cửa hàng) kích hoạt bảo hành điện tử và có thể kiểm tra thời gian bảo hành thông qua số Seri / Mã
+            tem của sản phẩm.</div>
+          <div class="text-center text-lg-end mt-4"><a role="button" class="link-chinhsach" data-bs-toggle="modal"
+              data-bs-target="#chinhsachModal">Chính sách bảo hành cho bạn</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{!-- step 2 --}}
+  <section class='my-5 baohanh'>
+    <div class='container-fluid wrapper my-4'>
+      <div class="bgr-baohanh mb-4">
+        <div class="">
+
+          <h1 class="text-white fw-bold">TRA CỨU THÔNG TIN BẢO HÀNH</h1>
+          <div class="row align-items-center">
+  <div class="col-lg-4">
+    <div class="form-check fs-5 fw-bold  my-2">
+  <input class="form-check-input" checked="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Kích hoạt bảo hành điện tử
+  </label>
+</div>
+<div class="form-check fs-5 fw-bold my-2">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+  <label class="form-check-label" for="flexRadioDefault2">
+    Tra cứu thông tin bảo hành
+  </label>
+</div>
+  </div>
+  <div class="col-lg-8">
+    <div class="form-tracuu d-flex align-items-center">
+      <a href="#" class="me-0 me-lg-3">
+       <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.481919 18.6845C6.36718 18.6699 12.2524 18.6699 18.1231 18.6845C18.5466 18.6845 18.678 18.5969 18.678 18.144C18.6634 15.2077 18.6634 12.2713 18.6634 9.34956C18.6634 6.39861 18.6634 3.44765 18.678 0.496696C18.6926 0.146087 18.6342 0 18.2253 0C13.669 0.0146087 9.11266 0 4.55633 0.0146087C2.07371 0.0292174 0.0146036 2.11826 0 4.60174C0 9.14504 0.0146036 13.6737 0 18.217C0 18.5969 0.102225 18.6845 0.481919 18.6845ZM3.50487 4.85009C3.50487 3.95896 3.95758 3.5207 4.863 3.5207C8.13421 3.5207 11.42 3.5353 14.6912 3.50609C15.1293 3.50609 15.1878 3.66678 15.1878 4.032C15.1732 5.81426 15.1732 7.59652 15.1732 9.37878C15.1732 11.1464 15.1586 12.9141 15.1732 14.6817C15.1732 15.0323 15.1147 15.193 14.7058 15.193C11.1426 15.1784 7.56467 15.1784 4.00139 15.193C3.59249 15.193 3.49026 15.0908 3.49026 14.6817C3.51947 11.3948 3.50487 8.12243 3.50487 4.85009Z" fill="#8D8D8D"></path>
+<path d="M23.8915 18.6991C26.8122 18.6845 29.7184 18.6845 32.6391 18.6845C35.6036 18.6845 38.5828 18.6845 41.5473 18.6991C41.9124 18.6991 42 18.5969 42 18.2463C41.9854 13.7176 42 9.17426 41.9854 4.64556C41.9708 2.08904 39.8971 0.0438261 37.3561 0.0292174C32.8289 0 28.3164 0.0146087 23.7893 0C23.4096 0 23.3074 0.0876522 23.3074 0.482087C23.322 6.36939 23.322 12.2567 23.3074 18.1294C23.3074 18.6115 23.468 18.6991 23.8915 18.6991ZM27.265 3.49148C30.58 3.50609 33.895 3.50609 37.21 3.50609C38.0132 3.50609 38.4805 3.95896 38.4805 4.74783C38.4951 8.07861 38.4805 11.4094 38.4951 14.7402C38.4951 15.0762 38.4075 15.1784 38.0716 15.1784C34.4645 15.1638 30.8574 15.1638 27.2503 15.1784C26.8707 15.1784 26.7976 15.0323 26.8122 14.6963C26.8268 12.8995 26.8122 11.088 26.8122 9.29113C26.8122 7.52348 26.8268 5.75583 26.7976 3.98817C26.8122 3.65217 26.8561 3.49148 27.265 3.49148Z" fill="#8D8D8D"></path>
+<path d="M18.1377 23.3155C15.2024 23.3301 12.267 23.3301 9.34631 23.3301C6.39638 23.3301 3.44645 23.3301 0.496523 23.3155C0.102225 23.3155 0 23.4031 0 23.7976C0.0146036 28.3263 0 32.8696 0.0146036 37.3983C0.0292072 39.911 2.08832 41.9854 4.61474 41.9854C9.15647 42 13.6836 41.9854 18.2253 42C18.5758 42 18.6926 41.927 18.6926 41.5471C18.678 35.6452 18.678 29.7433 18.6926 23.8414C18.6926 23.4031 18.5466 23.3155 18.1377 23.3155ZM14.7058 38.5085C11.4054 38.4939 8.11961 38.5085 4.81919 38.4939C3.94298 38.4939 3.50487 38.0557 3.50487 37.1791C3.50487 33.8776 3.50487 30.5906 3.49026 27.2891C3.49026 26.8946 3.60709 26.807 3.98679 26.807C5.76843 26.8216 7.55007 26.8216 9.34631 26.8216C11.128 26.8216 12.9096 26.8362 14.7058 26.807C15.0855 26.807 15.2024 26.9092 15.2024 27.2891C15.1878 30.8536 15.1878 34.4327 15.2024 37.9972C15.1878 38.3771 15.1147 38.5085 14.7058 38.5085Z" fill="#8D8D8D"></path>
+<path d="M35.0049 26.3541C34.9757 25.5068 34.9757 24.6449 35.0049 23.783C35.0195 23.3885 34.9027 23.3009 34.523 23.3009C32.756 23.3155 30.9889 23.3155 29.2219 23.3155C27.4256 23.3155 25.6148 23.3155 23.8185 23.3155C23.5119 23.3155 23.3074 23.3155 23.322 23.7391C23.3366 25.8136 23.3366 27.888 23.322 29.9624C23.322 30.2546 23.4389 30.3277 23.7017 30.3277C24.6071 30.313 25.5272 30.313 26.4326 30.3277C26.7393 30.3277 26.8415 30.24 26.8269 29.9332C26.8123 29.1005 26.8561 28.2532 26.8123 27.4205C26.7831 26.9384 26.9437 26.807 27.4256 26.8216C29.7914 26.8508 32.1572 26.8216 34.523 26.8362C34.8881 26.8362 35.0195 26.7485 35.0049 26.3541Z" fill="#8D8D8D"></path>
+<path d="M41.9854 35.2216C42 34.9586 41.8102 35.0024 41.6495 35.0024C40.7003 35.0024 39.751 35.0024 38.8164 34.9878C38.5535 34.9878 38.4805 35.0755 38.4805 35.3238C38.4951 35.9228 38.4951 36.5217 38.4805 37.1207C38.4805 38.0556 38.057 38.4793 37.1078 38.4793C34.9903 38.4793 32.8873 38.4939 30.7698 38.4793C30.4339 38.4793 30.2879 38.5377 30.3025 38.9176C30.3317 39.8087 30.3317 40.6998 30.3025 41.591C30.3025 41.9123 30.4047 41.9854 30.7114 41.9854C31.8797 41.9708 33.048 41.9854 34.2017 41.9854C35.2385 41.9854 36.2754 41.9854 37.3122 41.9854C39.4736 41.9854 41.3574 40.5099 41.854 38.4209C42.1022 37.369 41.9416 36.288 41.9854 35.2216Z" fill="#8D8D8D"></path>
+<path d="M38.904 30.3277C39.7949 30.2984 40.6857 30.313 41.5765 30.3277C41.8686 30.3277 41.9854 30.2692 41.9854 29.9478C41.9708 27.8734 41.9708 25.799 41.9854 23.7245C41.9854 23.4177 41.8978 23.3155 41.5911 23.3301C40.7149 23.3447 39.8387 23.3593 38.9624 23.3301C38.5828 23.3155 38.4513 23.4177 38.4659 23.8122C38.4951 24.8202 38.4805 25.8136 38.4805 26.8216C38.4805 27.8588 38.4951 28.896 38.4659 29.9332C38.4659 30.2546 38.5682 30.3423 38.904 30.3277Z" fill="#8D8D8D"></path>
+<path d="M26.3595 34.9878C25.4687 35.017 24.5779 35.0024 23.6871 34.9878C23.4096 34.9878 23.3074 35.0463 23.3074 35.353C23.322 37.4421 23.322 39.5457 23.3074 41.6348C23.3074 41.927 23.4096 42 23.6871 42C24.5925 41.9854 25.5125 41.9854 26.4179 42C26.7246 42 26.8268 41.927 26.8122 41.6056C26.7976 40.5683 26.8122 39.5311 26.8122 38.4939C26.8122 37.4713 26.7976 36.4487 26.8268 35.4407C26.8414 35.0755 26.71 34.9878 26.3595 34.9878Z" fill="#8D8D8D"></path>
+<path d="M30.6822 35.0024C31.3394 34.9878 31.9965 35.0024 32.6537 35.0024C33.3109 35.0024 33.968 34.9878 34.6252 35.0024C34.8881 35.0024 35.0195 34.9732 35.0049 34.6518C34.9903 33.3224 34.9903 31.993 35.0049 30.6637C35.0049 30.3569 34.8881 30.2984 34.6252 30.313C33.3109 30.3277 32.0111 30.3277 30.6968 30.313C30.4048 30.313 30.3317 30.4153 30.3317 30.6929C30.3463 32.0077 30.3463 33.3078 30.3317 34.6226C30.3025 34.9148 30.3901 35.017 30.6822 35.0024Z" fill="#8D8D8D"></path>
+<path d="M6.99512 11.3363C6.99512 11.5701 7.03893 11.687 7.331 11.687C8.65993 11.6723 9.98886 11.6723 11.3178 11.687C11.6099 11.7016 11.6829 11.5847 11.6829 11.3071C11.6829 9.99234 11.6683 8.69217 11.6829 7.37739C11.6829 7.09982 11.6099 6.99756 11.3178 6.99756C10.6606 7.01217 10.0035 6.99756 9.3463 6.99756C8.68914 6.99756 8.03197 7.01217 7.37481 6.99756C7.06814 6.98295 6.99512 7.09982 6.99512 7.392C7.00972 8.70678 7.00972 10.0216 6.99512 11.3363Z" fill="#8D8D8D"></path>
+<path d="M30.317 11.3363C30.3024 11.5993 30.4047 11.687 30.6675 11.687C31.9964 11.6723 33.3254 11.6723 34.6543 11.687C34.961 11.687 35.0048 11.5555 35.0048 11.2925C34.9902 10.6351 35.0048 9.97774 35.0048 9.32035C35.0048 8.66296 35.0048 8.00556 35.0048 7.34817C35.0048 7.11443 34.9902 6.98296 34.6981 6.98296C33.3546 6.99756 32.0111 6.99756 30.6529 6.98296C30.3754 6.98296 30.317 7.08522 30.317 7.33356C30.317 8.67756 30.317 10.007 30.317 11.3363Z" fill="#8D8D8D"></path>
+<path d="M11.2886 30.313C9.97426 30.3277 8.67453 30.3277 7.36021 30.313C7.06814 30.313 6.99512 30.4153 6.99512 30.6929C7.00972 32.0077 7.00972 33.3078 6.99512 34.6226C6.99512 34.8856 7.03893 35.0024 7.3456 35.0024C8.67453 34.9878 10.0035 34.9878 11.3324 35.0024C11.6537 35.0024 11.6829 34.871 11.6829 34.608C11.6683 33.9506 11.6829 33.2932 11.6829 32.6358C11.6829 31.993 11.6683 31.3649 11.6829 30.7221C11.6975 30.4445 11.6245 30.313 11.2886 30.313Z" fill="#8D8D8D"></path>
+</svg>
+
+
+      </a>
+      <input class="form-control form-control-lg input-baohanh" type="text" placeholder="Quét mã QR hoặc nhập dãy số bảo hành điện tử trên tem">
+      <a class="btn px-4 btn-tracuu fs-5 fw-bold text-uppercase ms-0 ms-lg-3 text-nowrap d-none d-xl-flex" href="#">        
+      
+          <span class="me-2"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M31.065 28.935L25.965 23.85C27.6105 21.7537 28.5033 19.165 28.5 16.5C28.5 14.1266 27.7962 11.8065 26.4776 9.83316C25.1591 7.85977 23.2849 6.3217 21.0922 5.41345C18.8995 4.50519 16.4867 4.26755 14.1589 4.73058C11.8312 5.1936 9.69295 6.33649 8.01472 8.01472C6.33649 9.69295 5.1936 11.8311 4.73058 14.1589C4.26756 16.4867 4.5052 18.8995 5.41345 21.0922C6.3217 23.2849 7.85977 25.1591 9.83316 26.4776C11.8066 27.7962 14.1266 28.5 16.5 28.5C19.165 28.5033 21.7537 27.6105 23.85 25.965L28.935 31.065C29.0745 31.2056 29.2404 31.3172 29.4231 31.3933C29.6059 31.4695 29.802 31.5087 30 31.5087C30.198 31.5087 30.3941 31.4695 30.5769 31.3933C30.7597 31.3172 30.9256 31.2056 31.065 31.065C31.2056 30.9255 31.3172 30.7596 31.3933 30.5769C31.4695 30.3941 31.5087 30.198 31.5087 30C31.5087 29.802 31.4695 29.6059 31.3933 29.4231C31.3172 29.2403 31.2056 29.0744 31.065 28.935V28.935ZM7.50001 16.5C7.50001 14.72 8.02785 12.9799 9.01678 11.4999C10.0057 10.0198 11.4113 8.86627 13.0559 8.18508C14.7004 7.50389 16.51 7.32566 18.2558 7.67293C20.0016 8.0202 21.6053 8.87737 22.864 10.136C24.1226 11.3947 24.9798 12.9984 25.3271 14.7442C25.6743 16.49 25.4961 18.2996 24.8149 19.9441C24.1337 21.5887 22.9802 22.9943 21.5001 23.9832C20.0201 24.9722 18.28 25.5 16.5 25.5C14.1131 25.5 11.8239 24.5518 10.136 22.864C8.44822 21.1761 7.50001 18.8869 7.50001 16.5Z" fill="white"></path>
+  </svg>
+  
+  
+  </span>Tra cứu
+      
+      
+       </a>
+        <a class="d-block d-xl-none" href="#"><svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.75 8.75H3.5V7H8.75V8.75ZM22.75 17.5C19.8555 17.5 17.5 19.8555 17.5 22.75C17.5 25.6445 19.8555 28 22.75 28C25.6445 28 28 25.6445 28 22.75C28 19.8555 25.6445 17.5 22.75 17.5ZM42 10.5V36.75H0V10.5H10.3775C11.5482 10.5 12.6402 9.9155 13.2895 8.94075L15.75 5.25H29.75L32.2105 8.94075C32.8598 9.9155 33.9517 10.5 35.1225 10.5H42ZM8.75 17.5C8.75 16.534 7.96775 15.75 7 15.75C6.03225 15.75 5.25 16.534 5.25 17.5C5.25 18.466 6.03225 19.25 7 19.25C7.96775 19.25 8.75 18.466 8.75 17.5ZM31.5 22.75C31.5 17.9183 27.5817 14 22.75 14C17.9183 14 14 17.9183 14 22.75C14 27.5817 17.9183 31.5 22.75 31.5C27.5817 31.5 31.5 27.5817 31.5 22.75Z" fill="#CC2027"></path>
+</svg>
+</a>
+    </div>
+  </div>
+    
+</div>
+
+        </div>
+      </div>
+      {{!-- product san pham --}}
+      <div class="row">
+        <div class="col-lg-7 col-xxl-8">
+
+          <div class='row g-2 g-md-3 g-xl-4 mt-0 masonry-grid d-none d-xl-block' id='gallery-product'>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="Vestibulum lobortis ultricies ipsum, a maximus ligula dignissim in. Sed consectetur tellus egestas, consequat dolor at, tempus augue. "
+                  data-fancybox="gallery" href="https://lipsum.app/id/1/800x450">
+                  <img class="w-100" src="https://lipsum.app/id/1/200x150" />
+                </a>
+
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="Short caption" data-fancybox="gallery" href="https://lipsum.app/id/2/800x450">
+                  <img class="w-100" src="https://lipsum.app/id/2/200x150" />
+                </a>
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/3/800x450">
+                  <img class="w-100" src="https://lipsum.app/id/3/200x150" />
+                </a>
+              </div>
+            </div>
+
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/4/800x450">
+                  <img class="w-100" src="https://lipsum.app/id/4/200x150" />
+                </a>
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/5/800x450">
+                  <img class="w-100" src="https://lipsum.app/id/5/200x150" />
+                </a>
+
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/ /800x450">
+                  <img class="w-100" src="https://lipsum.app/id/6/200x150" />
+                </a>
+              </div>
+            </div>
+            <div class='item-product  portfolio-item col-xxl-6 col-lg-6 col-6 col-sm-6'>
+              <div class='card rounded-0 border-0'>
+                <a data-caption="" data-fancybox="gallery" href="https://lipsum.app/id/7/800x450">
+                  <img class="w-100" src="https://lipsum.app/id/7/200x150" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-block d-xl-none">
+            <div class="swiper-container one-product">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="ratio ratio-1x1 overflow-hidden">
+                    <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ratio ratio-1x1 overflow-hidden">
+                    <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                  </div>
+                </div>
+              </div>
+              <!-- Add Arrows -->
+            </div>
+            <div class="swiper-container mt-3 thumbs-for-one-product">
+              <div class="swiper-wrapper mb-4">
+                <div class="swiper-slide">
+                  <div class="ratio ratio-1x1 overflow-hidden">
+                    <img data-src="https://swiperjs.com/demos/images/nature-1.jpg" alt="#" class="w-100 lazyload">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ratio ratio-1x1 overflow-hidden">
+                    <img data-src="https://swiperjs.com/demos/images/nature-2.jpg" alt="#" class="w-100 lazyload">
+                  </div>
+                </div>
+
+              </div>
+              <!-- If we need scrollbar -->
+              <div class='swiper-scrollbar'></div>
+            </div>
+            <div class='swiper-container swiper-sanpham'>
+
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-5  col-xxl-4 pt-4">
+          <div class="px-xl-4 px-0">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+              <h5 class="text-primary fw-bold text-uppercase">Thông tin sản phẩm</h5>
+              <a href="#" class="btn btn-sm btn-primary">Xem chi tiết</a>
+            </div>
+            <div class="tooltip-badge w-100 mb-2">
+              News
+            </div>
+            <div class="d-lg-flex d-block flex-lg-nowrap align-content-start">
+
+              <div class="info-product">
+
+                <h1 class="name h4 m-0">
+                  Ghế Sopha nhập khẩu Nga
+                </h1>
+                <div class="dec text-grey-70 mb-2">
+                  Mầu sắc tuỳ chọn, handmake tại Slovakia
+                </div>
+                <div class="fs-6 code text-grey">GX - 12345</div>
+                <div class="d-flex align-items-center">
+                  <div class="stars d-flex">
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 0L9.05725 4.16844L13.6574 4.83688L10.3287 8.08156L11.1145 12.6631L7 10.5L2.8855 12.6631L3.6713 8.08156L0.342604 4.83688L4.94275 4.16844L7 0Z"
+                        fill="#C62127"></path>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 0L9.05725 4.16844L13.6574 4.83688L10.3287 8.08156L11.1145 12.6631L7 10.5L2.8855 12.6631L3.6713 8.08156L0.342604 4.83688L4.94275 4.16844L7 0Z"
+                        fill="#C62127"></path>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 0L9.05725 4.16844L13.6574 4.83688L10.3287 8.08156L11.1145 12.6631L7 10.5L2.8855 12.6631L3.6713 8.08156L0.342604 4.83688L4.94275 4.16844L7 0Z"
+                        fill="#C62127"></path>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 0L9.05725 4.16844L13.6574 4.83688L10.3287 8.08156L11.1145 12.6631L7 10.5L2.8855 12.6631L3.6713 8.08156L0.342604 4.83688L4.94275 4.16844L7 0Z"
+                        fill="#C62127"></path>
+                    </svg>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7 0L9.05725 4.16844L13.6574 4.83688L10.3287 8.08156L11.1145 12.6631L7 10.5L2.8855 12.6631L3.6713 8.08156L0.342604 4.83688L4.94275 4.16844L7 0Z"
+                        fill="#C62127"></path>
+                    </svg>
+
+                  </div>
+                  <div class="ms-3 text-grey-70">(126)</div>
+                </div>
+              </div>
+              <div class="price ms-xl-5 ms-0 mt-3 d-flex d-lg-block justify-content-between align-items-center mt-xl-0">
+                <p class="small mb-0 mb-xl-1 text-grey-70 ">Giá tham khảo</p>
+                <h2 class="h4 text-primary m-0 fw-bold">1.350.000<span class="donvi">đ</span></h2>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush my-4">
+              <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+                <div class="fw-bold me-3">Kích thước</div>
+                <div class="thongso  d-flex d-flex justify-content-xl-end justify-content-start flex-wrap">
+                  <a type="button" class="active btn  ms-2 rounded-0 p-2" href="#">D100 x R55 x C75cm</a>
+                  <a type="button" class="btn  ms-2 rounded-0 p-2" href="#">D120 x R55 x C75cm</a>
+                </div>
+              </li>
+              <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+                <div class="fw-bold me-3">Vật liệu</div>
+                <div class="thongso d-flex justify-content-xl-end justify-content-start flex-wrap">
+                  <a type="button" class="btn active  ms-2 rounded-0 p-2" href="#">Lưới vải</a>
+                  <a type="button" class="btn  ms-2 rounded-0 p-2" href="#">Bọc da</a>
+                </div>
+              </li>
+              <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+                <div class="fw-bold me-3">Loại hàng</div>
+                <div class="thongso  d-flex justify-content-end">
+                  <a type="button" class="btn active ms-2 rounded-0 p-2" href="#">Hàng có sẵn</a>
+                </div>
+              </li>
+              <li
+                class="list-group-item align-items-center px-0 d-flex flex-wrap flex-lg-nowrap justify-content-between">
+                <div class="fw-bold me-3 text-nowrap">Mầu sắc</div>
+                <div class="thongso d-flex justify-content-xl-end justify-content-start mausac flex-wrap">
+                  <a type="button" class="btn p-1 rounded-0 active ms-2 mw-20" href="#">
+                    <img class="img-fluid lazyload"
+                      data-src="https://www.ikea.com/us/en/images/products/yttervag-four-poster-bed-frame-black-luroey__1014360_pe829628_s5.jpg?f=xu"
+                      alt="Four-poster bed frame, Queen, black"></a>
+                  <a type="button" class="btn p-1 rounded-0 ms-2 mw-20" href="#">
+                    <img class="img-fluid lazyload"
+                      data-src="https://www.ikea.com/us/en/images/products/yttervag-four-poster-bed-frame-black-luroey__1014360_pe829628_s5.jpg?f=xu"
+                      alt="Four-poster bed frame, Queen, black"></a>
+                  <a type="button" class="btn p-1 rounded-0 ms-2 mw-20" href="#">
+                    <img class="img-fluid lazyload"
+                      data-src="https://www.ikea.com/us/en/images/products/yttervag-four-poster-bed-frame-black-luroey__1014360_pe829628_s5.jpg?f=xu"
+                      alt="Four-poster bed frame, Queen, black"></a>
+                  <a type="button" class="btn p-1 rounded-0 ms-2 mw-20" href="#">
+                    <img class="img-fluid lazyload"
+                      data-src="https://www.ikea.com/us/en/images/products/yttervag-four-poster-bed-frame-black-luroey__1014360_pe829628_s5.jpg?f=xu"
+                      alt="Four-poster bed frame, Queen, black"></a>
+                </div>
+              </li>
+            </ul>
+            <a href="#" role="button" class="btn btn-lg rounded-pill fw-bold btn-primary d-block text-center fs-5 py-3">ÁP DỤNG BẢO HÀNH ĐIỆN TỬ</a>
+            {{!-- <p class="lead">Nhập số điện thoại của bạn để hiển thị thông tin bảo hành</p>
+
+            <div
+              class="fs-5 w-100 d-flex align-items-center justify-content-between text-center btn btn-primary btn-lg rounded-pill py-3 fw-bold mx-auto">
+              <div class="p-2"><i class="fas fa-mobile-alt fa-lg"></i> </div>
+              <input class="bg-transparent border-0 form-control form-control-lg text-white" type="text"
+                placeholder="Ex: 0983 xxx xxx">
+              <span class="me-2"><svg width="36" height="36" viewBox="0 0 36 36" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M31.065 28.935L25.965 23.85C27.6105 21.7537 28.5033 19.165 28.5 16.5C28.5 14.1266 27.7962 11.8065 26.4776 9.83316C25.1591 7.85977 23.2849 6.3217 21.0922 5.41345C18.8995 4.50519 16.4867 4.26755 14.1589 4.73058C11.8312 5.1936 9.69295 6.33649 8.01472 8.01472C6.33649 9.69295 5.1936 11.8311 4.73058 14.1589C4.26756 16.4867 4.5052 18.8995 5.41345 21.0922C6.3217 23.2849 7.85977 25.1591 9.83316 26.4776C11.8066 27.7962 14.1266 28.5 16.5 28.5C19.165 28.5033 21.7537 27.6105 23.85 25.965L28.935 31.065C29.0745 31.2056 29.2404 31.3172 29.4231 31.3933C29.6059 31.4695 29.802 31.5087 30 31.5087C30.198 31.5087 30.3941 31.4695 30.5769 31.3933C30.7597 31.3172 30.9256 31.2056 31.065 31.065C31.2056 30.9255 31.3172 30.7596 31.3933 30.5769C31.4695 30.3941 31.5087 30.198 31.5087 30C31.5087 29.802 31.4695 29.6059 31.3933 29.4231C31.3172 29.2403 31.2056 29.0744 31.065 28.935V28.935ZM7.50001 16.5C7.50001 14.72 8.02785 12.9799 9.01678 11.4999C10.0057 10.0198 11.4113 8.86627 13.0559 8.18508C14.7004 7.50389 16.51 7.32566 18.2558 7.67293C20.0016 8.0202 21.6053 8.87737 22.864 10.136C24.1226 11.3947 24.9798 12.9984 25.3271 14.7442C25.6743 16.49 25.4961 18.2996 24.8149 19.9441C24.1337 21.5887 22.9802 22.9943 21.5001 23.9832C20.0201 24.9722 18.28 25.5 16.5 25.5C14.1131 25.5 11.8239 24.5518 10.136 22.864C8.44822 21.1761 7.50001 18.8869 7.50001 16.5Z"
+                    fill="white"></path>
+                </svg>
+
+
+              </span>
+            </div> --}}
+            <div class="tag-products d-flex align-items-center flex-wrap  mt-3 mb-4">
+              <svg class="me-2" width="22" height="23" viewBox="0 0 22 23" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-outside-1" maskUnits="userSpaceOnUse" x="-0.0263985" y="0.281122" width="21.5926"
+                  height="23.202" fill="black">
+                  <rect fill="white" x="-0.0263985" y="0.281122" width="21.5926" height="23.202" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.7608 4.26528C10.4341 4.25439 10.1228 4.40379 9.92695 4.66539L2.5213 14.5568C2.23379 14.9408 2.25911 15.4737 2.59098 15.8201C3.30708 16.5675 4.57337 17.8391 5.61322 18.6176C6.65307 19.3962 8.2298 20.2531 9.14864 20.7298C9.57448 20.9506 10.0929 20.8249 10.3804 20.4409L17.786 10.5494C17.9819 10.2878 18.0376 9.94703 17.9352 9.6367L16.4412 5.11007C16.3098 4.71191 15.944 4.438 15.5249 4.42403L10.7608 4.26528ZM12.0419 9.60568C12.9118 10.257 14.1388 10.088 14.7825 9.22827C15.4261 8.36854 15.2427 7.14362 14.3728 6.49233C13.5029 5.84103 12.2759 6.01 11.6323 6.86973C10.9886 7.72946 11.172 8.95438 12.0419 9.60568Z" />
+                </mask>
+                <path
+                  d="M9.92695 4.66539L9.12645 4.06606L9.92695 4.66539ZM10.7608 4.26528L10.7941 3.26583L10.7941 3.26583L10.7608 4.26528ZM2.5213 14.5568L3.3218 15.1562L2.5213 14.5568ZM2.59098 15.8201L1.8689 16.5119L1.8689 16.5119L2.59098 15.8201ZM9.14864 20.7298L8.68817 21.6174L8.68817 21.6174L9.14864 20.7298ZM10.3804 20.4409L11.1809 21.0402L10.3804 20.4409ZM17.786 10.5494L16.9855 9.95011L17.786 10.5494ZM17.9352 9.6367L16.9855 9.95011L16.9855 9.95011L17.9352 9.6367ZM16.4412 5.11007L17.3908 4.79666L17.3908 4.79666L16.4412 5.11007ZM15.5249 4.42403L15.5582 3.42459L15.5582 3.42459L15.5249 4.42403ZM10.7275 5.26472L10.7275 5.26472L10.7941 3.26583C10.1408 3.24406 9.51817 3.54285 9.12645 4.06606L10.7275 5.26472ZM3.3218 15.1562L10.7275 5.26472L9.12645 4.06606L1.7208 13.9575L3.3218 15.1562ZM3.31306 15.1283C3.31487 15.1302 3.31766 15.134 3.31977 15.1389C3.3217 15.1434 3.32234 15.1472 3.32248 15.1497C3.32261 15.1522 3.32229 15.1541 3.3219 15.1553C3.32142 15.157 3.32095 15.1573 3.3218 15.1562L1.7208 13.9575C1.14832 14.7221 1.18917 15.8024 1.8689 16.5119L3.31306 15.1283ZM6.21255 17.8171C5.24567 17.0932 4.02981 15.8764 3.31306 15.1283L1.8689 16.5119C2.58436 17.2586 3.90108 18.585 5.01389 19.4181L6.21255 17.8171ZM9.60911 19.8421C8.68944 19.365 7.17943 18.541 6.21255 17.8171L5.01389 19.4181C6.1267 20.2513 7.77016 21.1412 8.68817 21.6174L9.60911 19.8421ZM9.57989 19.8415C9.57903 19.8427 9.57923 19.8421 9.58064 19.8412C9.58177 19.8405 9.58344 19.8397 9.58586 19.8391C9.58833 19.8385 9.59211 19.8381 9.59701 19.8386C9.60237 19.8393 9.60679 19.8409 9.60911 19.8421L8.68817 21.6174C9.56035 22.0699 10.6084 21.8049 11.1809 21.0402L9.57989 19.8415ZM16.9855 9.95011L9.57989 19.8415L11.1809 21.0402L18.5865 11.1488L16.9855 9.95011ZM16.9855 9.95011L16.9855 9.95011L18.5865 11.1488C18.9783 10.6256 19.0896 9.94396 18.8848 9.32329L16.9855 9.95011ZM15.4916 5.42348L16.9855 9.95011L18.8848 9.32329L17.3908 4.79666L15.4916 5.42348ZM15.4916 5.42348L15.4916 5.42348L17.3908 4.79666C17.128 4.00033 16.3963 3.45252 15.5582 3.42459L15.4916 5.42348ZM10.7275 5.26472L15.4916 5.42348L15.5582 3.42459L10.7941 3.26583L10.7275 5.26472ZM13.982 8.62894C13.6759 9.03771 13.0779 9.13214 12.6412 8.80518L11.4426 10.4062C12.7457 11.3818 14.6017 11.1383 15.583 9.8276L13.982 8.62894ZM13.7735 7.29283C14.2102 7.61979 14.288 8.22017 13.982 8.62894L15.583 9.8276C16.5643 8.51691 16.2753 6.66745 14.9722 5.69182L13.7735 7.29283ZM12.4328 7.46906C12.7388 7.06029 13.3368 6.96587 13.7735 7.29283L14.9722 5.69182C13.6691 4.7162 11.8131 4.95971 10.8317 6.2704L12.4328 7.46906ZM12.6412 8.80518C12.2045 8.47821 12.1267 7.87783 12.4328 7.46906L10.8317 6.2704C9.85045 7.58109 10.1394 9.43056 11.4426 10.4062L12.6412 8.80518Z"
+                  fill="#888888" mask="url(#path-1-outside-1)" />
+              </svg>
+              <a href="#" class="text-grey-70">
+                # Ghế xoay văn phòng
+              </a>
+              <a href="#" class="text-grey-70">
+                # Ghế Xuân Hòa
+              </a>
+            </div>
+            <div class="mota-sp">
+              <h3 class="mota-sp-title fw-bold">Mô Tả Sản Phẩm</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias corrupti neque maxime! Alias error
+                itaque illo molestiae, repudiandae quod soluta culpa voluptate assumenda, pariatur ad reiciendis dolores
+                rem tempora! Odio?</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{!-- step3 --}}
+  <section class='my-5 baohanh'>
+    <div class='container-fluid wrapper my-4'>
+
+      <div class="row  justify-content-center">
+        <div class="col-12 col-lg-6">
+          <h2 class="text-primary fw-bold text-uppercase">THÔNG TIN BẢO HÀNH</h2>
+          <ul class="list-group list-group-flush my-4">
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Khách hàng</div>
+              <div class="thongso  d-flex justify-content-end">
+                Họ tên Khách hàng
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Số điện thoại KH</div>
+              <div class="thongso  d-flex justify-content-end">
+                0983 xxx xxx
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Email</div>
+              <div class="thongso  d-flex justify-content-end">
+                longdo@gmail.com
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Người bán</div>
+              <div class="thongso  d-flex justify-content-end">
+                Họ tên người bán
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Số điện thoại NB</div>
+              <div class="thongso  d-flex justify-content-end">
+                0983 xxx xxx
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Nơi bán</div>
+              <div class="thongso  d-flex justify-content-end">
+                Số 34 A - Phố Huế - Hoàn Kiếm - Hà Nộ
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Thời gian giao dịch</div>
+              <div class="thongso text-primary  d-flex justify-content-end">
+                08 : 09 : 22 - 22/12/2020
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Thời hạn bảo hành</div>
+              <div class="thongso text-primary  d-flex justify-content-end">
+                08 : 09 : 22 - 22/12/2021
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Thời gian còn lại</div>
+              <div class="thongso w-50">
+                <div class="progress justify-content-end">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                    style="width: 68%;" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">180 ngày</div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+
+      </div>
+
+      <div class="row  justify-content-center mt-5">
+        <div class="col-12 col-lg-6">
+          <h2 class="text-primary fw-bold text-uppercase">Lịch sử bảo hành</h2>
+          <h4 class="fw-bold mt-5 text-center text-uppercase">Lần 1</h4>
+          <ul class="list-group list-group-flush my-2">
+
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Nhân viên bảo hành</div>
+              <div class="thongso  d-flex justify-content-end">
+                Họ tên nv bảo hành
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Số điện thoại NV</div>
+              <div class="thongso  d-flex justify-content-end">
+                0983 xxx xxx
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Nơi bán</div>
+              <div class="thongso  d-flex justify-content-end">
+                Số 34 A - Phố Huế - Hoàn Kiếm - Hà Nộ
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Lý do bảo hành</div>
+              <div class="thongso  d-flex justify-content-end">
+                Hỏng con lăn chân ghế
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Chi phí bảo hành</div>
+              <div class="thongso text-primary  d-flex justify-content-end">
+                56.000đ
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Thời gian đến bảo hành</div>
+              <div class="thongso text-primary  d-flex justify-content-end">
+                08 : 09 : 22 - 22/12/2020
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Thời nhận / trả sản phẩm</div>
+              <div class="thongso text-primary  d-flex justify-content-end">
+                08 : 09 : 22 - 22/12/2021
+              </div>
+            </li>
+
+
+          </ul>
+          <h4 class="fw-bold mt-5 text-center text-uppercase">Lần 2</h4>
+          <ul class="list-group list-group-flush my-2">
+
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Nhân viên bảo hành</div>
+              <div class="thongso  d-flex justify-content-end">
+                Họ tên nv bảo hành
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Số điện thoại NV</div>
+              <div class="thongso  d-flex justify-content-end">
+                0983 xxx xxx
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Nơi bán</div>
+              <div class="thongso  d-flex justify-content-end">
+                Số 34 A - Phố Huế - Hoàn Kiếm - Hà Nộ
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Lý do bảo hành</div>
+              <div class="thongso  d-flex justify-content-end">
+                Hỏng con lăn chân ghế
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Chi phí bảo hành</div>
+              <div class="thongso text-primary  d-flex justify-content-end">
+                56.000đ
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Thời gian đến bảo hành</div>
+              <div class="thongso text-primary  d-flex justify-content-end">
+                08 : 09 : 22 - 22/12/2020
+              </div>
+            </li>
+            <li class="list-group-item align-items-center px-0 d-flex flex-wrap justify-content-between">
+              <div class="fw-bold me-3">Thời nhận / trả sản phẩm</div>
+              <div class="thongso text-primary  d-flex justify-content-end">
+                08 : 09 : 22 - 22/12/2021
+              </div>
+            </li>
+
+
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Modal -->
+  <div class="modal fade" id="chinhsachModal" tabindex="-1" aria-labelledby="chinhsachLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold fs-4" id="chinhsachLabel">Chính sách bảo hành</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          {{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>./layouts/footer}}
+
+</body>
+
+</html>

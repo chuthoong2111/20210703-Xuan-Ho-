@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  {{>./components/nav}}
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    {{!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div> --}}
+    <div class="carousel-inner h-inner">
+      <div class="carousel-item active">
+        <img
+          data-src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1993&q=80"
+          class="d-block lazyload" alt="...">
+        <div class="carousel-caption">
+          <div class="col-12 col-xl-8 col-xxl-6 p-0 mx-auto">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Tour</a></li>
+              </ol>
+            </nav>
+            <h1 class="animated fadeInDown text-start breadcrumb-item active" aria-current="page">Alla Scoperta degli
+              Antichi Tesori
+              13 Giorni</h1>
+            <h5 class="info-tour text-start">
+              <span class="badge rounded-1 bg-secondary fw-light">AUT02</span>
+              <span class="badge rounded-1 bg-secondary fw-light">Vietnam</span>
+              <span class="badge rounded-1 bg-secondary fw-light">Clasic
+                Tour</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="promotion-icon"><img src="./assets/images/icon-promotion.png" alt="#"></a>
+      {{>./components/search}}
+    </div>
+    {{!-- tour-detail --}}
+    <section class="has-padding overview tour-detail bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h2 class="fs-3 fw-bold text-primary">
+              Overview
+            </h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad eveniet, provident itaque, perspiciatis
+              voluptate blanditiis at necessitatibus sed culpa nesciunt neque a nulla velit ipsam consequatur qui
+              consequuntur facere natus!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad eveniet, provident itaque, perspiciatis
+              voluptate blanditiis at necessitatibus sed culpa nesciunt neque a nulla velit ipsam consequatur qui
+              consequuntur facere natus!</p>
+            <div class="highlight">
+              <div class="inner">
+                <h2 class="fs-3 fw-bold text-danger">
+                  Hightlight
+                </h2>
+                <ul>
+                  <li>are unaffected by this style</li>
+                  <li>will still show a bullet</li>
+                  <li>and have appropriate left margin</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 offset-lg-1">
+            <div id="carouselGalerry" class="carousel gallery slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselGalerry" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselGalerry" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselGalerry" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    data-src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1993&q=80"
+                    class="d-block lazyload" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                  <img
+                    data-src="https://images.unsplash.com/photo-1520628185778-d80ddc01fba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    class="d-block lazyload" alt="...">
+
+                </div>
+                <div class="carousel-item">
+                  <img
+                    data-src="https://images.unsplash.com/photo-1531219432768-9f540ce91ef3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                    class="d-block lazyload" alt="...">
+
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalerry"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselGalerry"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="has-padding tour-detail">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class=" mb-3 d-flex justify-content-between">
+              <h2 class="fs-3 fw-bold text-primary">
+                Tour Detail
+              </h2>
+              <a class="btn allview" type="button" data-bs-toggle="collapse" id="allview"
+                data-bs-target=".multi-collapse" aria-expanded="true"
+                aria-controls="multiCollapseExample3 multiCollapseExample4"><i class="fas fa-eye"></i></a>
+            </div>
+            <div class="inner-detail ">
+
+              <a class="btn btn-light d-flex justify-content-between text-start btn-day" data-bs-toggle="collapse"
+                href="#multiCollapseExample1" role="button" aria-expanded="true" aria-controls="multiCollapseExample1">
+                <span>Jour 01 : Arrivée à Hanoi </span>
+                <span><i class="far fa-caret-square-down"></i></span>
+              </a>
+              <div class="collapse multi-collapse1 show" id="multiCollapseExample1">
+                <div class="card card-body">Accueil à l’aéroport de Hanoi par le guide francophone. Transfert à l’hôtel
+                  (30 km, 45 minutes). Le reste de la journée est libre pour se reposer ou faire une première découverte
+                  de la ville.
+                  Nuit à l’hôtel. (Les chambres sont disponibles dès 14h00).</div>
+              </div>
+              <a class="btn btn-light d-flex justify-content-between text-start btn-day" data-bs-toggle="collapse"
+                role="button" href="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+                <span>Jour 02 : Visite de Hanoi (B)</span>
+                <span><i class="far fa-caret-square-down"></i></span></a>
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                  <p>
+                    Journée de découverte en profondeur de la capitale du Vietnam, empreinte
+                    d’un charme intemporel. Vous commencerez par la visite du captivant Musée Ethnographique qui
+                    rassemble
+                    des costumes, des outils, des instruments de musique et expose certaines maisons typiques des 54
+                    ethnies du pays (fermé le lundi). Ensuite, visite de Van Mieu (Temple de la Littérature), la
+                    première
+                    université du Vietnam; de Tran Quoc, la plus ancienne pagode de Hanoi; et du temple Ngoc Son au bord
+                    du lac central Hoan Kiem.
+                  </p>
+
+                  <p>
+                    Dans l’après-midi, découverte du Vieux Quartier aussi connu sous le nom de Quartier des 36
+                    corporations. Véritable dédale de ruelles où chacune est spécialisée dans un métier ou un art. Le
+                    meilleur moyen pour explorer ce labyrinthe regorgeant d’énergie et de vie, est à pied.
+                    Conçu pour balayer tous les aspects de vie locale, le parcours abordera les composantes de la vie
+                    hanoienne d’un point de vue original et unique : artisanat, bouddhisme, temple, gastronomie, marché
+                    local, visite de maison-tube traditionnelle (particularité vietnamienne), bien-être…
+                    La visite se termine par une balade autour du lac Hoan Kiem (Lac de l’Epée Restituée). Nuit à
+                    l'hôtel.
+                  </p>
+                </div>
+
+
+
+              </div>
+              <a class="btn btn-light d-flex justify-content-between text-start btn-day" data-bs-toggle="collapse"
+                href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">
+                <span>Jour 03 : Arrivée à Hanoi </span>
+                <span><i class="far fa-caret-square-down"></i></span>
+              </a>
+              <div class="collapse multi-collapse" id="multiCollapseExample3">
+                <div class="card card-body">Accueil à l’aéroport de Hanoi par le guide francophone. Transfert à
+                  l’hôtel
+                  (30 km, 45 minutes). Le reste de la journée est libre pour se reposer ou faire une première
+                  découverte
+                  de la ville.
+                  Nuit à l’hôtel. (Les chambres sont disponibles dès 14h00).</div>
+              </div>
+              <a class="btn btn-light d-flex justify-content-between text-start btn-day" data-bs-toggle="collapse"
+                role="button" href="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">
+                <span>Jour 04 : Visite de Hanoi (B)</span>
+                <span><i class="far fa-caret-square-down"></i></span></a>
+              <div class="collapse multi-collapse" id="multiCollapseExample4">
+                <div class="card card-body">
+                  <p>
+                    Journée de découverte en profondeur de la capitale du Vietnam, empreinte
+                    d’un charme intemporel. Vous commencerez par la visite du captivant Musée Ethnographique qui
+                    rassemble
+                    des costumes, des outils, des instruments de musique et expose certaines maisons typiques des 54
+                    ethnies du pays (fermé le lundi). Ensuite, visite de Van Mieu (Temple de la Littérature), la
+                    première
+                    université du Vietnam; de Tran Quoc, la plus ancienne pagode de Hanoi; et du temple Ngoc Son au
+                    bord
+                    du lac central Hoan Kiem.
+                  </p>
+
+                  <p>
+                    Dans l’après-midi, découverte du Vieux Quartier aussi connu sous le nom de Quartier des 36
+                    corporations. Véritable dédale de ruelles où chacune est spécialisée dans un métier ou un art. Le
+                    meilleur moyen pour explorer ce labyrinthe regorgeant d’énergie et de vie, est à pied.
+                    Conçu pour balayer tous les aspects de vie locale, le parcours abordera les composantes de la vie
+                    hanoienne d’un point de vue original et unique : artisanat, bouddhisme, temple, gastronomie,
+                    marché
+                    local, visite de maison-tube traditionnelle (particularité vietnamienne), bien-être…
+                    La visite se termine par une balade autour du lac Hoan Kiem (Lac de l’Epée Restituée). Nuit à
+                    l'hôtel.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="fck-editor">
+              <h2 class="fs-3 fw-bold text-primary">
+                Hotel
+              </h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptatibus similique sint rem tempore
+                placeat doloremque quasi consectetur voluptatem laborum quibusdam porro quo debitis nostrum soluta
+                harum, autem maiores! Harum!</p>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Hotel name</th>
+                    <th scope="col">Stars</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td><img alt="🌟" class="emoji" draggable="false"
+                        src="https://s.w.org/images/core/emoji/11.2.0/svg/1f31f.svg"
+                        style="padding: 0px !important; margin: 0px 0.07em !important; list-style: none; border: none !important; outline: none; box-sizing: border-box; max-width: 100%; height: 1em !important; display: inline !important; box-shadow: none !important; width: 1em !important; vertical-align: -0.1em !important; background: none !important;"><img
+                        alt="🌟" class="emoji" draggable="false"
+                        src="https://s.w.org/images/core/emoji/11.2.0/svg/1f31f.svg"
+                        style="padding: 0px !important; margin: 0px 0.07em !important; list-style: none; border: none !important; outline: none; box-sizing: border-box; max-width: 100%; height: 1em !important; display: inline !important; box-shadow: none !important; width: 1em !important; vertical-align: -0.1em !important; background: none !important;"><img
+                        alt="🌟" class="emoji" draggable="false"
+                        src="https://s.w.org/images/core/emoji/11.2.0/svg/1f31f.svg"
+                        style="padding: 0px !important; margin: 0px 0.07em !important; list-style: none; border: none !important; outline: none; box-sizing: border-box; max-width: 100%; height: 1em !important; display: inline !important; box-shadow: none !important; width: 1em !important; vertical-align: -0.1em !important; background: none !important;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+              <h2 class="fs-3 fw-bold text-primary">
+                Price
+              </h2>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Destination</th>
+                    <th scope="col">Hotel name</th>
+                    <th scope="col">Stars</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td><img alt="🌟" class="emoji" draggable="false"
+                        src="https://s.w.org/images/core/emoji/11.2.0/svg/1f31f.svg"
+                        style="padding: 0px !important; margin: 0px 0.07em !important; list-style: none; border: none !important; outline: none; box-sizing: border-box; max-width: 100%; height: 1em !important; display: inline !important; box-shadow: none !important; width: 1em !important; vertical-align: -0.1em !important; background: none !important;"><img
+                        alt="🌟" class="emoji" draggable="false"
+                        src="https://s.w.org/images/core/emoji/11.2.0/svg/1f31f.svg"
+                        style="padding: 0px !important; margin: 0px 0.07em !important; list-style: none; border: none !important; outline: none; box-sizing: border-box; max-width: 100%; height: 1em !important; display: inline !important; box-shadow: none !important; width: 1em !important; vertical-align: -0.1em !important; background: none !important;"><img
+                        alt="🌟" class="emoji" draggable="false"
+                        src="https://s.w.org/images/core/emoji/11.2.0/svg/1f31f.svg"
+                        style="padding: 0px !important; margin: 0px 0.07em !important; list-style: none; border: none !important; outline: none; box-sizing: border-box; max-width: 100%; height: 1em !important; display: inline !important; box-shadow: none !important; width: 1em !important; vertical-align: -0.1em !important; background: none !important;">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+
+              </table>
+              <h2 class="fs-3 fw-bold text-primary">
+                import
+              </h2>
+              <ul>
+                <li>Private Reise mit Reiseverlauf wie beschrieben</li>
+                <li>17 Übernachtungen in Mittelklassehotels in Doppelzimmern , 01 Übernachtung bei Einheimischen in
+                  Muong Lo, 01 Übernachtung im Nachtzug und 01 Nacht auf dem Boot in Halong wie im Programm angegeben
+                </li>
+                <li>
+                  <o:p></o:p>Inlandsflug (Da Nang/Saigon) in Economyclass
+                </li>
+                <li>Mahlzeiten wie angegeben im Programm (F = Frühstück; M = Mittagessen; A = Abendessen)</li>
+                <li>
+                  <o:p></o:p>Privater klimatisierter Pkw für alle Transporte wie angegeben (außer an freien Tagen)
+                </li>
+                <li>
+                  <o:p></o:p>Lokale englisch-/ deutschsprachige Reiseführung (außer an freien Tagen)
+                </li>
+                <li>
+                  <o:p></o:p>Bootsfahrten wie angegeben im Programm
+                </li>
+                <li>
+                  <o:p></o:p>Eintrittsgebühren
+                </li>
+              </ul>
+              <h2 class="fs-3 fw-bold text-primary">
+                Not import
+              </h2>
+              <ul>
+                <li>Internationale Flüge (Hin- und Rückflug) und Flughafenabreisesteuer</li>
+                <li>Visa für Vietnam</li>
+                <li>Aufpreise für Services an Feiertagen (Silvester, Neujahr, Neujahr nach dem Mondkalender...)</li>
+                <li>Trinkgelder und persönliche Ausgaben wie Getränke, Telefon, Wäsche</li>
+                <li>Bankgebühren im Zusammenhang mit der Zahlung</li>
+                <li>Mahlzeiten, die nicht im Programm angegeben sind</li>
+                <li>Andere Dienstleistungen, die im Abschnitt “Im Preis eingeschlossene Leistungen“ nicht ausdrücklich
+                  erwähnt werden.</li>
+              </ul>
+              <hr>
+              <h2 class="fs-3 fw-bold text-primary text-danger">
+                <i class="fas fa-pencil-alt me-2"></i>Book now
+              </h2>
+              <div class="col-md-12 form" data-was-processed="true">
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3 text-left" data-was-processed="true"><label class="fw-bold">Ihre
+                      vollständige Name<span class="color-red">*</span></label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row gx-2 form-group" data-was-processed="true">
+                      <div class="col-md-4" data-was-processed="true"><select
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$ddlGender"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_ddlGender" class="form-control">
+                          <option value="1">Herr</option>
+                          <option value="2">Frau</option>
+                        </select></div>
+                      <div class="col-md-8" data-was-processed="true"><input
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$txtFirstName" type="text"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_txtFirstName" class="form-control"
+                          onfocus="return reseterror('ctl00_ContentPlaceHolder1_ctlTourDetail1_txtFirstName')"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Ihre
+                      Email<span class="color-red">*</span></label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row gx-2 form-group" data-was-processed="true">
+                      <div class="col-md-12" data-was-processed="true"><input
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$txtEmail" type="text"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_txtEmail" class="form-control"
+                          onfocusout="TrackingTour()" oncontextmenu="return noCopyMouse(event);"
+                          onfocus="return reseterror('ctl00_ContentPlaceHolder1_ctlTourDetail1_txtEmail')">
+                        <script>function TrackingTour() {
+                            var name = document.getElementById("ctl00_ContentPlaceHolder1_ctlTourDetail1_txtFirstName").value;
+                            var email = document.getElementById("ctl00_ContentPlaceHolder1_ctlTourDetail1_txtEmail").value;
+                            SaveEmail(name, email);
+                          }</script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Ihr
+                      Whatsapp<span class="color-red">*</span></label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row gx-2 form-group" data-was-processed="true">
+                      <div class="col-md-12" data-was-processed="true"><input
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$txtTelephone" type="text"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_txtTelephone" class="form-control"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Reisedatum<span
+                        class="color-red">*</span></label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row gx-2 form-group" data-was-processed="true">
+                      <div class="col-sm-3" data-was-processed="true"><select
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$ddlMonth"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_ddlMonth" class="form-control">
+                          <option value="0">Monat</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                        </select></div>
+                      <div class="col-sm-3" data-was-processed="true"><select
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$ddlYear"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_ddlYear" class="form-control">
+                          <option value="0">Jahr</option>
+                          <option value="2021">2021</option>
+                          <option value="2022">2022</option>
+                        </select></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Sind die
+                      Reisedaten fix?</label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row gx-2 form-group" data-was-processed="true">
+                      <div class="col-md-4 mt-2" data-was-processed="true">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                          <label class="form-check-label" for="inlineRadio1">Fix</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                          <label class="form-check-label" for="inlineRadio2">Flexibel</label>
+                        </div>
+                      </div>
+                      <div class="col-md-5 text-left mt-2" data-was-processed="true"><label><b>Haben Sie schon
+                            Flugticket?</b>:</label></div>
+                      <div class="col-md-3 text-left mt-2" data-was-processed="true">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option1">
+                          <label class="form-check-label" for="inlineRadio3">Ja</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                            value="option2">
+                          <label class="form-check-label" for="inlineRadio4">Nein</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Ihre
+                      Reisedauer <span class="color-red">*</span></label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row form-group" data-was-processed="true">
+                      <div class="col-md-2" data-was-processed="true"><input
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$txtDayNumber" type="text"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_txtDayNumber" class="form-control"></div>
+                      <div class="col-md-5" data-was-processed="true"><span>Tage</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Anzahl der
+                      Reisenden<span class="color-red">*</span></label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row form-group" data-was-processed="true">
+                      <div class="col-md-2" data-was-processed="true"><small>Erwachsene</small><input
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$txtAdultNumber" type="text"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_txtAdultNumber" class="form-control"
+                          onkeypress="return noNumbers(event)"
+                          onfocus="return reseterror('ctl00_ContentPlaceHolder1_ctlTourDetail1_txtAdultNumber')"></div>
+                      <div class="col-md-8 col-md-offset-1" id="export-1" data-was-processed="true">
+                        <div id="divAdult" class="over" data-was-processed="true"><small>Bitte geben Sie das Alter Ihre
+                            Gruppe an:</small>
+                          <div class="w-100"></div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">20 - 30</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">31 - 40</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">31 - 40</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                            <label class="form-check-label" for="inlineCheckbox4">31 - 40</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                            <label class="form-check-label" for="inlineCheckbox5">41 - 50</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                            <label class="form-check-label" for="inlineCheckbox6">51 - 60</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option7">
+                            <label class="form-check-label" for="inlineCheckbox7">70 und
+                              älter</label>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row  form-group" data-was-processed="true">
+                      <div class="col-md-2" data-was-processed="true"><small>Kinder</small><input
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$txtChildNumber" type="text"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_txtChildNumber" class="form-control"
+                          onkeypress="return noNumbers(event)"></div>
+                      <div class="col-md-8 col-md-offset-1" data-was-processed="true">
+                        <div id="divChild" class="over" data-was-processed="true"><small>Alter der Kinder</small>
+                          <div class="w-100"></div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1-2</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2-4</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                            <label class="form-check-label" for="inlineCheckbox3">4-6</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Budget pro
+                      Person ($) <span class="color-red">*</span></label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row form-group" data-was-processed="true">
+                      <div class="col-md-2" data-was-processed="true"><input
+                          name="ctl00$ContentPlaceHolder1$ctlTourDetail1$txtbudget" type="text"
+                          id="ctl00_ContentPlaceHolder1_ctlTourDetail1_txtbudget" class="form-control"
+                          onkeypress="return noNumbers(event)"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Art der
+                      Unterkunft </label></div>
+                  <div class="col-md-9" data-was-processed="true">
+                    <div class="row gx-2 form-group" data-was-processed="true">
+                      <div class="col-md-12" data-was-processed="true">
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                          <label class="form-check-label" for="inlineCheckbox1">classic</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                          <label class="form-check-label" for="inlineCheckbox2">luxyry</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                          <label class="form-check-label" for="inlineCheckbox3">delux</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2" data-was-processed="true">
+                  <div class="input-group" data-was-processed="true">
+                    <div class="col-md-3  text-left" data-was-processed="true"><label class="fw-bold">Weitere
+                        Informationen</label>
+                    </div>
+                    <div class="col-md-9" data-was-processed="true"><textarea
+                        name="ctl00$ContentPlaceHolder1$ctlTourDetail1$txtMoreRequest" row g-2s="4" cols="20"
+                        id="ctl00_ContentPlaceHolder1_ctlTourDetail1_txtMoreRequest" class="form-control"
+                        onfocus="return reseterror('ctl00_ContentPlaceHolder1_ctlTourDetail1_txtMoreRequest')"></textarea>
+                    </div>
+                  </div>
+                </div><br>
+                <p><em>Die mit einem <font class="color-red">*</font>gekennzeichneten Felder sind Pflichtfelder</em></p>
+                <p>Sie können Ihre Reiseanfrage jetzt abschicken. Wir senden Ihnen innerhalb von 24 Stunden ein
+                  kostenloses und unverbindliches Reiseangebot zurück. Vielen Dank für Ihre Geduld!</p>
+                <div class="text-center mt-4">
+                  <a href="#" class="btn btn-danger text-white fw-bold px-5 py-3">Jetzt
+                    abschicken</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="map-tour ps-0 ps-lg-5">
+              <img data-src="http://terra-indochina.com/DataUpload/Tour/2014112524426maptour02.png"
+                class="img-fluid lazyload" alt="#">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    {{!-- testimonial --}}
+    <section class="has-padding bg-testimonial">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-xl-8 col-xxl-6 ">
+
+            <h2 class="title fs-1 ">Testimonial</h2>
+            <div class="lead mb-4">Il miglior esperto di viaggi in Indocina ...</div>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-end">
+            <a href="#" class="btn-ast mt-auto mb-4">
+              <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="51.19" height="5.939"
+                viewBox="0 0 51.19 5.939">
+                <path class="a"
+                  d="M435.68,179.488H386.387l1.646-1.646-.707-.707-2.837,2.837,2.82,3.1.74-.672-1.74-1.914h49.37Z"
+                  transform="translate(-384.49 -177.135)"></path>
+              </svg>
+              Continua
+            </a>
+          </div>
+
+        </div>
+        <div class="row g-4 mt-0">
+          <div class="col-lg-6">
+            <div class="testimonial-quote group">
+              <img src="http://placehold.it/120x120">
+              <div class="quote-container">
+                <blockquote>
+                  <p>Overall, fantastic! I'd recommend them to anyone looking for a creative, thoughtful, and
+                    professional
+                    team.”</p>
+                </blockquote>
+                <cite><span>Kristi Bruno</span><br>
+                  <small class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></small><br>
+                  American College of Chest Physicians
+                </cite>
+                <a href="#" class="small mt-2 viewmore d-block">View more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="testimonial-quote group">
+              <img src="http://placehold.it/120x120">
+              <div class="quote-container">
+                <blockquote>
+                  <p>Overall, fantastic! I'd recommend them to anyone looking for a creative, thoughtful, and
+                    professional
+                    team.”</p>
+                </blockquote>
+                <cite><span>Kristi Bruno</span><br>
+                  <small class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                      class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></small><br>
+                  American College of Chest Physicians
+                </cite>
+                <a href="#" class="small mt-2 viewmore d-block">View more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{!-- tour --}}
+    <section class="has-padding bg-tour">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-12">
+            <h2 class="title fs-1">Tour khác</h2>
+            <div class="lead mb-4">Il miglior esperto di viaggi in Indocina ...</div>
+          </div>
+        </div>
+        <div class="row g-3" data-masonry='{"percentPosition": true }'>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="container_foto position-relative">
+              <div class="ver_mas text-center text-white">
+                <i class="fas fa-route me-2"></i> Viewmore
+              </div>
+              <article class="text-left">
+
+                <h2>Alla Scoperta degli Antichi Tesori
+                  13 Giorni</h2>
+                <h4><span class="text-truncate">Descripción corta de la imagen en cuestión Descripción corta de
+                    la imagen en cuestión</span></h4>
+                <div class="info-tour">
+                  <span class="badge rounded-1 bg-secondary fw-light">AUT02</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Vietnam</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Clasic
+                    Tour</span>
+                </div>
+              </article>
+              <img
+                src="https://images.unsplash.com/photo-1520628185778-d80ddc01fba2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                alt="">
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="container_foto position-relative">
+              <div class="ver_mas text-center text-white">
+                <i class="fas fa-route me-2"></i> Viewmore
+              </div>
+              <article class="text-left">
+
+                <h2>Alla Scoperta degli Antichi Tesori
+                  13 Giorni</h2>
+                <h4><span class="text-truncate">Descripción corta de la imagen en cuestión Descripción corta de
+                    la imagen en cuestión</span></h4>
+                <div class="info-tour">
+                  <span class="badge rounded-1 bg-secondary fw-light">AUT02</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Vietnam</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Clasic
+                    Tour</span>
+                </div>
+              </article>
+              <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                alt="">
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="container_foto position-relative">
+              <div class="ver_mas text-center text-white">
+                <i class="fas fa-route me-2"></i> Viewmore
+              </div>
+              <article class="text-left">
+
+                <h2>Alla Scoperta degli Antichi Tesori
+                  13 Giorni</h2>
+                <h4><span class="text-truncate">Descripción corta de la imagen en cuestión Descripción corta de
+                    la imagen en cuestión</span></h4>
+                <div class="info-tour">
+                  <span class="badge rounded-1 bg-secondary fw-light">AUT02</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Vietnam</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Clasic
+                    Tour</span>
+                </div>
+              </article>
+              <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                alt="">
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="container_foto position-relative">
+              <div class="ver_mas text-center text-white">
+                <i class="fas fa-route me-2"></i> Viewmore
+              </div>
+              <article class="text-left">
+
+                <h2>Alla Scoperta degli Antichi Tesori
+                  13 Giorni</h2>
+                <h4><span class="text-truncate">Descripción corta de la imagen en cuestión Descripción corta de
+                    la imagen en cuestión</span></h4>
+                <div class="info-tour">
+                  <span class="badge rounded-1 bg-secondary fw-light">AUT02</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Vietnam</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Clasic
+                    Tour</span>
+                </div>
+              </article>
+              <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                alt="">
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="container_foto position-relative">
+              <div class="ver_mas text-center text-white">
+                <i class="fas fa-route me-2"></i> Viewmore
+              </div>
+              <article class="text-left">
+
+                <h2>Alla Scoperta degli Antichi Tesori
+                  13 Giorni</h2>
+                <h4><span class="text-truncate">Descripción corta de la imagen en cuestión Descripción corta de
+                    la imagen en cuestión</span></h4>
+                <div class="info-tour">
+                  <span class="badge rounded-1 bg-secondary fw-light">AUT02</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Vietnam</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Clasic
+                    Tour</span>
+                </div>
+              </article>
+              <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                alt="">
+            </div>
+
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="container_foto position-relative">
+              <div class="ver_mas text-center text-white">
+                <i class="fas fa-route me-2"></i> Viewmore
+              </div>
+              <article class="text-left">
+
+                <h2>Alla Scoperta degli Antichi Tesori
+                  13 Giorni</h2>
+                <h4><span class="text-truncate">Descripción corta de la imagen en cuestión Descripción corta de
+                    la imagen en cuestión</span></h4>
+                <div class="info-tour">
+                  <span class="badge rounded-1 bg-secondary fw-light">AUT02</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Vietnam</span>
+                  <span class="badge rounded-1 bg-secondary fw-light">Clasic Tour</span>
+                </div>
+              </article>
+              <img src="https://img-aws.ehowcdn.com/400x400/ds-img.studiod.com/Half_Dome_from_Glacier_Point0_1.jpg"
+                alt="">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+    {{>./components/step}}
+    {{>./layouts/footer}}
+</body>
+
+</html>

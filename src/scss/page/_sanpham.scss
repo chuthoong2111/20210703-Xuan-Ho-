@@ -1,0 +1,433 @@
+.sanpham {
+    .swiper-hangmuc {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: none;
+            background: #ccc;
+            height: 1px;
+            width: 100%;
+
+            @include media-breakpoint-up(xl) {
+                display: block;
+            }
+        }
+    }
+    .price {
+        width: 100%;
+        @include media-breakpoint-up(xl) {
+            width: auto;
+        }
+    }
+    .list-group-flush {
+        border-top: 1px solid rgba(0, 0, 0, 0.125);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .w-25 {
+        width: 80% !important;
+        @include media-breakpoint-up(lg) {
+            width: 25% !important;
+        }
+    }
+    .page-link {
+        color: #555;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.list-cataloge {
+    .card {
+        position: relative;
+
+        .card-title {
+            transition: all ease-in-out 0.3s;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        &:hover {
+            .card-title {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.name {
+    text-transform: uppercase;
+    color: #222;
+    font-weight: bold;
+    // text-decoration: underline;
+}
+
+.tooltip-badge {
+    font-weight: bold;
+    color: rgba($color: $primary, $alpha: 0.8);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.dec {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.donvi {
+    line-height: 0.9;
+    font-size: 0.6875rem;
+    vertical-align: text-top;
+    margin-left: 0.0625rem;
+}
+
+.tag-products > * {
+    margin-right: 5px;
+}
+
+.thongso {
+    a {
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #ccc;
+        color: #555;
+        &:first-child {
+            margin-left: 0 !important;
+        }
+        &:hover {
+            border-color: $primary;
+            background: #fff;
+        }
+        &.active {
+            border-color: $primary;
+            background: #fff;
+            &::after {
+                content: '\f00c';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                font-size: 8px;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-top: 1.2rem solid transparent;
+                border-bottom: 0;
+
+                border-right: 1.2rem solid $primary;
+                right: -1px;
+                bottom: -1px;
+            }
+        }
+    }
+}
+
+.arrow-right {
+    width: 2rem;
+    height: 2rem;
+    margin-right: -0.32rem;
+}
+
+.canvas-one,
+.canvas-two {
+    color: #444;
+
+    .arrow-right {
+        transition: all ease-in-out 0.3s;
+        fill: #444444;
+    }
+
+    &:hover {
+        color: $primary;
+
+        .arrow-right {
+            transition: all ease-in-out 0.3s;
+            fill: $primary;
+        }
+    }
+}
+
+// fancybox
+a[data-fancybox] img {
+    cursor: zoom-in;
+}
+
+// swiper-sanpham
+.one-sanpham {
+    .card {
+        border: 0;
+        border-radius: 0;
+
+        &:hover {
+            .btn-cart {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    .card-img {
+        svg {
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            z-index: 3;
+            transition: all ease-in-out 0.3s;
+            @include media-breakpoint-up(lg) {
+                right: 1.5rem;
+                top: 1.5rem;
+            }
+            &:hover,
+            &.active {
+                fill: $primary;
+
+                path {
+                    stroke: $primary;
+                }
+            }
+        }
+    }
+
+    .card-body {
+        position: relative;
+        z-index: 3;
+    }
+
+    .card-title a {
+        color: #333;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.icon-promotion {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+}
+
+.btn-cart {
+    opacity: 0;
+    visibility: hidden;
+    transition: ease-in-out all 0.3s;
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+    background: #444;
+
+    &:hover {
+        background: rgba($color: $primary, $alpha: 0.8);
+
+        // svg {
+        //     path {
+        //         fill: #222;
+        //     }
+        // }
+    }
+}
+.viewed {
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    li {
+        max-width: 50%;
+        padding: 10px;
+        flex-basis: 50%;
+        @include media-breakpoint-up(sm) {
+            max-width: 33.333%;
+            flex-basis: 33.333%;
+        }
+        @include media-breakpoint-up(md) {
+            max-width: 25%;
+            flex-basis: 25%;
+        }
+        @include media-breakpoint-up(lg) {
+            max-width: 25%;
+            flex-basis: 25%;
+        }
+        @include media-breakpoint-up(xl) {
+            max-width: 10%;
+            flex-basis: 10%;
+        }
+    }
+}
+
+// review san pham
+.comments-form {
+    border-bottom: 1px solid #ccc;
+}
+
+.comments-form ul {
+    list-style: none;
+    margin-left: -40px;
+}
+.comments-form li {
+    margin-bottom: 15px;
+}
+.comments-form input[type='submit'] {
+    border: 0;
+    border-radius: 30px;
+    padding: 7px 16px;
+    background: $primary;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.comments-form input,
+.comments-form input,
+.comments-form textarea {
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background: #f7f7f7;
+    width: 100%;
+}
+
+.comments-form ul li input[type='text']:focus,
+.comments-form ul li textarea:focus {
+    background: #fff;
+}
+.comments-form ul li textarea {
+    width: 80%;
+    height: 80px;
+    resize: none;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    position: relative;
+    padding: 10px 20px;
+    background: #efefef;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.comment .timestamp {
+    color: #777;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 12px;
+}
+.comment h4 {
+    font-size: 1.1em;
+}
+.comment h4,
+.comment p {
+    margin: 10px;
+}
+.mw-20 {
+    max-width: 20%;
+    flex-basis: 20%;
+}
+.mausac {
+    a {
+        border: 1px solid #fff;
+        &:hover {
+            border: 1px solid $primary;
+        }
+        &.active {
+            border-color: $primary;
+            background: #fff;
+            &::after {
+                content: '\f00c';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                font-size: 8px;
+                color: #fff;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 2;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-top: 1.2rem solid transparent;
+                border-bottom: 0;
+
+                border-right: 1.2rem solid $primary;
+                right: -1px;
+                bottom: -1px;
+            }
+        }
+    }
+}
+.gallery-thumbs,
+.thumbs-for-one-product {
+    .ratio-1x1 {
+        border: 1px solid #fff;
+        border-radius: 0px;
+        img {
+            padding: 2px;
+        }
+    }
+}
+.swiper-slide-thumb-active .ratio-1x1 {
+    border: 1px solid #ddd;
+}
+.one-sanpham {
+    .card-title {
+        font-size: 1rem;
+        @include media-breakpoint-up(lg) {
+            font-size: 1.25rem;
+        }
+    }
+    .icon-promotion {
+        width: 64px;
+        top: -2rem;
+        @include media-breakpoint-up(lg) {
+            width: 75px;
+            top: -3rem;
+        }
+    }
+}
+.filter {
+    select {
+        width: auto !important;
+        @include media-breakpoint-up(lg) {
+            width: 100%;
+        }
+        margin-right: 6px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.filter-color {
+    a {
+        margin-left: 0;
+    }
+}
+.img-texture {
+    width: 18px;
+}

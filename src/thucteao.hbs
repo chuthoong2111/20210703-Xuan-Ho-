@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body class="decor" data-bs-spy='scroll' data-bs-target='#navbar-example2' data-bs-offset='125'  tabindex='0'>
+  {{>./components/sidebar}}
+
+  {{>./components/nav-thucteao}}
+
+    <section class="animated fadeInUp area-thucteao has-padding ">
+      <h1 class="visually-hidden d-none">Thực tế ảo</h1>
+      cho code thực tế ảo vô
+    </section>
+    <section class="animated fadeInUp area-dangkytuvan has-padding bg-grey-20" id="scrollspyDangkytuvan" data-offset="130">
+      <div class="container wrapper mx-auto">
+        <div class="row align-items-center">
+          <div class="col-lg-5 offset-lg-1 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center justify-content-center">
+              <img data-src="./assets/images/tool.png" class="lazyload img-fluid me-3">
+              <h4 class="text-primary lh-sm fw-normal">
+                TƯ VẤN – THIẾT KẾ <br>
+                SẢN XUẤT – LẮP ĐẶT<br>
+
+                BẢO HÀNH TRỌN GÓI
+              </h4>
+            </div>
+          </div>
+          <div class="col-lg-5 ">
+            <div class="d-flex justify-content-center">
+              <h2 class="text-primary lh-sm fw-bold order-1 m-0">
+                NỘI THẤT VĂN PHÒNG <br>
+                NỘI THẤT CĂN HỘ<br>
+                NỘI THẤT KHÁCH SẠN
+              </h2>
+              <div class="border-khung order-0">
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="dangkytuvan col-lg-10 offset-lg-1 col-xxl-8 -offset-xxl-2 mx-auto">
+          <div class="form-tuvan row">
+            <div class="col-lg-4"><input class="form-control rounded-0" placeholder="Vui lòng nhập họ tên"></div>
+            <div class="col-lg-4"><input class="form-control rounded-0" placeholder="Email của bạn"></div>
+            <div class="col-lg-4"><input class="form-control rounded-0" placeholder="Số điện thoại của bạn"></div>
+          </div>
+          <div class="col-12 text-center">
+            <a href="#" class="btn btn-primary py-2 px-4 fw-bold mt-3 text-center"><span class="fs-5">ĐĂNG KÝ TƯ
+                VẤN</span></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="animated fadeInUp area-taisao has-padding d-flex  justify-content-center" id="scrollspyTaisao"
+     >
+      <img data-src="./assets/images/taisao.png " class="lazyload img-fluid">
+    </section>
+      
+    <section id="scrollspyQuytrinhthietke" 
+      class="animated fadeInUp area-quytrinhthietke has-padding d-flex flex-column align-items-center justify-content-center  bg-grey-20"
+      >
+      <h2 class="text-primary">QUY TRÌNH TRIỂN KHAI DỰ ÁN</h2>
+      <img data-src="./assets/images/quytrinh.png" class="lazyload img-fluid">
+    </section>
+  {{>./layouts/footer}}
+
+</body>
+
+</html>

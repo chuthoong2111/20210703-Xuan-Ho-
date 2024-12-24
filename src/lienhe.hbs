@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    {{!--
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script> --}}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+  {{>./components/sidebar}}
+
+  {{>./components/nav}}
+  {{>./components/breadcrumb}}
+
+
+
+  <section class="tintuc khampha wrapper">
+    <div class="row ">
+      <h1 class=" h2 col-12 fw-bold my-3 text-uppercase">liên hệ</h1>
+      <div class="col-lg-8">
+        <h3 class="fw-bold text-primary my-4"> Thông tin của Quý khách</h3>
+
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Họ và Tên của bạn">
+          </div>
+          <div class="col-lg-4 mb-3">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nhập email của bạn">
+          </div>
+          <div class="col-lg-4 mb-3">
+            <input type="Phone" class="form-control" id="exampleFormControlInput1" placeholder="Số điện thoại">
+          </div>
+          <div class="col-12 mb-3">
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 200px"></textarea>
+              <label for="floatingTextarea2">Nội dung </label>
+            </div>
+          </div>
+          <div class="text-center col-12">
+
+            <a href="#" class="h5 btn btn-primary btn-lg rounded-pill text-uppercase px-4 fw-bold mx-auto">Gửi tin</a>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3 class="fw-bold text-primary my-4">Một không gian mở ra thế giới đầy cảm xúc</h3>
+            <div class="text-center my-4">
+              <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M25.4975 46.1388L32.7834 36.4264L21.8647 21.8545H15.7817L26.7107 36.4264L15.7817 50.9983H34.0339L30.3537 46.1388H25.4975Z"
+                  fill="#D02031" />
+                <path
+                  d="M42.4958 26.7174L35.2099 36.4298L46.1252 50.9983H52.2116L41.2826 36.4298L52.2116 21.8578H34.0204L37.6498 26.7174H42.4958Z"
+                  fill="#D02031" />
+                <path
+                  d="M33.9932 0C15.2497 0 0 15.2531 0 34C0 52.7469 15.2497 68 33.9932 68C52.7368 68 67.9864 52.7469 67.9864 34C67.9864 15.2531 52.7368 0 33.9932 0ZM33.9932 63.1201C17.4965 63.1201 4.8494 50.5001 4.8494 34C4.8494 17.5202 17.4965 4.85617 33.9932 4.85617C50.49 4.85617 63.137 17.5168 63.137 34C63.137 50.5001 50.49 63.1201 33.9932 63.1201Z"
+                  fill="#D02031" />
+              </svg>
+
+              <h3 class="fw-normal my-4">Mãi gắn bó, Mãi bền lâu</h3>
+              <div class="widget_text">
+                <div class="textwidget">
+                  <ul class="list-unstyled d-flex col-12 mx-auto justify-content-between">
+                    <li><a href="#"><strong>Sản phẩm</strong> chất lượng</a></li>
+                    <li><a href="#"><strong>Sự tiện nghi</strong>
+                        và tiện dụng</a></li>
+                    <li><a href="#"><strong>Môi trường</strong> chuyên nghiệp</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  {{>./layouts/footer}}
+  <svg focusable='false' viewBox='0 0 24 24' class='d-none' aria-hidden='true'>
+    <path id='tag' fill-rule='evenodd' clip-rule='evenodd'
+      d='M12.143 2.95l-7.94 1.253-1.253 7.94 10.387 10.386 9.192-9.192L12.143 2.95zm-2.114 7.08a1.5 1.5 0 10-2.121-2.122 1.5 1.5 0 002.121 2.121z'>
+    </path>
+  </svg>
+  <svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' class='d-none'>
+    <path id='arrow'
+      d='M21.677 12.673C21.6856 12.6559 21.7027 12.6388 21.7112 12.6216C21.7198 12.6045 21.7284 12.5874 21.7455 12.5703C21.754 12.5532 21.7626 12.5446 21.7712 12.5275C21.7797 12.5104 21.7883 12.4932 21.7968 12.4761C21.8054 12.459 21.814 12.4419 21.8225 12.4248C21.8225 12.4162 21.8225 12.3991 21.8311 12.382C21.8396 12.3649 21.8396 12.3477 21.8482 12.3306C21.8568 12.3135 21.8568 12.2964 21.8653 12.2793C21.8739 12.2621 21.8739 12.245 21.8824 12.2279C21.8824 12.2108 21.891 12.1851 21.891 12.168C21.891 12.1509 21.8996 12.1337 21.8996 12.1252C21.9081 12.0481 21.9081 11.9797 21.8996 11.9026C21.8996 11.8855 21.891 11.8684 21.891 11.8598C21.891 11.8427 21.8824 11.817 21.8824 11.7999C21.8824 11.7828 21.8739 11.7657 21.8653 11.7486C21.8568 11.7143 21.8568 11.6972 21.8482 11.6801C21.8482 11.663 21.8396 11.6458 21.8311 11.6287C21.8225 11.6116 21.8225 11.5945 21.814 11.5774C21.8054 11.5603 21.7968 11.5431 21.7883 11.526C21.7797 11.5089 21.7712 11.4918 21.7626 11.4747C21.754 11.4575 21.7455 11.449 21.7369 11.4319C21.7284 11.4147 21.7198 11.3976 21.7027 11.3805C21.6941 11.3634 21.677 11.3463 21.6684 11.3291C21.6599 11.312 21.6513 11.3035 21.6428 11.2863C21.6171 11.2607 21.5914 11.2264 21.5657 11.2007L14.6924 4.3274C14.2559 3.89087 13.5454 3.89087 13.1089 4.3274C12.6723 4.76394 12.6723 5.47439 13.1089 5.91093L18.0734 10.8755H4.12131C3.49646 10.884 3 11.3805 3 12.0053C3 12.6216 3.49646 13.1267 4.12131 13.1267H18.082L13.1174 18.0912C12.6809 18.5278 12.6809 19.2382 13.1174 19.6747C13.34 19.8887 13.6224 20 13.9049 20C14.1874 20 14.4784 19.8887 14.6924 19.6747L21.5657 12.8014C21.5914 12.7757 21.6171 12.75 21.6428 12.7158C21.6599 12.6987 21.6684 12.6816 21.677 12.673Z'
+      fill='#CC2027'></path>
+  </svg>
+
+  <svg class='d-none' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path id="comment-icon"
+      d="M1 2.5V10.5H3V13.047L3.8125 12.3905L6.172 10.5H11V2.5H1ZM2 3.5H10V9.5H5.828L5.6875 9.6095L4 10.953V9.5H2V3.5ZM12 4.5V5.5H14V11.5H12V12.953L10.172 11.5H6.422L5.172 12.5H9.828L13 15.047V12.5H15V4.5H12Z"
+      fill="#555555" />
+  </svg>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+a {
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+        color: #ccc;
+    }
+}
+
+.btn-danger,
+.btn-primary {
+    color: #fff !important;
+
+    &:hover {
+        color: #fff !important;
+        box-shadow: $shadow-lg;
+    }
+}
+body {
+    position: relative;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
+.has-padding {
+    padding: 40px 0;
+
+    @include media-breakpoint-up(xl) {
+        padding: 60px 0;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding: 80px 0;
+    }
+
+    position: relative;
+    // box-shadow: $shadow;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 12px;
+        background: #eee;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+// 20210629
+.wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: relative;
+    max-width: 1910px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(xl) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
